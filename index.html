@@ -1,0 +1,49 @@
+---
+layout: default
+title: pile-contributors.github.io
+---
+
+<div id="home">
+
+  <div class="section">
+  <h1 class="section_title">Hello</h1>
+
+  <p>
+    This site hosts resources related to piles.
+  </p>
+  </div>
+
+  <div class="section">
+  <h1 class="section_title">What is a pile</h1>
+  <p>
+    A pile is a small piece of code, large and important enough
+	for you to remember but smaller than a library.
+  </p>
+  <p>
+    The pile is expected to be used in various ways and should 
+	be flexible enough to allow several use modes.
+  </p>
+  </div>
+
+  <div class="section">
+  <h1 class="section_title">Latest Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts offset:0 limit:10 %}
+      <li>
+        <span>{{ post.date | date_to_string }}</span> &raquo; 
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        [ in
+	{% for category in post.categories %}
+	  <a href="/categories/{{ category }}.html">{{ category }}</a>
+	{% endfor %}
+        ]
+     </li>
+    {% endfor %}
+  </ul>
+  <p>
+    See them <a href="/categories/all.html">all</a>.
+  </p>
+  </div>
+
+</div>
+

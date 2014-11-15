@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Welcome to PILES!"
+date:   2014-11-15 16:37:39
+categories: update
+---
+
+[piles-contributors organization](https://github.com/pile-contributors) 
+was created on [GitHub][github];
+The intent is to host all piles and related resources.
+
+[Jekyll][jekyll] is used for this site.
+
+[github]:    https://github.com
+[jekyll]:    http://jekyllrb.com

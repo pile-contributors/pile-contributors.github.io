@@ -1,0 +1,20 @@
+---
+layout: default
+title: Post Categories
+---
+
+{% for category in site.categories %}
+<div class="section">
+<h1 class="section_title">Posts in <em><a href="{{ category | first }}.html">{{ category | first }}</a></em> category</h1>
+<ul class="posts">
+    {% for posts in category %}
+      {% for post in posts %}
+        {% if post.title | size > 0 %}
+<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+</ul>
+</div>
+{% endfor %}
+

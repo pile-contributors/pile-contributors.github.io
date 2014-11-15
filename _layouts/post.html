@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+<p class="meta">{{ page.date | date_to_string }}</p>
+
+<div class="post">
+{{ content }}
+</div>
+
+<p class="post_tags_list">
+Tagged with 
+{% for category in page.categories %}
+  <a href="/categories/{{ category }}.html">{{ category }}</a>
+{% endfor %}
+</p>
+
