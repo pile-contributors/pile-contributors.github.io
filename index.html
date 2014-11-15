@@ -1,6 +1,6 @@
 ---
 layout: default
-title: pile-contributors.github.io
+title: Home
 ---
 
 <div id="home">
@@ -12,7 +12,7 @@ title: pile-contributors.github.io
     This site hosts resources related to piles.
   </p>
   <p>
-	<img alt="Pile example" src="/assets/images/pile-128.png"></img>
+	<img alt="Pile example" src="{{ site.url }}/assets/images/pile-128.png"></img>
   </p>
   </div>
 
@@ -20,13 +20,33 @@ title: pile-contributors.github.io
   <h1 class="section_title">What is a pile?</h1>
   <p>
     A pile is a small piece of code, large and important enough
-	for you to remember but smaller than a library.
+	for you to remember but smaller than a library
+	(but flexibility is added to create static or shared libraries).
 	</br>
     The pile is expected to be used in various ways and should 
 	be flexible enough to allow several use modes.
   </p>
+  <p>
+    Each such pile consists of two repositories:
+	</br>
+	- one that only contains the source code, copyright information,
+	usage information, called <b>pile</b>;
+	</br>
+	- one that contains everything else like test code, tools 
+	used to generate the source, etc. called <b>pile-helpers</b>.
+  </p>
   </div>
 
+  <div class="section">
+  <h1 class="section_title">What tools do I need?</h1>
+  <p>
+    The tools to be used are CMake and git. The parameters that change
+	the functionality are to be passed on using CMake, with
+	the source being kept unchanged. Any change to the source should
+	be passed upstream to improve the overall quality and usability.
+  </p>
+  </div>
+  
   <div class="section">
   <h1 class="section_title">Repositories</h1>
   <p>
@@ -69,14 +89,14 @@ title: pile-contributors.github.io
         <a href="{{ post.url }}">{{ post.title }}</a>
         [ in
 	{% for category in post.categories %}
-	  <a href="/categories/{{ category }}.html">{{ category }}</a>
+	  <a href="{{ site.url }}/categories/{{ category }}.html">{{ category }}</a>
 	{% endfor %}
         ]
      </li>
     {% endfor %}
   </ul>
   <p>
-    See them <a href="/categories/all.html">all</a>.
+    See them <a href="{{ site.url }}/categories/all.html">all</a>.
   </p>
   </div>
 

@@ -203,3 +203,11 @@ dd {
   letter-spacing:0.05em
 }
 
+ul {
+	list-style: disc outside none;
+	padding: 0.2em;
+}
+
+li {
+	margin-left: 2em;
+}
