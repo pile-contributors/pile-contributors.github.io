@@ -167,7 +167,6 @@ title: CMake
 		<p>
 			Defines following variables:
 		</p>
-		
 		<dl>
 			<dt><em>PILE</em>_NAME</dt><dd>the name with all-lower-case letters</dd>
 			<dt><em>PILE</em>_NAME_U</dt><dd>the name with all-UPPER-case letters</dd>
@@ -175,7 +174,6 @@ title: CMake
 			<dt><em>PILE</em>_SOURCE_DIR</dt><dd>the path where this pile is stored (not including /cmake)</dd>
 			<dt><em>PILE</em>_BINARY_DIR</dt><dd>the path where this pile generates output</dd>
 		</dl>
-		
 		<p>
 			 By using this function the top level CMake file does not have to
 			 alter <b>CMAKE_MODULE_PATH</b> itself.
@@ -205,6 +203,398 @@ title: CMake
 		</dl>
 	</div>
 	
+	<div class="section">
+		<h1 class="section_title"><a name="pileCreateCopyTarget">pileCreateCopyTarget</a></h1>
+		<p>
+			Creates a target to copy files.
+			If <b>base_path</b> is provided then the path
+			structure is going to be preserved,
+			otherwise all files are going to be copied in same directory.
+		</p>
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>target_name</dt>
+					<dd>
+						name of the target to be created;
+					</dd>
+					<dt>target_description</dt>
+					<dd>
+						a description to add to this target;
+					</dd>
+					<dt>destination_path</dt>
+					<dd>
+						path where to copy the files;
+					</dd>
+					<dt>files_list</dt>
+					<dd>
+						list of files to copy;
+					</dd>
+					<dt>(optional) base_path</dt>
+					<dd>
+						part of the path that is used as a reference for
+						computing relative paths from <b>files_list</b>;
+					</dd>					
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileCreateCopyTarget (</br>
+				&nbsp;&nbsp;target_1 "copy some files"</br>
+				&nbsp;&nbsp;"${CMAKE_BINARY_DIR}/dump"</br>
+				&nbsp;&nbsp;${SOME_FILES})
+				</code>
+			</dd>
+		</dl>
+	</div>
 	
+	<div class="section">
+		<h1 class="section_title"><a name="pileCopyHeaders">pileCopyHeaders</a></h1>
+		<p>
+			Creates a target that copies the headers from a pile to build directory.
+			Name of the new target is <b>copy_<em>pile</em>_headers</b>.
+			The files are copied to <b>${CMAKE_BINARY_DIR}/build/include</b>
+			It is assumed that <b><em>PILE</em>_HEADERS</b> and 
+			<b><em>PILE</em>_PATH</b> are defined.
+		</p>
+		<p>
+		Internally the macro simply calls <a href="#pileCreateCopyTarget">pileCreateCopyTarget</a>
+		</p>
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>name</dt>
+					<dd>
+						name of the pile;
+					</dd>
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileCopyHeaders (SomePile)
+				</code>
+			</dd>
+		</dl>
+	</div>
+	
+	<div class="section">
+		<h1 class="section_title"><a name="pileSetDependencies">pileSetDependencies</a></h1>
+		<p>
+			Set dependencies for a pile.	
+			The list can be empty. Basically the macro creates a variable
+			<b><em>PILE</em>_DEPENDENCIES</b> and, if debugging is enabled, informs the
+			user about them.
+		</p>
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>name</dt>
+					<dd>
+						name of the pile;
+					</dd>
+					<dt>dependencies</dt>
+					<dd>
+						list of pile names that this pile depends on;
+					</dd>
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileSetDependencies (SomePile ${LIST_OF_DEPENDENCIES})
+				</code>
+			</dd>
+		</dl>
+	</div>
+	
+	<div class="section">
+		<h1 class="section_title"><a name="pileSetCategory">pileSetCategory</a></h1>
+		<p>
+			Set the category for a pile.	
+		</p>
+		
+		<p>
+			The list can be empty; if there are more than one items in 
+			the list they are interpreted to be components of a path.
+		</p>
+
+		<p>
+			A pile has a single category and multiple tags. All the
+			components of the category list are added as tags.
+			pileSetCategory("p1" "a;b;c") is thus interpreted like
+			a/b/c/p1 by a tool looking to store the piles or categorize.
+		</p>
+
+		<p>
+			The macro defines or changes <b><em>PILE</em>_CATEGORY</b>
+			and <b><em>PILE</em>_TAGS</b> variables.
+		</p>
+		
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>name</dt>
+					<dd>
+						name of the pile;
+					</dd>
+					<dt>category</dt>
+					<dd>
+						the category as a list;
+					</dd>
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileSetCategory (SomePile "a;b;c")
+				</code>
+			</dd>
+		</dl>
+	</div>
+	
+	<div class="section">
+		<h1 class="section_title"><a name="pileSetTags">pileSetTags</a></h1>
+		<p>
+			Set the tags for a pile.	
+		</p>
+		
+		<p>
+			The list can be empty; the macro defines or changes 
+			<b><em>PILE</em>_TAGS</b> variables.
+		</p>
+		
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>name</dt>
+					<dd>
+						name of the pile;
+					</dd>
+					<dt>tags</dt>
+					<dd>
+						the tags as a list;
+					</dd>
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileSetTags (SomePile "a;b;c")
+				</code>
+			</dd>
+		</dl>
+	</div>
+	
+	
+	<div class="section">
+		<h1 class="section_title"><a name="pileSetVersion">pileSetVersion</a></h1>
+		<p>
+			Set the version for a pile.	
+		</p>
+		
+		<p>
+			The list should contain major, minor and patch components.
+			The macro defines or changes
+			<b><em>PILE</em>_MAJOR_VERSION</b>, <b><em>PILE</em>_MINOR_VERSION</b>,
+            <b><em>PILE</em>_PATCH_VERSION</b>, <b><em>PILE</em>_VERSION_STRING</b>,
+            <b><em>PILE</em>_DEBUG and <b><em>PILE</em>_RELEASE</b>.
+		</p>
+		
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>name</dt>
+					<dd>
+						name of the pile;
+					</dd>
+					<dt>value</dt>
+					<dd>
+						the version;
+					</dd>
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileSetVersion (SomePile "1;0;0")</br>
+				pileSetVersion (SomeOtherPile "1;0;0;d")</br>
+				pileSetVersion (SomeThirdPile "1;0;0;debug")</br>
+				</code>
+			</dd>
+		</dl>
+	</div>
+	
+	<div class="section">
+		<h1 class="section_title"><a name="pileSetMode">pileSetMode</a></h1>
+		<p>
+			Set the use mode.	
+		</p>
+		
+		<p>
+			The list should contain major, minor and patch components.
+			The macro defines or changes
+			<b><em>PILE</em>_STATIC</b>, <b><em>PILE</em>_PILE</b>,
+            <b><em>PILE</em>_SHARED</b> with the one being selected 
+			set to ON and the others to OFF.
+		</p>
+		
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>name</dt>
+					<dd>
+						name of the pile;
+					</dd>
+					<dt>mode</dt>
+					<dd>
+						the mode;
+					</dd>
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileSetMode (SomePile "STATIC")</br>
+				pileSetMode (SomeOtherPile "PILE")</br>
+				pileSetMode (SomeThirdPile "PILE_SHARED")</br>
+				pileSetMode (SomeFourthPile "SHARED")</br>
+				</code>
+			</dd>
+		</dl>
+	</div>
+	
+	<div class="section">
+		<h1 class="section_title"><a name="pileSetCommon">pileSetCommon</a></h1>
+		<p>
+			Set common properties.	
+		</p>
+		
+		<p>
+			This is just a wrapper around the other macros:
+			<a href="#pileSetDependencies">pileSetDependencies</a>,
+			<a href="#pileSetCategory">pileSetCategory</a>,
+			<a href="#pileSetTags">pileSetTags</a>,
+			<a href="#pileSetVersion">pileSetVersion</a>,
+			<a href="#pileSetMode">pileSetMode</a>,
+			<a href="#"></a>.
+		</p>
+		
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>name</dt>
+					<dd>
+						name of the pile;
+					</dd>
+					<dt>version</dt>
+					<dd>
+						the version;
+					</dd>
+					<dt>mode</dt>
+					<dd>
+						the mode;
+					</dd>
+					<dt>dependencies</dt>
+					<dd>
+						the list of piles this pile depends on;
+					</dd>
+					<dt>category</dt>
+					<dd>
+						the list for category;
+					</dd>
+					<dt>tags</dt>
+					<dd>
+						the list of tags;
+					</dd>
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileSetCommon (SomePile</br>
+				&nbsp;&nbsp;"1;0;1"</br>
+				&nbsp;&nbsp;"STATIC"</br>
+				&nbsp;&nbsp;"APile;Another"</br>
+				&nbsp;&nbsp;"cat1;cat11"</br>
+				&nbsp;&nbsp;"tag1;tag2")</br>
+				</code>
+			</dd>
+		</dl>
+	</div>
+	
+	<div class="section">
+		<h1 class="section_title"><a name="pileConfigFile">pileConfigFile</a></h1>
+		<p>
+			Configures the file for a pile.	
+		</p>
+		
+		<p>
+			The input file is <b><em>pile</em>-config.h.in</b> an the
+			output is <b><em>pile</em>-config.h</b>.
+		</p>
+		
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>name</dt>
+					<dd>
+						name of the pile;
+					</dd>
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileConfigFile (SomePile)</br>
+				</code>
+			</dd>
+		</dl>
+	</div>
+	
+	<div class="section">
+		<h1 class="section_title"><a name="pileSetSources">pileSetSources</a></h1>
+		<p>
+			Set the list of sources.	
+		</p>
+		
+		<dl>
+			<dt>Arguments:</dt>
+			<dd>
+				<dl>
+					<dt>name</dt>
+					<dd>
+						name of the pile;
+					</dd>
+					<dt>headers</dt>
+					<dd>
+						the list of headers;
+					</dd>
+					<dt>sources</dt>
+					<dd>
+						the list of sources;
+					</dd>
+				</dl>
+			</dd>
+			<dt>Example:</dt>
+			<dd>
+				<code>
+				pileSetSources (SomePile ${HEADERS} ${SOURCES})</br>
+				</code>
+			</dd>
+		</dl>
+	</div>	
+	
+
 	
 </div>
