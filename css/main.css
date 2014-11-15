@@ -41,9 +41,29 @@ dl {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+dt {
+  font-weight: bold;
+}
 dd {
   padding-left: 0.5em;
   padding-right: 0.5em;
+}
+
+ul {
+	list-style: disc outside none;
+	padding: 0.2em;
+}
+
+li {
+	margin-left: 2em;
+}
+
+code {
+  padding: 0.5em;
+  background-color: #DBD1CC;
+  white-space: nowrap;
+  overflow: auto;
+  display: block;
 }
 
 /*****************************************************************************/
@@ -201,13 +221,4 @@ dd {
 
 .section_title {
   letter-spacing:0.05em
-}
-
-ul {
-	list-style: disc outside none;
-	padding: 0.2em;
-}
-
-li {
-	margin-left: 2em;
 }
