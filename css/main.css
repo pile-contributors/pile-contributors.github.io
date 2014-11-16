@@ -44,6 +44,9 @@ dl {
 dt {
   font-weight: bold;
 }
+dd > dt {
+  font-weight: normal;
+}
 dd {
   padding-left: 0.5em;
   padding-right: 0.5em;
@@ -58,13 +61,28 @@ li {
 	margin-left: 2em;
 }
 
-code {
+.code_sample {
   padding: 0.5em;
   background-color: #DBD1CC;
   white-space: nowrap;
   overflow: auto;
   display: block;
 }
+
+dl.arguments {
+ width:100%;
+ overflow:hidden;
+}
+
+dt.arguments {
+ float:left;
+ width:20%; /* adjust the width; make sure the total of both is 100% */
+}
+dd.arguments {
+ float:left;
+ width:70%; /* adjust the width; make sure the total of both is 100% */
+}
+
 
 /*****************************************************************************/
 /*

@@ -18,22 +18,22 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>output</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">output</dt>
+					<dd class="arguments">
 						the name of the output variable;
 					</dd>
-					<dt>input</dt>
-					<dd>
+					<dt class="arguments">input</dt>
+					<dd class="arguments">
 						(absolute) input path
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
+				<div class="code_sample">
 				pileCmakeOutputPath (OUTPUT_VAR "${CMAKE_SOURCE_DIR}/a_file.cc")
-				</code>
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -55,26 +55,26 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>output</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">output</dt>
+					<dd class="arguments">
 						the name of the output variable;
 					</dd>
-					<dt>reference</dt>
-					<dd>
+					<dt class="arguments">reference</dt>
+					<dd class="arguments">
 						(absolute) reference path
 					</dd>
-					<dt>input</dt>
-					<dd>
+					<dt class="arguments">input</dt>
+					<dd class="arguments">
 						(absolute) input path
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
+				<div class="code_sample">
 				pileRelativePath (OUTPUT_VAR "${CMAKE_SOURCE_DIR}" "${CMAKE_SOURCE_DIR}/a_file.cc" )
-				</code>
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -89,22 +89,22 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>pile_name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">pile_name</dt>
+					<dd class="arguments">
 						name of the pile
 					</dd>
-					<dt>target</dt>
-					<dd>
+					<dt class="arguments">target</dt>
+					<dd class="arguments">
 						name of the target
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
+				<div class="code_sample">
 				pileUsedBy (myLib somePile)
-				</code>
+				</div>
 			</dd>
 			<dt>Status:</dt>
 			<dd>
@@ -133,22 +133,22 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile
 					</dd>
-					<dt>message</dt>
-					<dd>
+					<dt class="arguments">message</dt>
+					<dd class="arguments">
 						the message to show
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
+				<div class="code_sample">
 				pileDebugMessage (SomePile "message from a pile")
-				</code>
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -181,13 +181,13 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile, camel cased;
 					</dd>
-					<dt>(optional) path</dt>
-					<dd>
+					<dt class="arguments">(optional) path</dt>
+					<dd class="arguments">
 						the path of this pile; both relative and absolute 
 						paths are supported.
 					</dd>
@@ -195,10 +195,10 @@ title: CMake
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
-				pileInclude (SomePile)</br>
+				<div class="code_sample">
+				pileInclude (SomePile)<br />
 				pileInclude (SomePile "./somepile_in_nonstandard_path")
-				</code>
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -214,25 +214,25 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>target_name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">target_name</dt>
+					<dd class="arguments">
 						name of the target to be created;
 					</dd>
-					<dt>target_description</dt>
-					<dd>
+					<dt class="arguments">target_description</dt>
+					<dd class="arguments">
 						a description to add to this target;
 					</dd>
-					<dt>destination_path</dt>
-					<dd>
+					<dt class="arguments">destination_path</dt>
+					<dd class="arguments">
 						path where to copy the files;
 					</dd>
-					<dt>files_list</dt>
-					<dd>
+					<dt class="arguments">files_list</dt>
+					<dd class="arguments">
 						list of files to copy;
 					</dd>
-					<dt>(optional) base_path</dt>
-					<dd>
+					<dt class="arguments">(optional) base_path</dt>
+					<dd class="arguments">
 						part of the path that is used as a reference for
 						computing relative paths from <b>files_list</b>;
 					</dd>					
@@ -240,12 +240,12 @@ title: CMake
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
-				pileCreateCopyTarget (</br>
-				&nbsp;&nbsp;target_1 "copy some files"</br>
-				&nbsp;&nbsp;"${CMAKE_BINARY_DIR}/dump"</br>
+				<div class="code_sample">
+				pileCreateCopyTarget (<br />
+				&nbsp;&nbsp;target_1 "copy some files"<br />
+				&nbsp;&nbsp;"${CMAKE_BINARY_DIR}/dump"<br />
 				&nbsp;&nbsp;${SOME_FILES})
-				</code>
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -265,18 +265,18 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile;
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
+				<div class="code_sample">
 				pileCopyHeaders (SomePile)
-				</code>
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -292,22 +292,22 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile;
 					</dd>
-					<dt>dependencies</dt>
-					<dd>
+					<dt class="arguments">dependencies</dt>
+					<dd class="arguments">
 						list of pile names that this pile depends on;
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
+				<div class="code_sample">
 				pileSetDependencies (SomePile ${LIST_OF_DEPENDENCIES})
-				</code>
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -338,22 +338,22 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile;
 					</dd>
-					<dt>category</dt>
-					<dd>
+					<dt class="arguments">category</dt>
+					<dd class="arguments">
 						the category as a list;
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
+				<div class="code_sample">
 				pileSetCategory (SomePile "a;b;c")
-				</code>
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -372,22 +372,22 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile;
 					</dd>
-					<dt>tags</dt>
-					<dd>
+					<dt class="arguments">tags</dt>
+					<dd class="arguments">
 						the tags as a list;
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
+				<div class="code_sample">
 				pileSetTags (SomePile "a;b;c")
-				</code>
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -404,30 +404,30 @@ title: CMake
 			The macro defines or changes
 			<b><em>PILE</em>_MAJOR_VERSION</b>, <b><em>PILE</em>_MINOR_VERSION</b>,
             <b><em>PILE</em>_PATCH_VERSION</b>, <b><em>PILE</em>_VERSION_STRING</b>,
-            <b><em>PILE</em>_DEBUG and <b><em>PILE</em>_RELEASE</b>.
+            <b><em>PILE</em>_DEBUG</b> and <b><em>PILE</em>_RELEASE</b>.
 		</p>
 		
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile;
 					</dd>
-					<dt>value</dt>
-					<dd>
+					<dt class="arguments">value</dt>
+					<dd class="arguments">
 						the version;
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
-				pileSetVersion (SomePile "1;0;0")</br>
-				pileSetVersion (SomeOtherPile "1;0;0;d")</br>
-				pileSetVersion (SomeThirdPile "1;0;0;debug")</br>
-				</code>
+				<div class="code_sample">
+				pileSetVersion (SomePile "1;0;0")<br />
+				pileSetVersion (SomeOtherPile "1;0;0;d")<br />
+				pileSetVersion (SomeThirdPile "1;0;0;debug")<br />
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -449,25 +449,25 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile;
 					</dd>
-					<dt>mode</dt>
-					<dd>
+					<dt class="arguments">mode</dt>
+					<dd class="arguments">
 						the mode;
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
-				pileSetMode (SomePile "STATIC")</br>
-				pileSetMode (SomeOtherPile "PILE")</br>
-				pileSetMode (SomeThirdPile "PILE_SHARED")</br>
-				pileSetMode (SomeFourthPile "SHARED")</br>
-				</code>
+				<div class="code_sample">
+				pileSetMode (SomePile "STATIC")<br />
+				pileSetMode (SomeOtherPile "PILE")<br />
+				pileSetMode (SomeThirdPile "PILE_SHARED")<br />
+				pileSetMode (SomeFourthPile "SHARED")<br />
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -484,50 +484,49 @@ title: CMake
 			<a href="#pileSetCategory">pileSetCategory</a>,
 			<a href="#pileSetTags">pileSetTags</a>,
 			<a href="#pileSetVersion">pileSetVersion</a>,
-			<a href="#pileSetMode">pileSetMode</a>,
-			<a href="#"></a>.
+			<a href="#pileSetMode">pileSetMode</a>.
 		</p>
 		
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile;
 					</dd>
-					<dt>version</dt>
-					<dd>
+					<dt class="arguments">version</dt>
+					<dd class="arguments">
 						the version;
 					</dd>
-					<dt>mode</dt>
-					<dd>
+					<dt class="arguments">mode</dt>
+					<dd class="arguments">
 						the mode;
 					</dd>
-					<dt>dependencies</dt>
-					<dd>
+					<dt class="arguments">dependencies</dt>
+					<dd class="arguments">
 						the list of piles this pile depends on;
 					</dd>
-					<dt>category</dt>
-					<dd>
+					<dt class="arguments">category</dt>
+					<dd class="arguments">
 						the list for category;
 					</dd>
-					<dt>tags</dt>
-					<dd>
+					<dt class="arguments">tags</dt>
+					<dd class="arguments">
 						the list of tags;
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
-				pileSetCommon (SomePile</br>
-				&nbsp;&nbsp;"1;0;1"</br>
-				&nbsp;&nbsp;"STATIC"</br>
-				&nbsp;&nbsp;"APile;Another"</br>
-				&nbsp;&nbsp;"cat1;cat11"</br>
-				&nbsp;&nbsp;"tag1;tag2")</br>
-				</code>
+				<div class="code_sample">
+				pileSetCommon (SomePile<br />
+				&nbsp;&nbsp;"1;0;1"<br />
+				&nbsp;&nbsp;"STATIC"<br />
+				&nbsp;&nbsp;"APile;Another"<br />
+				&nbsp;&nbsp;"cat1;cat11"<br />
+				&nbsp;&nbsp;"tag1;tag2")<br />
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -546,18 +545,18 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile;
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
-				pileConfigFile (SomePile)</br>
-				</code>
+				<div class="code_sample">
+				pileConfigFile (SomePile)<br />
+				</div>
 			</dd>
 		</dl>
 	</div>
@@ -571,26 +570,26 @@ title: CMake
 		<dl>
 			<dt>Arguments:</dt>
 			<dd>
-				<dl>
-					<dt>name</dt>
-					<dd>
+				<dl class="arguments">
+					<dt class="arguments">name</dt>
+					<dd class="arguments">
 						name of the pile;
 					</dd>
-					<dt>headers</dt>
-					<dd>
+					<dt class="arguments">headers</dt>
+					<dd class="arguments">
 						the list of headers;
 					</dd>
-					<dt>sources</dt>
-					<dd>
+					<dt class="arguments">sources</dt>
+					<dd class="arguments">
 						the list of sources;
 					</dd>
 				</dl>
 			</dd>
 			<dt>Example:</dt>
 			<dd>
-				<code>
-				pileSetSources (SomePile ${HEADERS} ${SOURCES})</br>
-				</code>
+				<div class="code_sample">
+				pileSetSources (SomePile ${HEADERS} ${SOURCES})<br />
+				</div>
 			</dd>
 		</dl>
 	</div>	
