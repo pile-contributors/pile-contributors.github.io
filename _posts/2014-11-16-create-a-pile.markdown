@@ -22,13 +22,12 @@ are looking for an actual implementation we have
 [a pile](/404.html) for it that does a lot more.
 
 {% highlight c++ %}
-// refcnt.h
+// refcnt/refcnt.h
 class RefCnt {
 private:
     int ref_cnt_;
 protected:
     RefCnt();
-private:
     virtual ~RefCnt();
 public:
     void acquire() {
@@ -39,11 +38,12 @@ public:
             delete this;
         }
     }
-}
+};
 {% endhighlight %}
 
 {% highlight c++ %}
-// refcnt.cc
+// refcnt/refcnt.cc
+#include "refcnt.h"
 RefCnt::RefCnt() :
     ref_cnt_(1)
 {}
@@ -68,7 +68,7 @@ The pile
 
 The `refcnt` directory is the one that will host our actual
 pile. We want to keep things simple here so that when we're
-going to came back in a few months to understand 
+going to come back in a few months to understand
 what's going on in a blink of an eye. Whatever tests, support,
 related scripts, project files we may nee we're going to throw
 in `refcnt-helpers`.
@@ -86,24 +86,97 @@ offers a number of helper macros and we're going to make use of
 those to create following simple file:
 
 {% highlight cmake %}
-# refcnt.cmake
+# refcnt/refcnt.cmake
 
-# TODO
+set (REFCNT_DEBUG_MSG ON)
 
+macro    (refcntInit
+          ref_cnt_use_mode)
+
+    # default name
+    set(REF_CNT_INIT_NAME "RefCnt")
+
+    # compose the list of headers and sources
+    set(REFCNT_HEADERS
+        "refcnt.h")
+    set(REFCNT_SOURCES
+        "refcnt.cc")
+
+    pileSetSources(
+        "${REF_CNT_INIT_NAME}"
+        "${REFCNT_HEADERS}"
+        "${REFCNT_SOURCES}")
+
+    pileSetCommon(
+        "${REF_CNT_INIT_NAME}"
+        "0;0;1;d"
+        "${ref_cnt_use_mode}"
+        ""
+        "basics"
+        "referece-count;management")
+
+endmacro ()
 {% endhighlight %}
 
 Now for the `CMakeLists.txt`, all we have to do
 is add to following lines:
 
 {% highlight cmake %}
-# CMakeLists.txt
+# refcnt/CMakeLists.txt
 
-# TODO
+if (NOT REFCNT_BUILD_MODE)
+    set (REFCNT_BUILD_MODE STATIC)
+endif ()
+
+include(pile_support)
+pileInclude (RefCnt)
+refCntInit(${REFCNT_BUILD_MODE})
 
 {% endhighlight %}
 
 and we will be able to use this directory as a standard
 library build by CMake, if we want that. 
+
+Now we have to include the content in a larger project.
+If we want to use the source files directly, then we can do
+
+{% highlight cmake %}
+# CMakeLists.txt
+cmake_minimum_required(VERSION 2.8.9)
+
+set (PROJECT_NAME "create_pile")
+project(${PROJECT_NAME})
+
+include(pile_support)
+pileInclude (RefCnt)
+
+refCntInit(PILE)
+add_executable(
+    ${PROJECT_NAME}
+    main.cc
+    ${REFCNT_SOURCES}
+    ${REFCNT_HEADERS})
+
+{% endhighlight %}
+
+and if we want to create a static library
+
+{% highlight cmake %}
+# CMakeLists.txt
+cmake_minimum_required(VERSION 2.8.9)
+
+set (PROJECT_NAME "create_pile")
+project(${PROJECT_NAME})
+
+add_subdirectory(refcnt)
+add_executable(
+    ${PROJECT_NAME}
+    main.cc)
+target_link_libraries(
+    ${PROJECT_NAME}
+    refcnt)
+
+{% endhighlight %}
 
 The helpers
 ===========

@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Adding a pile to your project"
+date:   2014-11-16 14:00:00
+categories: walkthrough
+---
+
+Having seen how we can [create a pile]({% post_url 2014-11-16-create-a-pile %})
+by hand we should now see how we can add this 
+pile to a completely unrelated project.
+
+We are going to use the content created last time
+so go [check it out]({% post_url 2014-11-16-create-a-pile %}).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
