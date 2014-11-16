@@ -96,7 +96,7 @@ Now for the `CMakeLists.txt`, all we have to do
 is add to following lines:
 
 {% highlight cmake %}
-# CMakeLists.cmake
+# CMakeLists.txt
 
 # TODO
 
@@ -116,7 +116,7 @@ for our pile.
 We add a top `CMakeLists.txt`:
 
 {% highlight cmake %}
-# CMakeLists.cmake
+# CMakeLists.txt
 
 # TODO
 
