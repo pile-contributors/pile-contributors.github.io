@@ -12,30 +12,141 @@ pile to a completely unrelated project.
 We are going to use the content created last time
 so go [check it out]({% post_url 2014-11-16-create-a-pile %}).
 
+As in the previous post, this is NOT what you
+are going to do to add a pile most of the time,
+but it serves to explain the concepts.
 
 
+The code
+========
+
+First you have to get the code. We will let that
+undefined for now - maybe it was a GitHub repository,
+maybe your local disk ... who knows. The thing is that
+you have a directory named in our case `refcnt`
+that coontains a cmake script named `refcnt.cmake`,
+a `CMakeLists.txt` and two source files: `refcnt.h`
+and `refcnt.cc`.
+
+You will copy this directory inside your project
+directory that is also CMake driven.
 
 
+Prerequisites
+=============
+
+For the whole piles system to work flawlesly, we provide
+a set of .cmake script files, freely available on
+[pile-cmake repository](https://github.com/pile-contributors/pile-cmake).
+
+We are going to need those because both the code to be
+written and the pile code rely on it.
+
+Once downloaded we will have to make the files visible
+to CMake. CMake searches `include()`d modules in
+paths listed in `CMAKE_MODULE_PATH`, then in CMake module
+directory.
+
+There are a couple of ways we can do that
+listed below. We will refer to the path that contains the
+scripts (i.e. the `pile_init.cmake` file) as `~/pile_support`
+so replace any occurence of that path with your own path.
+
+► The easies solution is to copy the files to a directory that
+CMake scans - CMake module directory. It is however a
+usually a bad idea to modify the installation.
+
+► Provide the path to cmake as an argument (make sure to
+use slashes - not backs-lashes - even on Windows):
+
+{% highlight bash %}
+cmake -DCMAKE_MODULE_PATH=~/pile_support
+{% endhighlight %}
+
+► Add the scripts to your project in a subdirectory called
+`pile-cmake`, then add that path to be searched:
+
+{% highlight cmake %}
+list(APPEND CMAKE_MODULE_PATH "pile-cmake")
+{% endhighlight %}
+
+The choice is yours. Also, note that setting
+`CMAKE_MODULE_PATH` environment variable has no effect.
+
+Including
+=========
+
+Once you decide add this line to your top level `CMakeLists.txt`:
+
+{% highlight cmake %}
+include(pile_support)
+{% endhighlight %}
+
+It is going to include all other macros that you will need,
+so don't bother to include other files in `~/pile_support`.
+
+The `include()` CMake macro is wrapped by `pileInclude()`
+and this is what we're going to use to include the pile
+in the parent `CMakeLists.txt` file:
+
+{% highlight cmake %}
+pileInclude(RefCnt)
+{% endhighlight %}
 
 
+Configuring
+===========
+
+The pile is not configured at include time. We also need to
+call initialization macro. This has same name as the pile
+in all-lower-case:
+
+{% highlight cmake %}
+refcntInit(PILE)
+{% endhighlight %}
+
+The argument tells the pile in what more you are using it.
+There are four possible modes:
+
+- *PILE*: we're including the sources directly
+- *STATIC*: the sources are to form a static library
+- *SHARED*: the sources are to form a shared library
+- *PILE_SHARED*: the sources are to be part of a shared library
+but not by themselves
+
+Only the *PILE* and *PILE_SHARED* modes are to be used
+in the way previously shown.
+If you want to create a library, be it static or shared,
+you should add the pile directory with a standard
+
+{% highlight cmake %}
+add_subdirectory(refcnt)
+{% endhighlight %}
+
+By default piles are compiled into static libraries but
+that can be overriden by setting `REFCNT_BUILD_MODE`
+to `SHARED` before the `add_subdirectory` call.
 
 
+PILE
+====
+
+In *PILE* and *PILE_SHARED* mode two variables are provided:
+`REFCNT_SOURCES` and `REFCNT_HEADERS`. These need to be added
+to your target - maybe something simple like this:
+
+{% highlight cmake %}
+add_executable(test
+    main.cc
+    ${REFCNT_SOURCES}
+    ${REFCNT_HEADERS})
+{% endhighlight %}
+
+They both contain absolute paths for the files to use.
 
 
+Climax
+======
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+This is it. You can configure and build as usual
+and the pile is going to be part of your project.

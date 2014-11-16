@@ -10,6 +10,10 @@ a pile for a C++ class step-by-step. There
 are automated ways to do this at the end of 
 this post.
 
+This is NOT what you are going to do to
+create piles, it only serves as an example for
+you to better understand the philosophy.
+
 A pile template is also present in our
 repository at [pile-template-cpp](https://github.com/pile-contributors/pile-template-cpp).
 
@@ -178,6 +182,12 @@ target_link_libraries(
 
 {% endhighlight %}
 
+A more polished version of these code snippets
+is available in
+[pile-examples repository](https://github.com/pile-contributors/pile-examples/tree/master/create_pile).
+
+
+
 The helpers
 ===========
 
@@ -194,4 +204,14 @@ We add a top `CMakeLists.txt`:
 # TODO
 
 {% endhighlight %}
+
+
+Tools
+-----
+
+To help us in creating and managing piles a number of
+tools are available. Once the content is generated you
+can go ahead and customize the content that was generated.
+
+
 
