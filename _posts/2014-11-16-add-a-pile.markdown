@@ -35,7 +35,7 @@ directory that is also CMake driven.
 Prerequisites
 =============
 
-For the whole piles system to work flawlesly, we provide
+For the whole piles system to work flawlessly, we provide
 a set of .cmake script files, freely available on
 [pile-cmake repository](https://github.com/pile-contributors/pile-cmake).
 
@@ -50,13 +50,13 @@ directory.
 There are a couple of ways we can do that
 listed below. We will refer to the path that contains the
 scripts (i.e. the `pile_init.cmake` file) as `~/pile_support`
-so replace any occurence of that path with your own path.
+so replace any occurrence of that path with your own path.
 
-► The easies solution is to copy the files to a directory that
+► The easiest solution is to copy the files to a directory that
 CMake scans - CMake module directory. It is however a
 usually a bad idea to modify the installation.
 
-► Provide the path to cmake as an argument (make sure to
+► Provide the path to CMake as an argument (make sure to
 use slashes - not backs-lashes - even on Windows):
 
 {% highlight bash %}
@@ -124,7 +124,7 @@ add_subdirectory(refcnt)
 {% endhighlight %}
 
 By default piles are compiled into static libraries but
-that can be overriden by setting `REFCNT_BUILD_MODE`
+that can be overridden by setting `REFCNT_BUILD_MODE`
 to `SHARED` before the `add_subdirectory` call.
 
 
