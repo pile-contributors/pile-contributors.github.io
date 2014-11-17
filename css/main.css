@@ -20,19 +20,37 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%;
+}
 
-h1 { margin-bottom: 1em; }
+h1 {
+  letter-spacing:0.05em;
+  word-spacing: 0.2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 150%;
+  color: #782901;
+}
+
+h2 {
+  margin-top: 1.2em;
+  margin-bottom: 0.7em;
+  font-size: 120%;
+  color: #CC4400;
+}
+
 p { margin: 1em 0; }
 
-a         {
+a {
   color: #55f;
   text-decoration: none;
 }
-a:hover   {
+
+a:hover {
   color: #55f;
   text-decoration: underline;
 }
+
 a:visited {
   color: #55f;
 }
@@ -41,24 +59,27 @@ dl {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
+
 dt {
   font-weight: bold;
 }
+
 dd > dt {
   font-weight: normal;
 }
+
 dd {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
 ul {
-	list-style: disc outside none;
-	padding: 0.2em;
+  list-style: disc outside none;
+  padding: 0.2em;
 }
 
 li {
-	margin-left: 2em;
+  margin-left: 2em;
 }
 
 .code_sample {
@@ -70,19 +91,27 @@ li {
 }
 
 dl.arguments {
- width:100%;
- overflow:hidden;
+  width:100%;
+  overflow:hidden;
 }
 
 dt.arguments {
- float:left;
- width:20%; /* adjust the width; make sure the total of both is 100% */
-}
-dd.arguments {
- float:left;
- width:70%; /* adjust the width; make sure the total of both is 100% */
+  float:left;
+  width:20%; /* adjust the width; make sure the total of both is 100% */
 }
 
+dd.arguments {
+  float:left;
+  width:70%; /* adjust the width; make sure the total of both is 100% */
+}
+
+.page_title {
+  font-size: 150%;
+  font-style: oblique;
+  font-family: "Lucida Console", Courier, monospace;
+  color: #CC4400;
+  text-shadow: -0.1em 0 #888, 0 0.1em #888, 0.1em 0 #FFF, 0 -0.1em #FFF;
+}
 
 /*****************************************************************************/
 /*
@@ -127,6 +156,7 @@ dd.arguments {
 .title {
   display: inline-block;
   margin-bottom: 2em;
+  font-size: 120%;
 }
 
 .title a {
@@ -148,6 +178,7 @@ dd.arguments {
 
 .meta {
   color: #aaa;
+  margin-bottom: 3em;
 }
 
 .footer {
@@ -238,5 +269,7 @@ dd.arguments {
 }
 
 .section_title {
-  letter-spacing:0.05em
+  letter-spacing:0.05em;
+  margin-top: 0.5em;
+
 }
