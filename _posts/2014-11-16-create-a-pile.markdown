@@ -18,7 +18,7 @@ A pile template is also present in our
 repository at [pile-template-cpp](https://github.com/pile-contributors/pile-template-cpp).
 
 The class
----------
+=========
 
 Let us start with a simple class that does 
 reference counting for us. Note that, if you
@@ -61,14 +61,14 @@ so we should create a pile. This way improvements to this
 class will propagate to all the projects that use it.
 
 The structure
--------------
+=============
 
 Create two directories: `refcnt` and `refcnt-helpers`
 somewhere. I will use `~\yard`, so the full path
 to the directories is `~\yard\refcnt` and `~\yard\refcnt-helpers`;
 
 The pile
-========
+--------
 
 The `refcnt` directory is the one that will host our actual
 pile. We want to keep things simple here so that when we're
@@ -189,29 +189,55 @@ is available in
 
 
 The helpers
-===========
+-----------
 
 As I said earlier, `~\yard\refcnt-helpers` is for 
 everything else. Notably, we can use it to store the 
 tests and, in this way, to show basic usage examples 
 for our pile.
 
+The important point about the helpers is that,
+although the code is held in
+separate repositories, you can store them
+in a single place on disk. But more on
+Git repositories in [another post](#todo).
+
 We add a top `CMakeLists.txt`:
 
 {% highlight cmake %}
-# CMakeLists.txt
+cmake_minimum_required(VERSION 2.8.9)
 
-# TODO
+project(refcnt_helpers)
+
+add_subdirectory(refcnt)
+add_executable(
+    refcnt_helpers
+    main.cc)
+target_link_libraries(
+    refcnt_helpers
+    refcnt)
 
 {% endhighlight %}
 
+and some main file.
 
 Tools
------
+=====
 
 To help us in creating and managing piles a number of
 tools are available. Once the content is generated you
 can go ahead and customize the content that was generated.
 
+pile-gui
+--------
 
+This is a Qt-based GUI application that has
+a lot of goodies for you. It allows creating
+and adding piles, and it also allows managing
+then.
 
+Others
+------
+
+There are other script tools to be developed
+and will be added here in due time.
