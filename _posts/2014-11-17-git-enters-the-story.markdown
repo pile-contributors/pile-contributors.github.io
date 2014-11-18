@@ -5,9 +5,9 @@ date:   2014-11-17 02:00:00
 categories: walkthrough
 ---
 
-The CMake build system is nice and all, but
-the interesting part comes when you add Git.
-Both the pile and the helper are git repositories.
+The [CMake][cmake] build system is nice and all, but
+the interesting part comes when you add [Git][git].
+Both the pile and the helper are [git][git] repositories.
 There are two different repositories because
 we want the user to have a directory as simple
 as possible when he/she gets the pile.
@@ -18,7 +18,7 @@ of the effects of this, as the maintainer of
 the pile will store the duo in a single folder,
 as explained below.
 
-To create a pile from Git's point of view we
+To create a pile from [Git][git]'s point of view we
 create the two directories - `pile` and `pile-helpers`
 with their respective content, then:
 
@@ -90,7 +90,7 @@ like if someone else updated the pile or you are using
 someone else's piles and he/she updated it.
 
 To [clone](http://git-scm.com/docs/git-clone)
-a git repository that contains submodules one uses
+a [git][git] repository that contains submodules one uses
 the command as follows:
 {% highlight bash %}
 git clone --recursive git@github.com:pile-contributors/$PILE-helpers.git
@@ -103,3 +103,5 @@ git submodule update --init --recursive
 
 
 
+[git]:       http://git-scm.com
+[cmake]:     http://www.cmake.org/

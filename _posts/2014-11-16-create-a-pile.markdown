@@ -231,7 +231,7 @@ can go ahead and customize the content that was generated.
 pile-gui
 --------
 
-This is a Qt-based GUI application that has
+This is a [Qt][qt]-based GUI application that has
 a lot of goodies for you. It allows creating
 and adding piles, and it also allows managing
 then.
@@ -241,3 +241,11 @@ Others
 
 There are other script tools to be developed
 and will be added here in due time.
+
+
+
+[github]:    https://github.com
+[jekyll]:    http://jekyllrb.com
+[git]:       http://git-scm.com
+[cmake]:     http://www.cmake.org/
+[qt]:        http://qt-project.org/

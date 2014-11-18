@@ -13,3 +13,5 @@ The intent is to host all piles and related resources.
 
 [github]:    https://github.com
 [jekyll]:    http://jekyllrb.com
+[git]:       http://git-scm.com
+[cmake]:     http://www.cmake.org/

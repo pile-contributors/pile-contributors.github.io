@@ -21,15 +21,15 @@ The code
 ========
 
 First you have to get the code. We will let that
-undefined for now - maybe it was a GitHub repository,
+undefined for now - maybe it was a [GitHub][github] repository,
 maybe your local disk ... who knows. The thing is that
 you have a directory named in our case `refcnt`
-that coontains a cmake script named `refcnt.cmake`,
+that coontains a [CMake][cmake] script named `refcnt.cmake`,
 a `CMakeLists.txt` and two source files: `refcnt.h`
 and `refcnt.cc`.
 
 You will copy this directory inside your project
-directory that is also CMake driven.
+directory that is also [CMake][cmake] driven.
 
 
 Prerequisites
@@ -43,8 +43,8 @@ We are going to need those because both the code to be
 written and the pile code rely on it.
 
 Once downloaded we will have to make the files visible
-to CMake. CMake searches `include()`d modules in
-paths listed in `CMAKE_MODULE_PATH`, then in CMake module
+to [CMake][cmake]. [CMake][cmake] searches `include()`d modules in
+paths listed in `CMAKE_MODULE_PATH`, then in [CMake][cmake] module
 directory.
 
 There are a couple of ways we can do that
@@ -53,10 +53,10 @@ scripts (i.e. the `pile_init.cmake` file) as `~/pile_support`
 so replace any occurrence of that path with your own path.
 
 ► The easiest solution is to copy the files to a directory that
-CMake scans - CMake module directory. It is however a
+[CMake][cmake] scans - [CMake][cmake] module directory. It is however a
 usually a bad idea to modify the installation.
 
-► Provide the path to CMake as an argument (make sure to
+► Provide the path to [CMake][cmake] as an argument (make sure to
 use slashes - not backs-lashes - even on Windows):
 
 {% highlight bash %}
@@ -85,7 +85,7 @@ include(pile_support)
 It is going to include all other macros that you will need,
 so don't bother to include other files in `~/pile_support`.
 
-The `include()` CMake macro is wrapped by `pileInclude()`
+The `include()` [CMake][cmake] macro is wrapped by `pileInclude()`
 and this is what we're going to use to include the pile
 in the parent `CMakeLists.txt` file:
 
@@ -150,3 +150,10 @@ Climax
 
 This is it. You can configure and build as usual
 and the pile is going to be part of your project.
+
+
+
+[github]:    https://github.com
+[jekyll]:    http://jekyllrb.com
+[git]:       http://git-scm.com
+[cmake]:     http://www.cmake.org/
