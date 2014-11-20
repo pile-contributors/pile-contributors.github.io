@@ -1,0 +1,76 @@
+---
+layout: post
+title:  "The tests"
+date:   2014-11-18 20:43:00
+categories: walkthrough
+---
+
+The helpers are a place for support code that
+includes the tests. This is an important part of any
+pile that clearly shows your pile in action.
+
+We will rely on [googletest][googletest] framework
+and this post is designed both to get you started
+and to describe the way we are going to test 
+the piles. It is provided under 
+[New BSD License](http://www.opensource.org/licenses/bsd-license.php).
+
+Preparing
+=========
+
+First we need to get [googletest][googletest]. I tried the
+repository under Windows with MinGw but it failed to build. Maybe
+you are more lucky:
+
+{% highlight bash %}
+mkdir ~/googletest
+cd ~/googletest
+svn checkout http://googletest.googlecode.com/svn/trunk/ src
+{% endhighlight %}
+
+<small><small>
+You are on Windows and you don't 
+have svn installed, [don't you](http://downloadsvn.codeplex.com/)?!</small>
+</small>
+
+So I've got [1.7.0 zip](https://code.google.com/p/googletest/downloads/detail?name=gtest-1.7.0.zip).
+
+Building in Windows
+-------------------
+
+I'm lazy so I opened the CMakeLists.txt in QtCreator,
+configured to `../build` and build. Worked flawlessly.
+
+
+
+Building in Ubuntu
+------------------
+
+Haven't tried, yet, but this should do it:
+
+{% highlight bash %}
+mkdir ~/googletest/build
+cd ~/googletest/build
+cmake ../src
+make
+# sudo make install
+{% endhighlight %}
+
+Using it
+--------
+
+The `CMakeLists.txt` file does not provide an install terget so I went
+ahead and created `~/googletest/install` and copied 
+the include directory inside (and removed the internal dir).
+I also created `~/googletest/install/lib` and copied 
+`libgtest.a` and `libgtest_main.a` inside.
+
+For [CMake][cmake] to see these we will have to add
+`~/googletest/install` to 
+[CMAKE_MODULE_PATH](http://www.cmake.org/cmake/help/v3.0/variable/CMAKE_MODULE_PATH.html).
+
+
+
+[git]:        http://git-scm.com
+[cmake]:      http://www.cmake.org/
+[googletest]: https://code.google.com
