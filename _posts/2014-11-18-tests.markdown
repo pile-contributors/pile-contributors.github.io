@@ -7,7 +7,7 @@ categories: walkthrough
 
 The helpers are a place for support code that
 includes the tests. This is an important part of any
-pile that clearly shows your pile in action.
+pile that clearly shows your code in action.
 
 We will rely on [googletest][googletest] framework
 and this post is designed both to get you started
@@ -19,7 +19,7 @@ Preparing
 =========
 
 First we need to get [googletest][googletest]. I tried the
-repository under Windows with MinGw but it failed to build. Maybe
+trunk under Windows with MinGw but it failed to build. Maybe
 you are more lucky:
 
 {% highlight bash %}
@@ -35,13 +35,28 @@ have svn installed, [don't you](http://downloadsvn.codeplex.com/)?!</small>
 
 So I've got [1.7.0 zip](https://code.google.com/p/googletest/downloads/detail?name=gtest-1.7.0.zip).
 
+This is a TODO; I need to make the trunk build.
+Also, the repository is a treasure trove and needs t be inspected.
+
 Building in Windows
 -------------------
 
 I'm lazy so I opened the CMakeLists.txt in QtCreator,
 configured to `../build` and build. Worked flawlessly.
 
+I was using MinGW and PThreads got defined which prevented 
+the compilation. I added `-Dgtest_disable_pthreads=ON` to
+CMake command line.
 
+I also modified line 1777 in `gtest-port.h` to
+
+form
+
+    ::testing::AutoHandle thread_;
+
+to
+
+    ::testing::internal::AutoHandle thread_;
 
 Building in Ubuntu
 ------------------
@@ -59,15 +74,19 @@ make
 Using it
 --------
 
-The `CMakeLists.txt` file does not provide an install terget so I went
-ahead and created `~/googletest/install` and copied 
-the include directory inside (and removed the internal dir).
+The `CMakeLists.txt` file does not provide an install target so I went
+ahead and created `~/googletest/install` directory and copied 
+the include directory inside (and removed the `internal` 
+directory; it felt right, smart, and proved wrong; keep the 
+`internal` directory).
 I also created `~/googletest/install/lib` and copied 
 `libgtest.a` and `libgtest_main.a` inside.
 
 For [CMake][cmake] to see these we will have to add
 `~/googletest/install` to 
-[CMAKE_MODULE_PATH](http://www.cmake.org/cmake/help/v3.0/variable/CMAKE_MODULE_PATH.html).
+[CMAKE_PREFIX_PATH](http://www.cmake.org/cmake/help/v3.0/variable/CMAKE_PREFIX_PATH.html).
+We will also use the [FindGTest.cmake](http://www.cmake.org/cmake/help/v3.1/module/FindGTest.html)
+to locate the components.
 
 
 
