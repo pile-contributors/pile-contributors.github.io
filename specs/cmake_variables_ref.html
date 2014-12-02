@@ -1,0 +1,148 @@
+---
+layout: default
+title: CMake
+---
+
+<div id="home">
+
+	{% include cmake_list.html %}
+
+	<div class="section">
+		<h1 class="section_title"><a name="general_variables">General Variables</a></h1>
+		<p>
+			General variables are the ones that affect the whole pile system.
+		</p>
+		<dl>
+			<dl class="arguments">
+				<dt class="arguments">PILE_SUPPORT_DEBUG</dt>
+				<dd class="arguments">
+					general switch for debug messages; 
+					set to <code>ON</code> to enable them;
+					set to <code>OFF</code> to disable them.
+				</dd>
+			</dl>
+		</dl>
+	</div>
+
+
+	<div class="section">
+		<h1 class="section_title"><a name="pile_variables">Pile Variables</a></h1>
+		<p>
+			These are variables normally found in <em>pile</em>.cmake files.
+		</p>
+		<dl>
+			<dl class="arguments">
+				<dt class="arguments"><em>PILE</em>_QT_MODS</dt>
+				<dd class="arguments">
+					a list of Qt modules like <code>Core Widgets Network</code>;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_DEBUG_MSG</dt>
+				<dd class="arguments">
+					enable or disable debug messages for a certain pile;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_BUILD_MODE</dt>
+				<dd class="arguments">
+					used in <code>CMakeLists.txt</code> for the pile to
+					decide the way pile is being used; defaults to
+					<code>STATIC</code>; <code>CMakeLists.txt</code> file
+					is / should only bbe used for 
+					<code>STATIC</code> or
+					<code>SHARED</code> modes. In the end this variable will
+					be used as <em>PILE</em>_PILE_MODE.
+				</dd>
+			</dl>
+		</dl>
+	</div>
+
+
+	<div class="section">
+		<h1 class="section_title"><a name="pile_indirect_variables">Indirect Variables</a></h1>
+		<p>
+			These are variables created on behalf of the pile by various macros.
+		</p>
+		<dl>
+			<dl class="arguments">
+				<dt class="arguments"><em>PILE</em>_NAME</dt>
+				<dd class="arguments">
+					the name with all-lower-case letters;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_NAME_U</dt>
+				<dd class="arguments">
+					the name with all-UPPER-case letters;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_NAME_C</dt>
+				<dd class="arguments">
+					the name as provided (should be CamelCase);
+				</dd>
+				<dt class="arguments"><em>PILE</em>_SOURCE_DIR</dt>
+				<dd class="arguments">
+					the path where this pile is stored (not including /cmake);
+				</dd>
+				<dt class="arguments"><em>PILE</em>_BINARY_DIR</dt>
+				<dd class="arguments">
+					the path where this pile generates output;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_DEPENDENCIES</dt>
+				<dd class="arguments">
+					piles that current pile depends on;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_CATEGORY</dt>
+				<dd class="arguments">
+					a list of categories, with the most general 
+					one first and most specific one last;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_TAGS</dt>
+				<dd class="arguments">
+					a set of tags;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_MAJOR_VERSION</dt>
+				<dd class="arguments">
+					first component of the version;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_MINOR_VERSION</dt>
+				<dd class="arguments">
+					second component of the version;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_PATCH_VERSION</dt>
+				<dd class="arguments">
+					third component of the version;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_VERSION_STRING</dt>
+				<dd class="arguments">
+					a string in the form <code>1.2.3</code>;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_DEBUG</dt>
+				<dd class="arguments">
+					defined if this is a debug version;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_RELEASE</dt>
+				<dd class="arguments">
+					defined if this is a release version;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_PILE_MODE</dt>
+				<dd class="arguments">
+					one of <code>STATIC, SHARED, PILE</code> or <code>PILE_SHARED</code>;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_HEADERS</dt>
+				<dd class="arguments">
+					the list of header files to build this pile;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_SOURCES</dt>
+				<dd class="arguments">
+					the list of source files to build this pile;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_CONFIG_FILE</dt>
+				<dd class="arguments">
+					full path to the configuration file;
+				</dd>
+				<dt class="arguments"><em>PILE</em>_CONFIG_FILE_IN</dt>
+				<dd class="arguments">
+					full path to the configuration file template;
+				</dd>
+			</dl>
+		</dl>
+	</div>
+	
+	
+
+</div>
