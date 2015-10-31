@@ -1,0 +1,129 @@
+---
+layout: default
+title: Piles Project
+---
+
+<div id="home">
+
+	<p>
+	The project provides a set of macros to
+	help bootstrap the creation of new projects.
+	</p>
+	
+	<p>
+	A typical top level CMakeLists.txt file
+	starts with these lines:
+	</p>
+{% highlight CMake %}
+	# 1
+	cmake_minimum_required(VERSION 3.0.0)
+	# 2
+	project("ProjName" VERSION "0.0.1" LANGUAGES C CXX)
+	# 3
+	list (APPEND CMAKE_MODULE_PATH "$ENV{CMAKE_MODULE_PATH}")
+	IF(WIN32)
+		string(REPLACE "\\" "/" CMAKE_MODULE_PATH "${CMAKE_MODULE_PATH}")
+	ENDIF()
+	# 4
+	include(pile_support)
+{% endhighlight %}
+
+	<p>
+	It declares minimum CMake version (<b>1</b>)
+	and provides a name for the project using
+	standard <a href="https://cmake.org/cmake/help/v3.0/command/project.html">project</a>
+	CMake command (<b>2</b>). This defines following variables
+	with obvious content:
+	<ul>
+	<li>PROJECT_SOURCE_DIR, &lt;PROJECT-NAME&gt;_SOURCE_DIR</li>
+	<li>PROJECT_BINARY_DIR, &lt;PROJECT-NAME&gt;_BINARY_DIR</li>
+	<li>PROJECT_VERSION, &lt;PROJECT-NAME&gt;_VERSION</li>
+	<li>PROJECT_VERSION_MAJOR, &lt;PROJECT-NAME&gt;_VERSION_MAJOR</li>
+	<li>PROJECT_VERSION_MINOR, &lt;PROJECT-NAME&gt;_VERSION_MINOR</li>
+	<li>PROJECT_VERSION_PATCH, &lt;PROJECT-NAME&gt;_VERSION_PATCH</li>
+	<li>PROJECT_VERSION_TWEAK, &lt;PROJECT-NAME&gt;_VERSION_TWEAK</li>
+	</ul>	
+	</p>
+
+	<p>
+	By default Cmake does not inspect the content of
+	<em>CMAKE_MODULE_PATH</em> environment variable, thus forcing the
+	user to employ the -D... command line option.
+	If such an environment variable was defined we can
+	make use of it using script in <b>3</b>; we take into account
+	the fact that CMake expects it to have forward-slashes
+	as path delimiters even in Windows environments.
+	</p>
+	
+	<p>
+	Previous point is important because we need a way to
+	find <em>pile_support</em> CMake script (<b>4</b>).
+	It will make sure to include all other CMake helpers
+	provided by the project.
+	</p>
+
+	<hr><!-- ------------------------------------- -->
+	
+	<p>
+	The main part of the top-level CMake script
+	has following format:
+	</p>
+	
+{% highlight CMake %}
+	
+	pileProject("1")
+
+	pileProjectCommon()
+
+	# add sub-directories here ...
+	
+	pileProjectEnd()
+
+{% endhighlight %}
+	
+	<p>
+	The <em>pileProject</em> adds a number of variables:
+	<dl>
+		<dt>PROJECT_NAME:</dt><dd>the name of the project (CamelCased, with spaces)</dd>
+		<dt>PROJECT_NAME_UNIX:</dt><dd>the name of the project (low case, no spaces)</dd>
+		<dt>PROJECT_NAME_UPPER:</dt><dd>the name of the project (high case, no spaces)</dd>
+		<dt>&lt;PROJECT-NAME&gt;_MAJOR_VERSION:</dt><dd>major version</dd>
+		<dt>&lt;PROJECT-NAME&gt;_MINOR_VERSION:</dt><dd>minor version</dd>
+		<dt>&lt;PROJECT-NAME&gt;_PATCH_VERSION:</dt><dd>pathc/build number</dd>
+		<dt>&lt;PROJECT-NAME&gt;_SETTINGS_VERSION:</dt><dd>the version for settings</dd>
+		<dt>&lt;PROJECT-NAME&gt;_VERSION:</dt><dd>a string in the form "1.2.3"</dd>
+		<dt>TARGET_COMPILER_MSVC:</dt><dd>The compiler to be used is Microsoft compiler?</dd>
+		<dt>TARGET_SYSTEM_WIN32:</dt><dd>target system is Windows?</dd>
+		<dt>TARGET_SYSTEM_UNIX:</dt><dd>are we targeting unix?</dd>
+		<dt>&lt;PROJECT-NAME&gt;_DEBUG:</dt><dd>is this a debug build or a release build?</dd>
+	</dl>
+	The module search path is ammended to include a cmake directory at
+	the top level of the hierarchy.
+	</p>
+	
+	<p>
+	The <em>pileProjectCommon</em> invokes all common macros listed below.
+	The user may choose to use only a subset of these macros.
+	<ul>
+        <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonDebug">pileProjectCommonDebug</a></li>
+        <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonModPaths">pileProjectCommonModPaths</a></li>
+        <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonOptions">pileProjectCommonOptions</a></li>
+        <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonBuildDir">pileProjectCommonBuildDir</a></li>
+        <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonIncludeDir">pileProjectCommonIncludeDir</a></li>
+        <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonBits">pileProjectCommonBits</a></li>
+        <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonQt">pileProjectCommonQt</a></li>
+	</ul>
+	</p>
+
+	<p>
+	The <em>pileProjectEnd</em> looks for a configuration file
+	called <em>config.h.in</em> and, if it exists, uses the
+	standard CMake 
+	<a href="https://cmake.org/cmake/help/v3.0/command/configure_file.html">configure_file</a>
+	command on it. If a <em>Doxyfile.in</em> file exists
+	and the user enabled appropriate option
+	it is also run through same standard mechanism, Doxygeen is located
+	and a target is created for building the documentation.
+	</p>
+
+</div>
