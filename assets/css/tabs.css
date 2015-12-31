@@ -2,15 +2,15 @@
     background-image: url('../../assets/images/tab_b.png');
     width: 100%;
     z-index: 101;
-    font-size: 13px;
+    font-size: 0.9em;
     font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
 }
 
 .tabs2 {
-    font-size: 10px;
+    font-size: 0.8em;
 }
 .tabs3 {
-    font-size: 9px;
+    font-size: 0.7em;
 }
 
 .tablist {

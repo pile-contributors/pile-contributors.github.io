@@ -996,7 +996,7 @@ table.fieldtable {
 div.summary
 {
 	float: right;
-	font-size: 8pt;
+	font-size: 0.6em !important;
 	padding-right: 5px;
 	width: 50%;
 	text-align: right;
@@ -1131,6 +1131,8 @@ dl.section dd {
 	font: 120% Tahoma, Arial,sans-serif;
 	margin: 0px;
 	padding: 0px;
+    margin-bottom: 0.5em !important;
+    font-style: italic !important;
 }
 
 #projectnumber
