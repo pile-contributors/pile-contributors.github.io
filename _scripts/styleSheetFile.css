@@ -1011,8 +1011,8 @@ div.ingroups a
 
 div.header
 {
-        background-image:url('../../../assets/images/nav_h.png');
-        background-repeat:repeat-x;
+    background-image:url('../../../assets/images/nav_h.png');
+    background-repeat:repeat-x;
 	background-color: #F9FAFC;
 	margin:  0px;
 	border-bottom: 1px solid #C4CFE5;
@@ -1110,9 +1110,10 @@ dl.section dd {
  
 #projectname
 {
-	font: 300% Tahoma, Arial,sans-serif;
+	font: 200% Tahoma, Arial,sans-serif;
 	margin: 0px;
 	padding: 2px 0px;
+    color: #a00;
 }
     
 #projectbrief
