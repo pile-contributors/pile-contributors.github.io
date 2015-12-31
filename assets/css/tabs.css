@@ -25,6 +25,7 @@
     background-image: url('../../assets/images/tab_b.png');
     line-height: 36px;
     list-style: none;
+    margin-left: 0em !important; 
 }
 
 .tablist a {
