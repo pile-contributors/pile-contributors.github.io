@@ -925,6 +925,7 @@ table.fieldtable {
 	font-size: 13px;
 }
 
+
 .navpath ul
 {
 	font-size: 11px;
@@ -982,6 +983,10 @@ table.fieldtable {
         font-size: 8pt;
 }
 
+
+#navrow1 > ul > li, #navrow2 > ul > li {
+    margin-left: 0em !important; 
+}
 
 div.summary
 {

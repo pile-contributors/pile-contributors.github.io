@@ -399,7 +399,7 @@ class DocumRun(object):
                     '        <dt id="categ-%s">%s</dt><dd>%s</dd>\n' % (
                         categ,
                         category_link(categ),
-                        ', '.join([pile_link(pdata) 
+                        ', '.join([pile_link(pdata)
                         for pdata in sorted(data)]))
 
             return result
@@ -413,7 +413,7 @@ class DocumRun(object):
                     '        <dt id="tag-%s">%s</dt><dd>%s</dd>\n' % (
                         tag,
                         tag_link(tag),
-                        ', '.join([pile_link(pdata) 
+                        ', '.join([pile_link(pdata)
                         for pdata in sorted(data)]))
 
             return result
