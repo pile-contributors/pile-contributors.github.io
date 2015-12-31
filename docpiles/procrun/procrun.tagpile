@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>procrun-private.h</name>
+    <path>H:/prog/piles/procrun/src/procrun/</path>
+    <filename>procrun-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>procrun.cc</name>
+    <path>H:/prog/piles/procrun/src/procrun/</path>
+    <filename>procrun_8cc</filename>
+    <includes id="procrun_8h" name="procrun.h" local="yes" imported="no">procrun.h</includes>
+    <includes id="procrun-private_8h" name="procrun-private.h" local="yes" imported="no">procrun-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>procrun.h</name>
+    <path>H:/prog/piles/procrun/src/procrun/</path>
+    <filename>procrun_8h</filename>
+    <class kind="class">ProcRun</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/procrun/src/procrun/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>ProcRun</name>
+    <filename>class_proc_run.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ProcRun</name>
+      <anchorfile>class_proc_run.html</anchorfile>
+      <anchor>a8dcdf8ead814683c50e3325c0fd68d72</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ProcRun</name>
+      <anchorfile>class_proc_run.html</anchorfile>
+      <anchor>a6cdf2e1d5a78c4a4fda5be6f2db3f046</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

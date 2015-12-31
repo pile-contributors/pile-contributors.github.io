@@ -1,0 +1,838 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>dbmodel.cc</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodel_8cc</filename>
+    <includes id="dbmodel_8h" name="dbmodel.h" local="yes" imported="no">dbmodel.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbmodel.h</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodel_8h</filename>
+    <class kind="class">DbModel</class>
+  </compound>
+  <compound kind="file">
+    <name>dbmodelcol.cc</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodelcol_8cc</filename>
+    <includes id="dbmodel_8h" name="dbmodel.h" local="yes" imported="no">dbmodel.h</includes>
+    <class kind="class">ComboLine</class>
+  </compound>
+  <compound kind="file">
+    <name>dbmodelcol.h</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodelcol_8h</filename>
+    <class kind="class">DbModelCol</class>
+  </compound>
+  <compound kind="file">
+    <name>dbmodelmanager.cc</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodelmanager_8cc</filename>
+  </compound>
+  <compound kind="file">
+    <name>dbmodelmanager.h</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodelmanager_8h</filename>
+    <class kind="class">DbModelManager</class>
+  </compound>
+  <compound kind="file">
+    <name>dbmodelprivate.cc</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodelprivate_8cc</filename>
+    <includes id="dbmodel_8h" name="dbmodel.h" local="yes" imported="no">dbmodel.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbmodelprivate.h</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodelprivate_8h</filename>
+    <class kind="class">DbModelPrivate</class>
+  </compound>
+  <compound kind="file">
+    <name>dbmodeltbl.cc</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodeltbl_8cc</filename>
+  </compound>
+  <compound kind="file">
+    <name>dbmodeltbl.h</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>dbmodeltbl_8h</filename>
+    <class kind="class">DbModelTbl</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/dbmodel/src/dbmodel/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>ComboLine</name>
+    <filename>class_combo_line.html</filename>
+    <member kind="slot">
+      <type>void</type>
+      <name>ttChanged</name>
+      <anchorfile>class_combo_line.html</anchorfile>
+      <anchor>a4cbfe7a04b9ae8babd41601d9c5636bc</anchor>
+      <arglist>(const QString &amp;s_value)</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>showPopUp</name>
+      <anchorfile>class_combo_line.html</anchorfile>
+      <anchor>a0665e11f9f862196765f367b91f5fe72</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ComboLine</name>
+      <anchorfile>class_combo_line.html</anchorfile>
+      <anchor>ab393a14101f3337a5e0e2197aaee2288</anchor>
+      <arglist>(QWidget *parent=0)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbModel</name>
+    <filename>class_db_model.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DbModel</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>ad64f732ba51faad0a5140ef171ed3440</anchor>
+      <arglist>(DbStruct *db, DbTaew *meta, QObject *parent=NULL)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbModel</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a3a07a37b8625b9e2b43fb390e54e7b5c</anchor>
+      <arglist>(DbStruct *db, int component, QObject *parent=NULL)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbModel</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a2638c2206b9da9dc0237bad22665ab7b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isValid</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a09e7c22f6e65daaea6f4423b2115c8e2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMeta</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a18f8a2013cd284a8327245a0742e482a</anchor>
+      <arglist>(DbTaew *meta)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMeta</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a25d852115696b0cc250f45a27c49b2d6</anchor>
+      <arglist>(DbStruct *database, DbTaew *meta)</arglist>
+    </member>
+    <member kind="function">
+      <type>DbTaew *</type>
+      <name>takeMeta</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>acc1e4c582db7398a308bbb40c7072942</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>DbTaew *</type>
+      <name>metaTaew</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a92c9aa5ad82989979dbc0bb8c4ab4c26</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>QSqlTableModel *</type>
+      <name>mainModel</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a2ab2bb7e83f7fd040211993627586592</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>selectMe</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a3d44355f70a694029daa9bed1f4c2ade</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>rowCount</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>ac574460a5c5475e8497d29134c83a950</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>columnCount</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a874e3d403ae09efca3410be5ec7baff1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>lessThan</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a92ba9d7e3bd2f59a4a73f74c53503e2a</anchor>
+      <arglist>(const QModelIndex &amp;left, const QModelIndex &amp;right) const </arglist>
+    </member>
+    <member kind="function">
+      <type>DbStruct *</type>
+      <name>database</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>ab4db5ec8405e8429ac13fc5acbe1f4c1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDatabase</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a627b2fb7bbb9d4409dc7d6e1b13b0df9</anchor>
+      <arglist>(DbStruct *value)</arglist>
+    </member>
+    <member kind="function">
+      <type>DbStruct *</type>
+      <name>takeDatabase</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>ac663579fcdc6a0664b6fd5e239a58521</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const DbModelCol &amp;</type>
+      <name>columnData</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>ae7522ff6ee7d7f1519d5a7931d009f1b</anchor>
+      <arglist>(int index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>const DbModelTbl &amp;</type>
+      <name>tableData</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>aa64a93b97c8b6c3ad5eee7d36e8c9629</anchor>
+      <arglist>(int table_index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setFilter</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a3caaca726babed603ba63c429abb2f96</anchor>
+      <arglist>(const QString &amp;filter, int table_index=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setFilter</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>ac8d0479acd71375be4ee8e4eb023fda8</anchor>
+      <arglist>(const QString &amp;filter, const QString &amp;table)</arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>filter</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a68d8048ac45de73a7623339276983c96</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setOrder</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>ac60df70549830f57e6ccbddb9251531e</anchor>
+      <arglist>(int column, Qt::SortOrder order, int table_index=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setOrder</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a1d0325119516557eabd40b057591a367</anchor>
+      <arglist>(int column, Qt::SortOrder order, const QString &amp;table)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>findTable</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>ab46fc012b9cff19d9a4e87e0a7061e64</anchor>
+      <arglist>(const QString &amp;table) const </arglist>
+    </member>
+    <member kind="function">
+      <type>QSqlRecord</type>
+      <name>record</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a17c33f102b58c92bdb750bcb6fec6896</anchor>
+      <arglist>(int row) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reloadHeaders</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a619dbd83dfac282b5d7b92a056d5e9bc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setCurrentMarker</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a4f1e86f76b2a4cfa37ff3f9ea1a5bbb9</anchor>
+      <arglist>(int row, int column)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getMarkerRow</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a80a7cd0b34d6ec9a548a18b6edbdce3f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getMarkerCol</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a078f8927b41315ca124468929b9f07c2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hasMarkerCell</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>abc5805c7b718edb77b63f6262a5cd305</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setCurrentMarker</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a4f1e86f76b2a4cfa37ff3f9ea1a5bbb9</anchor>
+      <arglist>(int row, int column)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getMarkerRow</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a80a7cd0b34d6ec9a548a18b6edbdce3f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getMarkerCol</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a078f8927b41315ca124468929b9f07c2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hasMarkerCell</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>abc5805c7b718edb77b63f6262a5cd305</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbModelCol</name>
+    <filename>class_db_model_col.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DbModelCol</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>aeb7ac1ae339f5696c74ee7a9dc60f737</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbModelCol</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a8d1b64ef3f7ec545363d03eb50224f66</anchor>
+      <arglist>(const DbColumn &amp;source, int user_index, const DbModelTbl &amp;table)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbModelCol</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a89fe01c9325747e73ca726589df7cbc3</anchor>
+      <arglist>(const DbModelCol &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>DbModelCol &amp;</type>
+      <name>operator=</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>aa993e92fc50fcd77ad00decbbd987c15</anchor>
+      <arglist>(const DbModelCol &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~DbModelCol</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a852d64c90359d31a30197c39561f295e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isForeign</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>ae5bcae685145f2e56866170ac079df1d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setCombo</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a7fe7e0408f875a9c88d857599e266498</anchor>
+      <arglist>(QComboBox *control, const QVariant &amp;key, bool b_delegate_enh=true) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getComboValue</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>ac1413991c3bdd42f407fe6fe9ab1b858</anchor>
+      <arglist>(const QModelIndex &amp;index, DbModel *top_model, QComboBox *control) const </arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>comboResult</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a5725c8e383e353e0fa81232b4277b989</anchor>
+      <arglist>(DbModel *top_model, QComboBox *control) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getTristateValue</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a5950ef5b4f063d75c5c472c382f8538b</anchor>
+      <arglist>(const QModelIndex &amp;index, DbModel *top_model, QCheckBox *control) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setTristate</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a81b8bb85e7cea7d7edd2d7d9dde23a4a</anchor>
+      <arglist>(QCheckBox *control, const QVariant &amp;value, bool b_delegate_enh) const </arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>user_index_</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a4f3cf9f93a194d733f8412499a6581a7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>const DbModelTbl *</type>
+      <name>table_</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>af23934f658a7f4b28060f7a5a0a9e36a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>t_primary_</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a1b013a7186ab03eed21f1088dc590eb4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>t_display_</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a4a67c903221a5fedf8e02aea04aa5c04</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>QString</type>
+      <name>label_</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>afcb9623c866a50817af3581dba504e52</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>DbColumn</type>
+      <name>original_</name>
+      <anchorfile>class_db_model_col.html</anchorfile>
+      <anchor>a2bfa604ae282310d5d5d06aa5db6b94b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbModelManager</name>
+    <filename>class_db_model_manager.html</filename>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>init</name>
+      <anchorfile>class_db_model_manager.html</anchorfile>
+      <anchor>a50bf9aab24e075825b0ade82423f1ae6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>end</name>
+      <anchorfile>class_db_model_manager.html</anchorfile>
+      <anchor>a7ff7848baf3a92e1885365dc46d07bbf</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const QIcon &amp;</type>
+      <name>getIcon</name>
+      <anchorfile>class_db_model_manager.html</anchorfile>
+      <anchor>a478eec7dd4d9b97688d7e643d8a9033e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>setIcon</name>
+      <anchorfile>class_db_model_manager.html</anchorfile>
+      <anchor>ad78d4f208641bd16c2232544aa87725b</anchor>
+      <arglist>(const QIcon &amp;value)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const QColor &amp;</type>
+      <name>getColor</name>
+      <anchorfile>class_db_model_manager.html</anchorfile>
+      <anchor>a7acad20730988a834e8e50ed094bae59</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>setColor</name>
+      <anchorfile>class_db_model_manager.html</anchorfile>
+      <anchor>a3360c166e01b8322f4680eedab133d45</anchor>
+      <arglist>(const QColor &amp;value)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type></type>
+      <name>DbModelManager</name>
+      <anchorfile>class_db_model_manager.html</anchorfile>
+      <anchor>a2f07bbb7bd26bffc1171dd7d0a089dd5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbModelManager</name>
+      <anchorfile>class_db_model_manager.html</anchorfile>
+      <anchor>a56fb72b686f5242ad22f0dcad5a7ba87</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbModelPrivate</name>
+    <filename>class_db_model_private.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DbModelPrivate</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>aa97d569c83551120b4f6776b7cd5a9af</anchor>
+      <arglist>(DbStruct *db, DbTaew *meta, QObject *parent=NULL)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbModelPrivate</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a2e9ca43c590ca1076ed34ecb769bb48b</anchor>
+      <arglist>(DbStruct *db, int component, QObject *parent=NULL)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbModelPrivate</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a0de4c1c5531762d03299d773e0c4b56b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isValid</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a7e4b31afef1d75e591316cb23597a29d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMeta</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>acf63916c33f10071efe8b1768722ca9e</anchor>
+      <arglist>(DbTaew *meta)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMeta</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>ad4e9cd235910fbf0c2bc4a5c33a68f45</anchor>
+      <arglist>(DbStruct *database, DbTaew *meta)</arglist>
+    </member>
+    <member kind="function">
+      <type>DbTaew *</type>
+      <name>takeMeta</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a1f4d75ef8696314f3ebcc60227daa882</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>DbTaew *</type>
+      <name>metaTaew</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a0d345e1e4a32773ea8a4614c97dcfef5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>QSqlTableModel *</type>
+      <name>mainModel</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>ada0436b267111b4476459d725db963ee</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>selectMe</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a8b312c378d55646b4eb235f83051b8b4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>rowCount</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>aec7f070d0f10f5791fbe847c0cca8dd2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>columnCount</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>aea23f882b79b9cbf7c44aaf29dbe64b0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>DbStruct *</type>
+      <name>database</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>aee27ec2e170b84826b3d317befa5fd48</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDatabase</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a2642aedf26497d5bef75ce628050583d</anchor>
+      <arglist>(DbStruct *value)</arglist>
+    </member>
+    <member kind="function">
+      <type>DbStruct *</type>
+      <name>takeDatabase</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a930891c92107a7826fefc079d36e00ee</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const DbModelCol &amp;</type>
+      <name>columnData</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a1484dacd545ce2bb32ff88c3cf69dc90</anchor>
+      <arglist>(int index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>const DbModelTbl &amp;</type>
+      <name>tableData</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a382d830d8340ab9635d604dbc016167c</anchor>
+      <arglist>(int table_index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setFilter</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a549459badeada9744125775e3399fd29</anchor>
+      <arglist>(const QString &amp;filter, int table_index=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setFilter</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a032ea6b70f5921d5e75c5a758415ed9b</anchor>
+      <arglist>(const QString &amp;filter, const QString &amp;table)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setOrder</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>ac2a35ece8f40f7babc054a482b93821a</anchor>
+      <arglist>(int column, Qt::SortOrder order, int table_index=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setOrder</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a9e80061514554f53f41967f1b7b9a1b9</anchor>
+      <arglist>(int column, Qt::SortOrder order, const QString &amp;table)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>findTable</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a30c54c7070bd28a9ab624d0acad4a238</anchor>
+      <arglist>(const QString &amp;table) const </arglist>
+    </member>
+    <member kind="function">
+      <type>QSqlRecord</type>
+      <name>record</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a3bb8c056892411e258c2df9418c5ba53</anchor>
+      <arglist>(int row) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reloadHeaders</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a7d0a27ba5ef78dc47411119dfeba958e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setCurrentMarker</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a6e09a7b164a12196fd282ec39850a0e1</anchor>
+      <arglist>(int row, int column)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getMarkerRow</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a12eaf5e64eb7007d42e5c0f4f2ee9d11</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getMarkerCol</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a5de50a16e51516c859acdb18134143a5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hasMarkerCell</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>ae729ffd20961cb952d950328b5e704b8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>data</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a327d8ecc220360da4510ab3c46f3ec60</anchor>
+      <arglist>(const QModelIndex &amp;idx, int role=Qt::DisplayRole) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setHeaderData</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a43717e0d392bb4e51a906771c0be4af6</anchor>
+      <arglist>(int section, Qt::Orientation orientation, const QVariant &amp;value, int role=Qt::EditRole)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>validateIndex</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a3262e42b9c2e0d329c321cf7cda57162</anchor>
+      <arglist>(const QModelIndex &amp;idx) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>sort</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a8194b4624fac99458ff215bb91812c34</anchor>
+      <arglist>(int column, Qt::SortOrder order=Qt::AscendingOrder)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>removeRows</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>ad7c75781cf472a4c8b458149fe063f79</anchor>
+      <arglist>(int row, int count, const QModelIndex &amp;parent)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static QVariant</type>
+      <name>formattedData</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a1710124ba511668c7f91569e0aee08e6</anchor>
+      <arglist>(const DbColumn &amp;colorig, const QVariant &amp;original_value)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setCurrentMarker</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a6e09a7b164a12196fd282ec39850a0e1</anchor>
+      <arglist>(int row, int column)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getMarkerRow</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a12eaf5e64eb7007d42e5c0f4f2ee9d11</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getMarkerCol</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a5de50a16e51516c859acdb18134143a5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hasMarkerCell</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>ae729ffd20961cb952d950328b5e704b8</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbModelTbl</name>
+    <filename>class_db_model_tbl.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DbModelTbl</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a813e03e92913a3394ed0328df42c853b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbModelTbl</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>aaa5f4d11858ec486d030992cb330a637</anchor>
+      <arglist>(DbTaew *meta_part, QSqlTableModel *model_part)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~DbModelTbl</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a7f78dfbf3efc93199138c1397fcccb38</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isValid</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>abec353d563eaa6a53574a91c7ed78ae9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="variable">
+      <type>DbTaew *</type>
+      <name>meta</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a04254c920545b15bac9f9ba57d4f1fb2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>QSqlTableModel *</type>
+      <name>model</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>ab752f1fa3d5a8944731ebcd07f63eac5</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

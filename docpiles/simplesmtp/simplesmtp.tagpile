@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/simplesmtp/src/simplesmtp/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="file">
+    <name>simplesmtp-private.h</name>
+    <path>H:/prog/piles/simplesmtp/src/simplesmtp/</path>
+    <filename>simplesmtp-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>simplesmtp.cc</name>
+    <path>H:/prog/piles/simplesmtp/src/simplesmtp/</path>
+    <filename>simplesmtp_8cc</filename>
+    <includes id="smtp_8h" name="smtp.h" local="yes" imported="no">smtp.h</includes>
+    <includes id="simplesmtp_8h" name="simplesmtp.h" local="yes" imported="no">simplesmtp.h</includes>
+    <includes id="simplesmtp-private_8h" name="simplesmtp-private.h" local="yes" imported="no">simplesmtp-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>simplesmtp.h</name>
+    <path>H:/prog/piles/simplesmtp/src/simplesmtp/</path>
+    <filename>simplesmtp_8h</filename>
+    <class kind="class">SimpleSmtp</class>
+  </compound>
+  <compound kind="file">
+    <name>smtp.cc</name>
+    <path>H:/prog/piles/simplesmtp/src/simplesmtp/</path>
+    <filename>smtp_8cc</filename>
+    <includes id="smtp_8h" name="smtp.h" local="yes" imported="no">smtp.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>smtp.h</name>
+    <path>H:/prog/piles/simplesmtp/src/simplesmtp/</path>
+    <filename>smtp_8h</filename>
+    <class kind="class">Smtp</class>
+  </compound>
+  <compound kind="class">
+    <name>SimpleSmtp</name>
+    <filename>class_simple_smtp.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>Smtp</name>
+    <filename>class_smtp.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>states</name>
+      <anchorfile>class_smtp.html</anchorfile>
+      <anchor>a4f141b2fc18196cc1ca4eaf7d0a58cdb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>status</name>
+      <anchorfile>class_smtp.html</anchorfile>
+      <anchor>ae6dfd2ae5661c72d817b67e7b12dc631</anchor>
+      <arglist>(const QString &amp;)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Smtp</name>
+      <anchorfile>class_smtp.html</anchorfile>
+      <anchor>a5591ea1366eb9a20819d889c069bec36</anchor>
+      <arglist>(const QString &amp;user, const QString &amp;pass, const QString &amp;host, int port=465, int timeout=30000)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Smtp</name>
+      <anchorfile>class_smtp.html</anchorfile>
+      <anchor>a7ee1cafcaa552c66e00dd9d373c85c87</anchor>
+      <arglist>(const Smtp &amp;other)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Smtp</name>
+      <anchorfile>class_smtp.html</anchorfile>
+      <anchor>ab3378e754e9d90b50d30c1d46f51ff0f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>sendMail</name>
+      <anchorfile>class_smtp.html</anchorfile>
+      <anchor>aa9b432b7953fb0809605b08e74bbd924</anchor>
+      <arglist>(UserMsg &amp;um, const QString &amp;to, const QString &amp;subject, const QString &amp;body, bool body_is_html=false, QStringList files=QStringList())</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

@@ -1,0 +1,1040 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>grouplistdelegate.cc</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>grouplistdelegate_8cc</filename>
+    <includes id="groupmodel_8h" name="groupmodel.h" local="yes" imported="no">groupmodel.h</includes>
+    <includes id="groupsubmodel_8h" name="groupsubmodel.h" local="yes" imported="no">groupsubmodel.h</includes>
+    <includes id="grouplistwidget_8h" name="grouplistwidget.h" local="yes" imported="no">grouplistwidget.h</includes>
+    <includes id="grouplistwidget-private_8h" name="grouplistwidget-private.h" local="yes" imported="no">grouplistwidget-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>grouplistdelegate.h</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>grouplistdelegate_8h</filename>
+    <class kind="class">GroupListDelegate</class>
+  </compound>
+  <compound kind="file">
+    <name>grouplistgroup.cc</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>grouplistgroup_8cc</filename>
+    <includes id="grouplistwidget_8h" name="grouplistwidget.h" local="yes" imported="no">grouplistwidget.h</includes>
+    <includes id="groupmodel_8h" name="groupmodel.h" local="yes" imported="no">groupmodel.h</includes>
+    <includes id="groupsubmodel_8h" name="groupsubmodel.h" local="yes" imported="no">groupsubmodel.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>grouplistgroup.h</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>grouplistgroup_8h</filename>
+    <class kind="class">GroupListGroup</class>
+  </compound>
+  <compound kind="file">
+    <name>grouplistwidget-private.h</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>grouplistwidget-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>grouplistwidget.cc</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>grouplistwidget_8cc</filename>
+    <includes id="grouplistwidget_8h" name="grouplistwidget.h" local="yes" imported="no">grouplistwidget.h</includes>
+    <includes id="groupmodel_8h" name="groupmodel.h" local="yes" imported="no">groupmodel.h</includes>
+    <includes id="groupsubmodel_8h" name="groupsubmodel.h" local="yes" imported="no">groupsubmodel.h</includes>
+    <includes id="grouplistwidget-private_8h" name="grouplistwidget-private.h" local="yes" imported="no">grouplistwidget-private.h</includes>
+    <class kind="class">GrpTreeItem</class>
+    <class kind="class">GrpTreeDeleg</class>
+  </compound>
+  <compound kind="file">
+    <name>grouplistwidget.h</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>grouplistwidget_8h</filename>
+    <class kind="class">GroupListWidget</class>
+  </compound>
+  <compound kind="file">
+    <name>groupmodel.cc</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>groupmodel_8cc</filename>
+    <includes id="groupmodel_8h" name="groupmodel.h" local="yes" imported="no">groupmodel.h</includes>
+    <includes id="groupsubmodel_8h" name="groupsubmodel.h" local="yes" imported="no">groupsubmodel.h</includes>
+    <includes id="grouplistwidget-private_8h" name="grouplistwidget-private.h" local="yes" imported="no">grouplistwidget-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>groupmodel.h</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>groupmodel_8h</filename>
+    <class kind="class">ModelId</class>
+    <class kind="class">GroupModel</class>
+  </compound>
+  <compound kind="file">
+    <name>groupsubmodel.cc</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>groupsubmodel_8cc</filename>
+    <includes id="groupsubmodel_8h" name="groupsubmodel.h" local="yes" imported="no">groupsubmodel.h</includes>
+    <includes id="groupmodel_8h" name="groupmodel.h" local="yes" imported="no">groupmodel.h</includes>
+    <includes id="grouplistwidget-private_8h" name="grouplistwidget-private.h" local="yes" imported="no">grouplistwidget-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>groupsubmodel.h</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>groupsubmodel_8h</filename>
+    <class kind="class">GroupSubModel</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/grouplistwidget/src/grouplistwidget/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>GroupListDelegate</name>
+    <filename>class_group_list_delegate.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Layout</name>
+      <anchorfile>class_group_list_delegate.html</anchorfile>
+      <anchor>aaca795138d0e7ba3bb84b80d01615079</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>LayIcon</name>
+      <anchorfile>class_group_list_delegate.html</anchorfile>
+      <anchor>aaca795138d0e7ba3bb84b80d01615079ab4ec4f25eb49b27ddf67a1e4c08832d5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>LayList</name>
+      <anchorfile>class_group_list_delegate.html</anchorfile>
+      <anchor>aaca795138d0e7ba3bb84b80d01615079a1514f8450fb90f849f404a6aad94ab9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GroupListDelegate</name>
+      <anchorfile>class_group_list_delegate.html</anchorfile>
+      <anchor>aadbf455ddca4ba37d72f295e9cceef29</anchor>
+      <arglist>(QObject *parent=NULL)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~GroupListDelegate</name>
+      <anchorfile>class_group_list_delegate.html</anchorfile>
+      <anchor>a22689eb103c5186babd242894da2b819</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>reinit</name>
+      <anchorfile>class_group_list_delegate.html</anchorfile>
+      <anchor>af1505addb1cea47f2c28077cb72c0d09</anchor>
+      <arglist>(GroupListWidget *lwidget, GroupModel *umodel)</arglist>
+    </member>
+    <member kind="function">
+      <type>QSize</type>
+      <name>gridCell</name>
+      <anchorfile>class_group_list_delegate.html</anchorfile>
+      <anchor>af24eeffbdcf4baeaa23d4ac7b5dbe2d0</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>GroupListGroup</name>
+    <filename>class_group_list_group.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>GroupListWidget</name>
+    <filename>class_group_list_widget.html</filename>
+    <member kind="slot">
+      <type>void</type>
+      <name>setViewMode</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>ae13e6b34eaf9894016bb92a6e73bf734</anchor>
+      <arglist>(QListView::ViewMode value)</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>setFlow</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a98e098857a88c30ae0f82b5880423e67</anchor>
+      <arglist>(QListView::Flow value)</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>setPixmapSize</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a77a1bb81e2ccc962b8fc495a44943595</anchor>
+      <arglist>(int value)</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>increasePixSize</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a88efd72d61ecda5994789660cc8769ba</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>decreasePixSize</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>abdaa0e051c419134da9f69a26f802061</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>currentLVItemChanged</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a28a92b11c2d1f6c8bc74b0bc3c74540d</anchor>
+      <arglist>(int row)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>currentLVItemChangedEx</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>ae557377b785cb121cd9db5fff6d7c31d</anchor>
+      <arglist>(int row_in_base, int row_in_list, int gsm)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GroupListWidget</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a8f4c13549edea8e7ac0c56bc1bf16dfb</anchor>
+      <arglist>(QWidget *parent=NULL)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~GroupListWidget</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a05f35b5a5140704945b8d7d8c6a09aa5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setBaseModel</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>aef8af4cca9c05adf435668ead6a7e63d</anchor>
+      <arglist>(QAbstractItemModel *model)</arglist>
+    </member>
+    <member kind="function">
+      <type>QAbstractItemModel *</type>
+      <name>baseModel</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>ab817b5e7f1a4d0ea56e8a98062f0ea05</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setUnderModel</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a7ce0aa6187ec1d0248622cee83325362</anchor>
+      <arglist>(GroupModel *model)</arglist>
+    </member>
+    <member kind="function">
+      <type>GroupModel *</type>
+      <name>underModel</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a40b08dfd77364ca3f9307bb77aabd634</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>GroupModel *</type>
+      <name>takeUnderModel</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a5eb73c9ef97b5b5826f9f5597a7283e3</anchor>
+      <arglist>(GroupModel *other=NULL)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>appendToMenu</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>add2a10ac88f420a3dea7b0040bc51c7a</anchor>
+      <arglist>(QMenu *menu)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>appendGroupToMenu</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>ad361af1dfc03b2e89634523e2ca15634</anchor>
+      <arglist>(QMenu *menu)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>appendSortToMenu</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a135066382869d23bd36aee1f340e80f4</anchor>
+      <arglist>(QMenu *menu)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>appendLayoutToMenu</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>adc310790ebf97bcf7a813c709d7f3277</anchor>
+      <arglist>(QMenu *menu)</arglist>
+    </member>
+    <member kind="function">
+      <type>QListView::ViewMode</type>
+      <name>viewMode</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a8bd2bb2eacb3ef8df853e0960d503c4c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>QListView::Flow</type>
+      <name>flow</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a34f047d2530d57321a7831d221a4122d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>pixmapSize</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a5f0219fbc9564f4e976d1ffaade09ed1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>QSize</type>
+      <name>gridCell</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>af48dd79530c87449de383149608f457b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>QSize</type>
+      <name>computeGridCell</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a1c992bcccdb16b5a847c099cc5fce989</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>QAbstractItemDelegate *</type>
+      <name>listDelegate</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a1a04b7b978253012c127ceeba21472bd</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setListDelegate</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a9ae8da865926e42e1e3c71c5f0c579b3</anchor>
+      <arglist>(QAbstractItemDelegate *value)</arglist>
+    </member>
+    <member kind="function">
+      <type>QAbstractItemDelegate *</type>
+      <name>takeListDelegate</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a14ed57dff9efc4d9e889fdff23bf02f3</anchor>
+      <arglist>(QAbstractItemDelegate *value=NULL)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>contextMenuEvent</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>ac265c5ccfc42a4c22177459aa151fa76</anchor>
+      <arglist>(QContextMenuEvent *event)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>resizeEvent</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a59fd5a731771572cc5e2706b7923a4bd</anchor>
+      <arglist>(QResizeEvent *e)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>wheelEvent</name>
+      <anchorfile>class_group_list_widget.html</anchorfile>
+      <anchor>a64665c0495dcac59ba3166410e60ab1f</anchor>
+      <arglist>(QWheelEvent *)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>GroupModel</name>
+    <filename>class_group_model.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>ComparisionReslt</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>acb05e1c79e67a8a9255a74d81355fb23</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>ComparisionReslt(*</type>
+      <name>Compare</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a4caabfdea8ecb6238ff0984bee3fcd6b</anchor>
+      <arglist>)(GroupModel *model, int column, const QVariant &amp;v1, const QVariant &amp;v2)</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>modelAboutToBeReset</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a0bdb28d708702d822cb7003c74d268ca</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>modelReset</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a82a410488d3c2c70ba40fc942c560152</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GroupModel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a3132121e16463bce2b87d5ed7c2a85e5</anchor>
+      <arglist>(QAbstractItemModel *model=NULL, QObject *parent=NULL)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~GroupModel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a879bbecddf023705922dadbbe87548f5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setBaseModel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>abed8e31137ce1d8fd72a8e2f8dd7a0f9</anchor>
+      <arglist>(QAbstractItemModel *model, int grouping_col=-1, int sorting_col=-1, Qt::SortOrder group_dir=Qt::AscendingOrder, Qt::SortOrder sort_dir=Qt::AscendingOrder)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QAbstractItemModel *</type>
+      <name>baseModel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>adcf23959ee46849e20c5db731d0fa146</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>QAbstractItemModel *</type>
+      <name>takeBaseModel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a4723c7c45b566ecc2d12d5dacfb1cc10</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setPixmapColumn</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a4f12b9c78f38493cbdc7ba41f34978fe</anchor>
+      <arglist>(int column)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>pixmapColumn</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a567485a36d2302b60eefb0d082ca12a0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setPixmapRole</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ad69c928abba513093fe12b8216ec65e6</anchor>
+      <arglist>(Qt::ItemDataRole role)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Qt::ItemDataRole</type>
+      <name>pixmapRole</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>aa4174280aa978e0ebf5d72d1d6e3c9c9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QPixmap</type>
+      <name>pixmap</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a9d989fbe907f9271ba7397c34bff1fd9</anchor>
+      <arglist>(int row) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setUserData</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>adf902378fff6e71565a711411aaf8679</anchor>
+      <arglist>(const QVariant &amp;value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const QVariant &amp;</type>
+      <name>userData</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a4b7f6824c11e254826e13d4d6ea23d2a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const ModelId &amp;</type>
+      <name>label</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a5ad23f7db327abc69a1b961c618f9f92</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>labelCount</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>aea3f3945158abb4bd1553087d9e952b0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>ModelId</type>
+      <name>label</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ad96640e3dbac93404aa55a4c20191c46</anchor>
+      <arglist>(int idx) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a54a4ce344e42733d73c2eed8b710ba49</anchor>
+      <arglist>(const ModelId &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ad8fd629d86b014c07de5db46509efaf4</anchor>
+      <arglist>(int column, Qt::ItemDataRole role=Qt::DisplayRole)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a8ecf5ddddde68de89cc7ac6f55f6453a</anchor>
+      <arglist>(const ModelId &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>abe8d4b47bb0d72e43b90ea5b97f75186</anchor>
+      <arglist>(const ModelId &amp;value, int idx)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>aa8b7b4842d5ce30e13bbf2c681acad35</anchor>
+      <arglist>(int column, Qt::ItemDataRole role=Qt::DisplayRole, int idx=0)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static ComparisionReslt</type>
+      <name>defaultCompare</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ae5d86ee07918b2c47a9158b0764e5bbb</anchor>
+      <arglist>(GroupModel *model, int column, const QVariant &amp;v1, const QVariant &amp;v2)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual QStringList</type>
+      <name>columnLabels</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a67a51164c29df07655c83c070881d09b</anchor>
+      <arglist>(const QList&lt; int &gt; &amp;scols, int *idx_crt, int highlite) const </arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>resetAllSubGroups</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>aa2e64aa2e426b3e662660ab48e4e7d0d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const ModelId &amp;</type>
+      <name>label</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a5ad23f7db327abc69a1b961c618f9f92</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>labelCount</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>aea3f3945158abb4bd1553087d9e952b0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>ModelId</type>
+      <name>label</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ad96640e3dbac93404aa55a4c20191c46</anchor>
+      <arglist>(int idx) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a54a4ce344e42733d73c2eed8b710ba49</anchor>
+      <arglist>(const ModelId &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ad8fd629d86b014c07de5db46509efaf4</anchor>
+      <arglist>(int column, Qt::ItemDataRole role=Qt::DisplayRole)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a8ecf5ddddde68de89cc7ac6f55f6453a</anchor>
+      <arglist>(const ModelId &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>abe8d4b47bb0d72e43b90ea5b97f75186</anchor>
+      <arglist>(const ModelId &amp;value, int idx)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLabel</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>aa8b7b4842d5ce30e13bbf2c681acad35</anchor>
+      <arglist>(int column, Qt::ItemDataRole role=Qt::DisplayRole, int idx=0)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>groupingColumn</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ab1d9aaed3a8be79743c61d0d2bfaebe5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>isGrouping</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ab43450bc31837e5b7798e0904934ffd9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setGroupingRole</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a4100b1650c7b7340631aaa3afc2b2d8a</anchor>
+      <arglist>(Qt::ItemDataRole role)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Qt::ItemDataRole</type>
+      <name>groupingRole</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a7bb4494acba54e6c1761a8675ce7e6c4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setGroupLabelRole</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a1ac8083551bcd0e9baf2b0e4dd22bd75</anchor>
+      <arglist>(Qt::ItemDataRole role)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Qt::ItemDataRole</type>
+      <name>groupLabelRole</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a33507b624eba13bc240ca774be2ae2b1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Qt::SortOrder</type>
+      <name>groupingDirection</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>af69dd10e9b9debfbebf8d2c4a207d891</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setGroupingFunc</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>aa8fab6beeabcbbeec46b4a93de6eedaf</anchor>
+      <arglist>(Compare value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Compare</type>
+      <name>groupingFunc</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ab4f8df55316569a20c23ff41b80d08ad</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual GroupSubModel *</type>
+      <name>group</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a8ee8b5703c88d3dcfc3c9a57c32b4b4f</anchor>
+      <arglist>(int idx) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>groupCount</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a7bfce2e8b77c93be8d640412defe127c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QList&lt; int &gt;</type>
+      <name>groupingColumns</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a6eaccd380cf64198e62948f9bde8beca</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QStringList</type>
+      <name>groupingColumnLabels</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a2fec00bb788c291c0efb10a6efd913ee</anchor>
+      <arglist>(int *idx_crt) const </arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>groupingChanged</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a7689fdabe508a6f0e1ffd33088f512bc</anchor>
+      <arglist>(int column, Qt::SortOrder)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>buildAllGroups</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>abcfeaf3cff8e8a75fa73bb28ad482be8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>buildNoGroupingGroup</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a963a56eb7521b2a8c584e0df6f44479c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>clearAllGroups</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a9fb98fc0aa03c08fa436466c6e83c5b0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setGroupingColumn</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a268e1ca19c47d2943d05b50ee72a6433</anchor>
+      <arglist>(int column)</arglist>
+    </member>
+    <member kind="slot" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setGroupingColumnByProperty</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ae052a90a11aaa740fe283ba6cf953c84</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>removeGrouping</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>abb803ee8321fb3a0bd5342c46c308650</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setGroupingDirection</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ae7e8a1a59032e06c0dfa5d3d4f9bca91</anchor>
+      <arglist>(Qt::SortOrder value)</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>setGroupingAscending</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ad002e5b71b1b45f350235c6a8add9fc5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>setGroupingDescending</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a9593df1eb555149dbdf32536219a1a2a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>sortingColumn</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a96dde3af24fafed0a6a1aca1d40c445c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>isSorting</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ada716e1ac0bed0c9bd194390ba2f115c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setSortingRole</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a6fada9bfff99280ccd2bcd565209cd2f</anchor>
+      <arglist>(Qt::ItemDataRole role)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Qt::ItemDataRole</type>
+      <name>sortingRole</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ab8a7536f129b3f1e7f117e565186169b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Qt::SortOrder</type>
+      <name>sortingDirection</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>aa1cedb73ea0b1e92aa25049a22c9d988</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setSortingFunc</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a3d2f8e084b9ab4888c4283d5be2e2103</anchor>
+      <arglist>(Compare value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Compare</type>
+      <name>sortingFunc</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a28eae2399899e8752cd8a785403b5e5b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QList&lt; int &gt;</type>
+      <name>sortingColumns</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a22776312281c35a33f11e5b77bf636c0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QStringList</type>
+      <name>sortingColumnLabels</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a4452602287656c43b7a02c3fe68ad12c</anchor>
+      <arglist>(int *idx_crt) const </arglist>
+    </member>
+    <member kind="signal">
+      <type>void</type>
+      <name>sortingChanged</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ac2bdfd9e15e170fed4af64b1b6454006</anchor>
+      <arglist>(int column, Qt::SortOrder)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>performSorting</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ad0dc57bcdc02069c0053ce6499e09e9b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>performUnsorting</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a7fcf1f74e358ad982294e82b6b17cc7f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setSortingColumn</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a3abb854db0dbbb1b101dcd485efc33b1</anchor>
+      <arglist>(int column)</arglist>
+    </member>
+    <member kind="slot" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setSortingColumnByProperty</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>ac548e92fc59b79094814a2f9913a95b3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>removeSorting</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a12d3193bfd7ed0feeb9652870d3604a5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setSortingDirection</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a7617e0b5dc4180be0b8a7c05078e0088</anchor>
+      <arglist>(Qt::SortOrder value)</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>setSortingAscending</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a54c862ecc8a2339619e8ffaedfba65d0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>setSortingDescending</name>
+      <anchorfile>class_group_model.html</anchorfile>
+      <anchor>a5ec382b750fa2e66d274f8f8c6c0218a</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>GroupSubModel</name>
+    <filename>class_group_sub_model.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>GroupSubModel</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a2e68022911c256409066f03ba1820393</anchor>
+      <arglist>(GroupModel *model=NULL, const QVariant &amp;key=QVariant(), const QString &amp;lbl=QString())</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~GroupSubModel</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a8be309ec86c800cee950f56fbe9468ab</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>listIndex</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a6727c458be43486edcf4631a8309fa04</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setParentModel</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a1927186768f051ba59d9d26df7c84649</anchor>
+      <arglist>(GroupModel *model)</arglist>
+    </member>
+    <member kind="function">
+      <type>GroupModel *</type>
+      <name>parentModel</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>aac825ea372641ea48c913a06478a20c1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>appendRecord</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>ad18a205ea12f782bdc28d24b86750d4a</anchor>
+      <arglist>(int original_row)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>insertSortedRecord</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a24ff1da1e7d7324792dc5d605c05fb9f</anchor>
+      <arglist>(int row)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setGroupKey</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>ac58fd56a3d652fd590fa5565ed9a4e94</anchor>
+      <arglist>(const QVariant &amp;value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const QVariant &amp;</type>
+      <name>groupKey</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>ac9b7617ddb460100cf37d21d81788761</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setLabel</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>ab18376fdb6c825edb4dc23aa01b828b2</anchor>
+      <arglist>(const QString &amp;value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual const QString &amp;</type>
+      <name>label</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a8df6cc8ece62a574d7cad4ad3f96efd7</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>performSorting</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a821ec309e7f4ff81c7a85158303238f1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>performUnsorting</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a729501bc10832fff4ad30b3fbe3d917e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>rowCount</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a0791fceeb726ede945b4a453335d8f0b</anchor>
+      <arglist>(const QModelIndex &amp;parent=QModelIndex()) const </arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>data</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>a02044c4f0de65f83c8179cc0ea7a0d16</anchor>
+      <arglist>(const QModelIndex &amp;index, int role) const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>mapRowToBaseModel</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>aa4c590326b2eb92b7f3b8ae00c09e304</anchor>
+      <arglist>(int row) const </arglist>
+    </member>
+    <member kind="function">
+      <type>const QList&lt; int &gt; &amp;</type>
+      <name>mapping</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>afcb5cb7c419fb82f29be03122b45d8c0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>baseModelDataChange</name>
+      <anchorfile>class_group_sub_model.html</anchorfile>
+      <anchor>afae6bcbf483c0ad835796d0b353bc525</anchor>
+      <arglist>(int index_in_group, const QVector&lt; int &gt; &amp;roles)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>GrpTreeDeleg</name>
+    <filename>class_grp_tree_deleg.html</filename>
+    <member kind="function">
+      <type>QSize</type>
+      <name>sizeHint</name>
+      <anchorfile>class_grp_tree_deleg.html</anchorfile>
+      <anchor>a4624e795d1381a089b73a31113362b07</anchor>
+      <arglist>(const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>GrpTreeItem</name>
+    <filename>class_grp_tree_item.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>ModelId</name>
+    <filename>class_model_id.html</filename>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>appopts-private.h</name>
+    <path>H:/prog/piles/appopts/src/appopts/</path>
+    <filename>appopts-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>appopts.cc</name>
+    <path>H:/prog/piles/appopts/src/appopts/</path>
+    <filename>appopts_8cc</filename>
+    <includes id="appopts_8h" name="appopts.h" local="yes" imported="no">appopts.h</includes>
+    <includes id="appopts-private_8h" name="appopts-private.h" local="yes" imported="no">appopts-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>appopts.h</name>
+    <path>H:/prog/piles/appopts/src/appopts/</path>
+    <filename>appopts_8h</filename>
+    <class kind="class">AppOpts</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/appopts/src/appopts/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>AppOpts</name>
+    <filename>class_app_opts.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>AppOpts</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>a9b8436e0ab365b85e3b64a10bb5a579f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~AppOpts</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>a7d97a361b41f552b9930ce6b870e9949</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>loadFromAll</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>a3f7b08139fb585d096ecf1ca3709195d</anchor>
+      <arglist>(UserMsg &amp;um, const QString &amp;s_app_name=QString())</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>loadFile</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>ad76c28187f41bde29d44b52259030aa0</anchor>
+      <arglist>(const QString &amp;s_file, PerSt **out_pers, UserMsg &amp;um)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setValue</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>a9644abfbab5e48dd24163e056113a7a0</anchor>
+      <arglist>(const QString &amp;s_key, const QString &amp;s_value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setValue</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>a525beb4b438768826c98c97ee5c55471</anchor>
+      <arglist>(const QString &amp;s_key, const QStringList &amp;sl_value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>appendValue</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>aac7622fce5f67ba4641728d9a5e4d52e</anchor>
+      <arglist>(const QString &amp;s_key, const QString &amp;s_value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>appendValues</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>a809a8d16685119be677354ccc7772848</anchor>
+      <arglist>(const QString &amp;s_key, const QStringList &amp;sl_values)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setCurrentConfig</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>a7f8521333bc180c3fa7fc701a3b13b10</anchor>
+      <arglist>(const QString &amp;s_file, UserMsg &amp;um)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>valueB</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>ae25d3b4508dd8ef9677facffc832d8e6</anchor>
+      <arglist>(const QString &amp;s_name, bool b_default=false) const </arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>valueS</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>af673721f3a84ec0ab48130b06a805f02</anchor>
+      <arglist>(const QString &amp;s_name, const QString &amp;s_default=QString()) const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>valueI</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>ac18b6060c10ed30838c461acf61f9a0e</anchor>
+      <arglist>(const QString &amp;s_name, int i_default=0) const </arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static QString</type>
+      <name>cfgFileName</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>ab6bbca25caa6485459b6996d59c03ea6</anchor>
+      <arglist>(const QString &amp;s_app_name)</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>dxf-private.h</name>
+    <path>H:/prog/piles/dxf/src/dxf/</path>
+    <filename>dxf-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>dxf.cc</name>
+    <path>H:/prog/piles/dxf/src/dxf/</path>
+    <filename>dxf_8cc</filename>
+    <includes id="dxf_8h" name="dxf.h" local="yes" imported="no">dxf.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dxf.h</name>
+    <path>H:/prog/piles/dxf/src/dxf/</path>
+    <filename>dxf_8h</filename>
+    <class kind="class">Dxf</class>
+  </compound>
+  <compound kind="file">
+    <name>dxfwriter.cc</name>
+    <path>H:/prog/piles/dxf/src/dxf/</path>
+    <filename>dxfwriter_8cc</filename>
+    <includes id="dxfwriter_8h" name="dxfwriter.h" local="yes" imported="no">dxfwriter.h</includes>
+    <includes id="string__templates_8h" name="string_templates.h" local="yes" imported="no">string_templates.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dxfwriter.h</name>
+    <path>H:/prog/piles/dxf/src/dxf/</path>
+    <filename>dxfwriter_8h</filename>
+    <class kind="class">DxfWriter</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/dxf/src/dxf/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="file">
+    <name>string_templates.h</name>
+    <path>H:/prog/piles/dxf/src/dxf/</path>
+    <filename>string__templates_8h</filename>
+  </compound>
+  <compound kind="class">
+    <name>Dxf</name>
+    <filename>class_dxf.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Dxf</name>
+      <anchorfile>class_dxf.html</anchorfile>
+      <anchor>a66c200024e46d210766eae783dee2a48</anchor>
+      <arglist>(const QString &amp;s_path)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Dxf</name>
+      <anchorfile>class_dxf.html</anchorfile>
+      <anchor>a1b9b8e7e92dd2e6f89e2fedb7d128e53</anchor>
+      <arglist>(void)</arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>path</name>
+      <anchorfile>class_dxf.html</anchorfile>
+      <anchor>a6ce8f8e9a78e571a427ae0e78a207bbf</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DxfWriter</name>
+    <filename>class_dxf_writer.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DxfWriter</name>
+      <anchorfile>class_dxf_writer.html</anchorfile>
+      <anchor>a9fc3b748a5bfd2783f72fbbe2bc55d80</anchor>
+      <arglist>(const QString &amp;s_path)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DxfWriter</name>
+      <anchorfile>class_dxf_writer.html</anchorfile>
+      <anchor>a9b38b896515799b6193c77cf053da1c3</anchor>
+      <arglist>(void)</arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>path</name>
+      <anchorfile>class_dxf_writer.html</anchorfile>
+      <anchor>a947d03bb0154fcecd1964eb143c938a5</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

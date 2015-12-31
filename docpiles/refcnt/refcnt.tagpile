@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/refcnt/src/refcnt/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="file">
+    <name>refcnt-private.h</name>
+    <path>H:/prog/piles/refcnt/src/refcnt/</path>
+    <filename>refcnt-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>refcnt.cc</name>
+    <path>H:/prog/piles/refcnt/src/refcnt/</path>
+    <filename>refcnt_8cc</filename>
+    <includes id="refcnt_8h" name="refcnt.h" local="no" imported="no">refcnt/refcnt.h</includes>
+    <includes id="refcnt-private_8h" name="refcnt-private.h" local="yes" imported="no">refcnt-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>refcnt.h</name>
+    <path>H:/prog/piles/refcnt/src/refcnt/</path>
+    <filename>refcnt_8h</filename>
+    <class kind="class">RefCnt</class>
+  </compound>
+  <compound kind="class">
+    <name>RefCnt</name>
+    <filename>class_ref_cnt.html</filename>
+    <member kind="function">
+      <type>int</type>
+      <name>reference</name>
+      <anchorfile>class_ref_cnt.html</anchorfile>
+      <anchor>a4d56519a2c2f4a63ed224cefed001977</anchor>
+      <arglist>(void *owner)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>dereference</name>
+      <anchorfile>class_ref_cnt.html</anchorfile>
+      <anchor>a843cb7d7265eac6589f4d92cd3020618</anchor>
+      <arglist>(void *owner)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>release</name>
+      <anchorfile>class_ref_cnt.html</anchorfile>
+      <anchor>aedcabedf37997bee0af641f0b35cb1ed</anchor>
+      <arglist>(void *owner)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>referenceCount</name>
+      <anchorfile>class_ref_cnt.html</anchorfile>
+      <anchor>af63d86652b99e841ffdf7f938200f272</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>forceRelease</name>
+      <anchorfile>class_ref_cnt.html</anchorfile>
+      <anchor>a9d8ed9811af06f623406d7df3af90e71</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>changeOwner</name>
+      <anchorfile>class_ref_cnt.html</anchorfile>
+      <anchor>af12f128dd78ad39518afb2335a42fd8b</anchor>
+      <arglist>(void *, void *)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isOwner</name>
+      <anchorfile>class_ref_cnt.html</anchorfile>
+      <anchor>a39f1c31c2092e4edc5fe56db145bb495</anchor>
+      <arglist>(void *)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type></type>
+      <name>RefCnt</name>
+      <anchorfile>class_ref_cnt.html</anchorfile>
+      <anchor>aa557cc6714e1dfd2639528dc36840569</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual</type>
+      <name>~RefCnt</name>
+      <anchorfile>class_ref_cnt.html</anchorfile>
+      <anchor>a46383929955b62501ad2d20fe1e2d80d</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

@@ -32,3 +32,9 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+
+# Documentation
+# =========================
+*.pyc
+Doxyfile-with-comments
+log.txt

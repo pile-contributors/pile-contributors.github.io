@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/translate/src/translate/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="file">
+    <name>translang.cc</name>
+    <path>H:/prog/piles/translate/src/translate/</path>
+    <filename>translang_8cc</filename>
+    <includes id="translate_8h" name="translate.h" local="yes" imported="no">translate.h</includes>
+    <includes id="translate-private_8h" name="translate-private.h" local="yes" imported="no">translate-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>translang.h</name>
+    <path>H:/prog/piles/translate/src/translate/</path>
+    <filename>translang_8h</filename>
+    <class kind="class">TransLang</class>
+  </compound>
+  <compound kind="file">
+    <name>translate-private.h</name>
+    <path>H:/prog/piles/translate/src/translate/</path>
+    <filename>translate-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>translate.cc</name>
+    <path>H:/prog/piles/translate/src/translate/</path>
+    <filename>translate_8cc</filename>
+    <includes id="translate_8h" name="translate.h" local="yes" imported="no">translate.h</includes>
+    <includes id="translate-private_8h" name="translate-private.h" local="yes" imported="no">translate-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>translate.h</name>
+    <path>H:/prog/piles/translate/src/translate/</path>
+    <filename>translate_8h</filename>
+    <class kind="class">Translate</class>
+  </compound>
+  <compound kind="class">
+    <name>TransLang</name>
+    <filename>class_trans_lang.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>TransLang</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>a8546eedbe1fff10e0bb9dacd6f6e45d8</anchor>
+      <arglist>(const QString &amp;dir, const QString &amp;langfile, const QString &amp;name, const QString &amp;icon, const QString &amp;locale)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>TransLang</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>ab313a81465e99564a23a0becc66a2407</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~TransLang</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>a1dbe64a2f8aa5c1be2a523ab2eb47c78</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isValid</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>a537a9167833d301ca1b59a9a4091f5d8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>langDirectory</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>a1b2c54699d5f354958739bac9b4cea55</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>langFile</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>aa1cda517fdb80ec219b218d7aa8041bc</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>qtLangFile</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>ad0f77118817a2b9922594e8580fcaa4e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>langName</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>aa316254b6a1bd294f78b5b1264ec31c3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>localeName</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>a375d88e344b62630169a845919bcf50f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>langIcon</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>a1965df9073f33992fe3ce29b85a62953</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const QMap&lt; QString, QString &gt; &amp;</type>
+      <name>metadata</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>a10b375cbaea263594412b8fa598d4d80</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>QTranslator *</type>
+      <name>translator</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>afa0b9eaec46957057af8a4d24d5e2bf7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>QTranslator *</type>
+      <name>qtTranslator</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>a1903e5ab910ac9b1d592966e117a6dcd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>translatorDone</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>ae83493107ff1f76340680b7471ba204f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>addMetadata</name>
+      <anchorfile>class_trans_lang.html</anchorfile>
+      <anchor>abe8af439b40ebe030028057bfe76d629</anchor>
+      <arglist>(const QString &amp;key, const QString &amp;value)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>translate</name>
+    <filename>classtranslate.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>Translate</name>
+    <filename>class_translate.html</filename>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>init</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>a89a5c01b681acbfdb6e5ee03b4489152</anchor>
+      <arglist>(QString *error)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>end</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>abf12271bff37a7062c2e771282629e4e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>count</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>ade1e8e7c36d444d1763e62f77833b33e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const TransLang &amp;</type>
+      <name>item</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>af9318449c084969b367751af31cb8370</anchor>
+      <arglist>(int i)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static const TransLang &amp;</type>
+      <name>item</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>aa2bd5280f8d2362e3ee339a0ff366894</anchor>
+      <arglist>(const QString &amp;s_name)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>itemIndex</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>aaa3c7485a9a183e397d872e764f43e95</anchor>
+      <arglist>(const QString &amp;s_name)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>itemIndexFromLocale</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>a486577b557f4f34c2b080a9af6f18330</anchor>
+      <arglist>(const QString &amp;s_locale)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>validInstance</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>a66946437d90807aaa3c9a912c879d86f</anchor>
+      <arglist>(const TransLang &amp;item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static QTranslator *</type>
+      <name>translator</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>a28c58e7fc9abe35e6a03f1793629c5cc</anchor>
+      <arglist>(int i)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static QTranslator *</type>
+      <name>qtTranslator</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>adfc2499db8e73fd1e87b4ef2f7abf5cd</anchor>
+      <arglist>(int i)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>translatorDone</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>a392f4b33888eac64e9ce0ba07e87f9e9</anchor>
+      <arglist>(int i)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>current</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>a7a66e829205738472d31c63b7eaa3231</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>setCurrent</name>
+      <anchorfile>class_translate.html</anchorfile>
+      <anchor>aa85d7fdd292d3a6e5ae06488a1276a5f</anchor>
+      <arglist>(int value)</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

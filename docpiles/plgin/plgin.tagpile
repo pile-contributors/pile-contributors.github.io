@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>plgin-private.h</name>
+    <path>H:/prog/piles/plgin/src/plgin/</path>
+    <filename>plgin-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>plgin.cc</name>
+    <path>H:/prog/piles/plgin/src/plgin/</path>
+    <filename>plgin_8cc</filename>
+    <includes id="plgin_8h" name="plgin.h" local="yes" imported="no">plgin.h</includes>
+    <includes id="plgin-private_8h" name="plgin-private.h" local="yes" imported="no">plgin-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>plgin.h</name>
+    <path>H:/prog/piles/plgin/src/plgin/</path>
+    <filename>plgin_8h</filename>
+    <class kind="class">PlgIn</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/plgin/src/plgin/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>PlgIn</name>
+    <filename>class_plg_in.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>PlgIn</name>
+      <anchorfile>class_plg_in.html</anchorfile>
+      <anchor>ade53b0946f47376a7d9cd2f696f65280</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~PlgIn</name>
+      <anchorfile>class_plg_in.html</anchorfile>
+      <anchor>a629d5e699da0a39881d1e6e8ea782952</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

@@ -1,0 +1,1723 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>dbcolumn.cc</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbcolumn_8cc</filename>
+    <includes id="dbcolumn_8h" name="dbcolumn.h" local="yes" imported="no">dbcolumn.h</includes>
+    <includes id="dbstruct-private_8h" name="dbstruct-private.h" local="yes" imported="no">dbstruct-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbcolumn.h</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbcolumn_8h</filename>
+    <includes id="dbobject_8h" name="dbobject.h" local="no" imported="no">dbstruct/dbobject.h</includes>
+    <class kind="class">DbColumn</class>
+    <class kind="union">DbColumn::ColFormat</class>
+  </compound>
+  <compound kind="file">
+    <name>dbobject.cc</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbobject_8cc</filename>
+    <includes id="dbobject_8h" name="dbobject.h" local="yes" imported="no">dbobject.h</includes>
+    <includes id="dbstruct-private_8h" name="dbstruct-private.h" local="yes" imported="no">dbstruct-private.h</includes>
+    <includes id="dbstruct_8h" name="dbstruct.h" local="yes" imported="no">dbstruct.h</includes>
+    <includes id="dbcolumn_8h" name="dbcolumn.h" local="yes" imported="no">dbcolumn.h</includes>
+    <includes id="dbrecord_8h" name="dbrecord.h" local="yes" imported="no">dbrecord.h</includes>
+    <includes id="dbtable_8h" name="dbtable.h" local="yes" imported="no">dbtable.h</includes>
+    <includes id="dbview_8h" name="dbview.h" local="yes" imported="no">dbview.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbobject.h</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbobject_8h</filename>
+    <class kind="class">DbObject</class>
+  </compound>
+  <compound kind="file">
+    <name>dbrecord.cc</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbrecord_8cc</filename>
+    <includes id="dbrecord_8h" name="dbrecord.h" local="yes" imported="no">dbrecord.h</includes>
+    <includes id="dbstruct-private_8h" name="dbstruct-private.h" local="yes" imported="no">dbstruct-private.h</includes>
+    <includes id="dbtable_8h" name="dbtable.h" local="yes" imported="no">dbtable.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbrecord.h</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbrecord_8h</filename>
+    <includes id="dbobject_8h" name="dbobject.h" local="no" imported="no">dbstruct/dbobject.h</includes>
+    <includes id="dbcolumn_8h" name="dbcolumn.h" local="no" imported="no">dbstruct/dbcolumn.h</includes>
+    <class kind="class">DbRecord</class>
+  </compound>
+  <compound kind="file">
+    <name>dbstruct-private.h</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbstruct-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>dbstruct.cc</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbstruct_8cc</filename>
+    <includes id="dbstruct_8h" name="dbstruct.h" local="yes" imported="no">dbstruct.h</includes>
+    <includes id="dbstruct-private_8h" name="dbstruct-private.h" local="yes" imported="no">dbstruct-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbstruct.h</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbstruct_8h</filename>
+    <includes id="dbobject_8h" name="dbobject.h" local="no" imported="no">dbstruct/dbobject.h</includes>
+    <includes id="dbtable_8h" name="dbtable.h" local="no" imported="no">dbstruct/dbtable.h</includes>
+    <includes id="dbview_8h" name="dbview.h" local="no" imported="no">dbstruct/dbview.h</includes>
+    <class kind="class">DbStructMeta</class>
+    <class kind="class">DbStruct</class>
+    <member kind="define">
+      <type>#define</type>
+      <name>META_DATA_BASE_CTORS</name>
+      <anchorfile>dbstruct_8h.html</anchorfile>
+      <anchor>a755f9d49baf860aa1010cba0aab2d339</anchor>
+      <arglist>(__name__)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>META_DATA_BASE_GETTER</name>
+      <anchorfile>dbstruct_8h.html</anchorfile>
+      <anchor>a356b544e9c5e2594faf2c7f32ce9bab4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>META_DATA_BASE</name>
+      <anchorfile>dbstruct_8h.html</anchorfile>
+      <anchor>ae8826a9608d3d9ded49b5160043aa1aa</anchor>
+      <arglist>(__name__)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>dbtable.cc</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbtable_8cc</filename>
+    <includes id="dbtable_8h" name="dbtable.h" local="yes" imported="no">dbtable.h</includes>
+    <includes id="dbstruct-private_8h" name="dbstruct-private.h" local="yes" imported="no">dbstruct-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbtable.h</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbtable_8h</filename>
+    <includes id="dbtaew_8h" name="dbtaew.h" local="no" imported="no">dbstruct/DbTaew.h</includes>
+    <includes id="dbcolumn_8h" name="dbcolumn.h" local="no" imported="no">dbstruct/dbcolumn.h</includes>
+    <class kind="class">DbTable</class>
+  </compound>
+  <compound kind="file">
+    <name>dbtaew.cc</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbtaew_8cc</filename>
+    <includes id="dbtaew_8h" name="dbtaew.h" local="yes" imported="no">dbtaew.h</includes>
+    <includes id="dbstruct-private_8h" name="dbstruct-private.h" local="yes" imported="no">dbstruct-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbtaew.h</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbtaew_8h</filename>
+    <includes id="dbobject_8h" name="dbobject.h" local="no" imported="no">dbstruct/dbobject.h</includes>
+    <class kind="class">DbTaew</class>
+  </compound>
+  <compound kind="file">
+    <name>dbview.cc</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbview_8cc</filename>
+    <includes id="dbview_8h" name="dbview.h" local="yes" imported="no">dbview.h</includes>
+    <includes id="dbstruct-private_8h" name="dbstruct-private.h" local="yes" imported="no">dbstruct-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbview.h</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>dbview_8h</filename>
+    <includes id="dbtaew_8h" name="dbtaew.h" local="no" imported="no">dbstruct/dbtaew.h</includes>
+    <class kind="class">DbView</class>
+  </compound>
+  <compound kind="file">
+    <name>pile_schema_api.py</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>pile__schema__api_8py</filename>
+    <class kind="class">pile_schema_api::GeneratedsSuper</class>
+    <class kind="class">pile_schema_api::GeneratedsSuper::_FixedOffsetTZ</class>
+    <class kind="class">pile_schema_api::GDSParseError</class>
+    <class kind="class">pile_schema_api::MixedContainer</class>
+    <class kind="class">pile_schema_api::MemberSpec_</class>
+    <class kind="class">pile_schema_api::parameterlessType</class>
+    <class kind="class">pile_schema_api::identity</class>
+    <class kind="class">pile_schema_api::bit</class>
+    <class kind="class">pile_schema_api::tristate</class>
+    <class kind="class">pile_schema_api::integer</class>
+    <class kind="class">pile_schema_api::bigint</class>
+    <class kind="class">pile_schema_api::smallint</class>
+    <class kind="class">pile_schema_api::tinyint</class>
+    <class kind="class">pile_schema_api::float_</class>
+    <class kind="class">pile_schema_api::real</class>
+    <class kind="class">pile_schema_api::decimal</class>
+    <class kind="class">pile_schema_api::decimalScale0</class>
+    <class kind="class">pile_schema_api::money</class>
+    <class kind="class">pile_schema_api::smallmoney</class>
+    <class kind="class">pile_schema_api::parameterlessStringType</class>
+    <class kind="class">pile_schema_api::uniqueidentifier</class>
+    <class kind="class">pile_schema_api::variablePrecisionTime</class>
+    <class kind="class">pile_schema_api::dateType</class>
+    <class kind="class">pile_schema_api::timeType</class>
+    <class kind="class">pile_schema_api::dateTimeType</class>
+    <class kind="class">pile_schema_api::char</class>
+    <class kind="class">pile_schema_api::binary</class>
+    <class kind="class">pile_schema_api::nchar</class>
+    <class kind="class">pile_schema_api::vrtcol</class>
+    <class kind="class">pile_schema_api::column</class>
+    <class kind="class">pile_schema_api::columnList</class>
+    <class kind="class">pile_schema_api::constraintColumn</class>
+    <class kind="class">pile_schema_api::constraint</class>
+    <class kind="class">pile_schema_api::primaryKey</class>
+    <class kind="class">pile_schema_api::uniqueConstraints</class>
+    <class kind="class">pile_schema_api::index</class>
+    <class kind="class">pile_schema_api::indexes</class>
+    <class kind="class">pile_schema_api::relationshipColumn</class>
+    <class kind="class">pile_schema_api::foreignKeyColumns</class>
+    <class kind="class">pile_schema_api::primaryKeyTable</class>
+    <class kind="class">pile_schema_api::relationship</class>
+    <class kind="class">pile_schema_api::relationships</class>
+    <class kind="class">pile_schema_api::table</class>
+    <class kind="class">pile_schema_api::tables</class>
+    <class kind="class">pile_schema_api::viewSubset</class>
+    <class kind="class">pile_schema_api::viewWriteBackCol</class>
+    <class kind="class">pile_schema_api::viewWriteBack</class>
+    <class kind="class">pile_schema_api::view</class>
+    <class kind="class">pile_schema_api::views</class>
+    <class kind="class">pile_schema_api::database</class>
+  </compound>
+  <compound kind="file">
+    <name>pileschema.py</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>pileschema_8py</filename>
+    <class kind="class">pileschema::Driver</class>
+    <class kind="class">pileschema::SqlDriver</class>
+    <class kind="class">pileschema::QtDriver</class>
+    <class kind="class">pileschema::SqLiteDriver</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/dbstruct/src/dbstruct/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::GeneratedsSuper::_FixedOffsetTZ</name>
+    <filename>classpile__schema__api_1_1_generateds_super_1_1___fixed_offset_t_z.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::bigint</name>
+    <filename>classpile__schema__api_1_1bigint.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::binary</name>
+    <filename>classpile__schema__api_1_1binary.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::bit</name>
+    <filename>classpile__schema__api_1_1bit.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::char</name>
+    <filename>classpile__schema__api_1_1char.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="union">
+    <name>DbColumn::ColFormat</name>
+    <filename>union_db_column_1_1_col_format.html</filename>
+    <member kind="variable">
+      <type>BoolFormat</type>
+      <name>bit_</name>
+      <anchorfile>union_db_column_1_1_col_format.html</anchorfile>
+      <anchor>ac81c4502cab376715b1fe11ff48848b5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>width_</name>
+      <anchorfile>union_db_column_1_1_col_format.html</anchorfile>
+      <anchor>aef30473177194f95161bf908bba82af2</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::column</name>
+    <filename>classpile__schema__api_1_1column.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::columnList</name>
+    <filename>classpile__schema__api_1_1column_list.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::constraint</name>
+    <filename>classpile__schema__api_1_1constraint.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::constraintColumn</name>
+    <filename>classpile__schema__api_1_1constraint_column.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::database</name>
+    <filename>classpile__schema__api_1_1database.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::dateTimeType</name>
+    <filename>classpile__schema__api_1_1date_time_type.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::dateType</name>
+    <filename>classpile__schema__api_1_1date_type.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>DbColumn</name>
+    <filename>class_db_column.html</filename>
+    <base>DbObject</base>
+    <class kind="union">DbColumn::ColFormat</class>
+    <member kind="enumeration">
+      <type></type>
+      <name>ForeignBehaviour</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a0f5e823378878af757cb98b87bb0f7d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <type></type>
+      <name>DataType</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a1844456b4fa234b411053054f0ce85bb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>FB_CHOOSE</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a0f5e823378878af757cb98b87bb0f7d6abc1394436e731f4a20fcf5a255a94fc1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>FB_CHOOSE_ADD</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a0f5e823378878af757cb98b87bb0f7d6a4809f52de1e606809f05918834bf6f8d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DTY_INVALID</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a1844456b4fa234b411053054f0ce85bba0b86f099ee271a36c9989e5c2b4b6fb0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DTY_MAX</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a1844456b4fa234b411053054f0ce85bba129286294df0ddc2485b6de4773c3ecb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbColumn</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>ab83cd4cfdc14ae0e8fcd7e723054bb26</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbColumn</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a863d2c249ea8b6fd9f54ae26fbb51e31</anchor>
+      <arglist>(const QString &amp;col_name, int col_id, int real_col_id, int length, const QString &amp;col_label, DataType datatype, bool nulls, bool autoincrement, const QString &amp;default_value, const QString &amp;format, bool read_only, int virtrefcol, const QString &amp;foreign_table, const QString &amp;foreign_key, const QString &amp;foreign_ref, ForeignBehaviour foreign_behaviour)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbColumn</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a465af6d9d4953c8402907d79ec68af19</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Type</type>
+      <name>type</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>af14c15661e4415b8a624a2e196396aed</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isForeignKey</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>aea3573a52d8448195f23d5b52bb6a68b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isVirtual</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>af84af6ca057adde80683ecb2edd7f38f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="variable">
+      <type>QString</type>
+      <name>foreign_table_</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>adb457cd3137fd1464999b6fab87390b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>QString</type>
+      <name>foreign_key_</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a1731abd1fed7aeb74a76932af315f6d1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>QString</type>
+      <name>foreign_ref_</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>aced56026e992de1ec7545bdcaa1867b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ForeignBehaviour</type>
+      <name>foreign_behaviour_</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a1c864890092be32adc23368636f2c6e7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>QString</type>
+      <name>original_format_</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a44226626d8bd2284a9d257bf837967ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ColFormat</type>
+      <name>format_</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>ab36c081adfcadb93ffb9452e9eb5555a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>QChar</type>
+      <name>fill_char_</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a853f2b738ead71cc352eefe5fa439411</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>nr_format_</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>a9199a22828b1624fbbcfd9d571271c21</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>int</type>
+      <name>precision_</name>
+      <anchorfile>class_db_column.html</anchorfile>
+      <anchor>aa265c2dc2ff246981a17605845f4ae05</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbObject</name>
+    <filename>class_db_object.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>Type</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>abdf59870c28b7fb89583164f69a6a4b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBO_STRUCT</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>abdf59870c28b7fb89583164f69a6a4b7a961273dbc38882184c08f6863bbaa290</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBO_COLUMN</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>abdf59870c28b7fb89583164f69a6a4b7a0fb705c3f78547605c6526f80300c228</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBO_RECORD</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>abdf59870c28b7fb89583164f69a6a4b7a0acefb908ab15e7485849ddbe0bcfe15</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBO_TABLE</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>abdf59870c28b7fb89583164f69a6a4b7a19413a7ae9c15e24ee9855f91c44280f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBO_SUBSET</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>abdf59870c28b7fb89583164f69a6a4b7a70b2c0b31bfd39af785e736467f90ee2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBO_CPLX_VIEW</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>abdf59870c28b7fb89583164f69a6a4b7a5ebea302efb41a95e7112af49417620b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBO_CUSTOM</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>abdf59870c28b7fb89583164f69a6a4b7aa00c0b11dfbeaedb5b0ed3a20e85df17</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>DBO_MAX</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>abdf59870c28b7fb89583164f69a6a4b7a8aa0726eb8fdf6e8b0549bc572934ed5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbObject</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>af942a254302d3f4dcc6658f7083862d2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbObject</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>a75433e36cc94989509c837b859f52c5b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Type</type>
+      <name>type</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>ad1f49789e60960ff4ba4011e04ff9d46</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>DbStructMeta *</type>
+      <name>asStruct</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>a5d642a13b147efb10dadfb9e59158c5c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>DbColumn *</type>
+      <name>asColumn</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>a47e67935afd6695a39198cb3973656fe</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>DbRecord *</type>
+      <name>asRecord</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>aff32024451cb7a33bc6bb6da84898c94</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>DbTable *</type>
+      <name>asTable</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>a5c13ad92dcb9e9ad3fbf5d910e467e37</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>DbView *</type>
+      <name>asView</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>a5ad8266ee7a6c9053c60355cab865114</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isStruct</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>aa218fdc8a7b3c5e129d355d2cc485646</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isColumn</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>a105d65b2a96e549e0ed43c1a8fdf131d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isRecord</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>a177eb102495b7a30fae0618045548b19</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isTable</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>afa891a849c4a0b826805a2dd13bd01fc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isView</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>a5c07eefb2248bf386dfac5c2534e9068</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isCustom</name>
+      <anchorfile>class_db_object.html</anchorfile>
+      <anchor>a4c8b8a77fc16645ce026a15cb5d20b88</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbRecord</name>
+    <filename>class_db_record.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DbRecord</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a5f5d1be5beaefc3f70be5f25842b004f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbRecord</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a0fa7b1eb5c4c70f070517609a6573948</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual DbObject::Type</type>
+      <name>type</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a41fc847da36534233a5efdb51edf51f8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>initFromId</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>ad64f0920f1fd914c4db2e21e2fc25a5c</anchor>
+      <arglist>(DbTaew *table, QSqlDatabase &amp;db, long db_id)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>initFrom</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a5b963f894502f923e5285241d8648c7c</anchor>
+      <arglist>(DbTaew *table, QSqlDatabase &amp;db, int column)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>save</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a145d8a6f3e2e724bcddd8850f93e5dd1</anchor>
+      <arglist>(DbTaew *table, QSqlDatabase &amp;db)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>remFromDb</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>af3a3cbb8a65d740f9b4cc4b14fb51eb1</anchor>
+      <arglist>(DbTaew *table, QSqlDatabase &amp;db, int column)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>isNew</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a4089309cfc6ffdd933854e8452fbc4b2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>bindOne</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a574901f3ed456151456e47252985e15c</anchor>
+      <arglist>(QSqlQuery &amp;query, int i) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual void</type>
+      <name>bind</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a36cabf654ce46a5d961e7baeb73d09df</anchor>
+      <arglist>(QSqlQuery &amp;query) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DbRecMap</type>
+      <name>toMap</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a41cb883a62fdc84c7e9840dc5d62d9ab</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>retreive</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a80c95b3d1c7930eb76fee4f9e9ef4736</anchor>
+      <arglist>(const QSqlQuery &amp;query)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>retreive</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>aa840ae32a167f4da9a5ff57d949d019b</anchor>
+      <arglist>(const QSqlRecord &amp;rec)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>retreive</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>ac33d103d716f183b41db8cba7452bac1</anchor>
+      <arglist>(const DbRecMap &amp;map)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setId</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>ad94f419267178906823c7a45872922f2</anchor>
+      <arglist>(long)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual long</type>
+      <name>getId</name>
+      <anchorfile>class_db_record.html</anchorfile>
+      <anchor>a0b7c880f13dcb677b1eef80204877673</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbStruct</name>
+    <filename>class_db_struct.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DbStruct</name>
+      <anchorfile>class_db_struct.html</anchorfile>
+      <anchor>a80cf414740be4fc597170e955b0c3389</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbStruct</name>
+      <anchorfile>class_db_struct.html</anchorfile>
+      <anchor>a04468f3c744a8495c91fb47e52d26645</anchor>
+      <arglist>(const QSqlDatabase &amp;db)</arglist>
+    </member>
+    <member kind="function">
+      <type>QSqlDatabase &amp;</type>
+      <name>database</name>
+      <anchorfile>class_db_struct.html</anchorfile>
+      <anchor>a592f554066129e713d17ed35cfbfe64b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDatabase</name>
+      <anchorfile>class_db_struct.html</anchorfile>
+      <anchor>a6d53671ff74400fe6c3e5df347206aae</anchor>
+      <arglist>(const QSqlDatabase &amp;value)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DbStructMeta *</type>
+      <name>metaDatabase</name>
+      <anchorfile>class_db_struct.html</anchorfile>
+      <anchor>aaac0f93dcf3b0923271589800f8deab2</anchor>
+      <arglist>()=0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbStructMeta</name>
+    <filename>class_db_struct_meta.html</filename>
+    <base>DbObject</base>
+    <member kind="function">
+      <type></type>
+      <name>DbStructMeta</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a31d046524343df3ecf8fcaeaf319118b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbStructMeta</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a93ea02a67a859cd331dde171a7463a11</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Type</type>
+      <name>type</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>af9efbb186405fa6b7c90a644fcf83e5b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual DbTaew *</type>
+      <name>taew</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a324aa39bd3dc89c43214362c2c6c880f</anchor>
+      <arglist>(const QString &amp;value)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>databaseName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>adfc8aa2c487d31ec0532ca59dfd9412d</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>componentName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a635cb38c7bc45e84d08463bc8fac8c97</anchor>
+      <arglist>(int index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>idFromName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a15137a4100538177db0fddc1b33de441</anchor>
+      <arglist>(const QString &amp;value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DbTaew *</type>
+      <name>taew</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a68978d4a483edbe7b69a77cc654a1d5d</anchor>
+      <arglist>(int index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>comp2table</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a586fecce41e87e12d13631c36ad6dfe0</anchor>
+      <arglist>(int value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>table2comp</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>ae5d513540aacb3fc2113b4f3d765fd43</anchor>
+      <arglist>(int value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>tableIdFromName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>aa61de6d782765c119c9b28a4015e1547</anchor>
+      <arglist>(const QString &amp;value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>tableName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a0daad97fedd00352cd3e23c648dfa147</anchor>
+      <arglist>(int index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>comp2view</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a0b7343ec4c0adb3b85939dba950a42c3</anchor>
+      <arglist>(int value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>view2comp</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>aa78542b69885d745bf99af0a4de94571</anchor>
+      <arglist>(int value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>viewIdFromName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>aca766c497460e49f48dc6c9447cbd138</anchor>
+      <arglist>(const QString &amp;value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>viewName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a011ce499ce61caf3188b6dd98fb79ac9</anchor>
+      <arglist>(int index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>databaseName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>adfc8aa2c487d31ec0532ca59dfd9412d</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>componentName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a635cb38c7bc45e84d08463bc8fac8c97</anchor>
+      <arglist>(int index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>idFromName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a15137a4100538177db0fddc1b33de441</anchor>
+      <arglist>(const QString &amp;value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DbTaew *</type>
+      <name>taew</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a68978d4a483edbe7b69a77cc654a1d5d</anchor>
+      <arglist>(int index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>comp2table</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a586fecce41e87e12d13631c36ad6dfe0</anchor>
+      <arglist>(int value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>table2comp</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>ae5d513540aacb3fc2113b4f3d765fd43</anchor>
+      <arglist>(int value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>tableIdFromName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>aa61de6d782765c119c9b28a4015e1547</anchor>
+      <arglist>(const QString &amp;value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>tableName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a0daad97fedd00352cd3e23c648dfa147</anchor>
+      <arglist>(int index) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>comp2view</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a0b7343ec4c0adb3b85939dba950a42c3</anchor>
+      <arglist>(int value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>view2comp</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>aa78542b69885d745bf99af0a4de94571</anchor>
+      <arglist>(int value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>viewIdFromName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>aca766c497460e49f48dc6c9447cbd138</anchor>
+      <arglist>(const QString &amp;value) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>viewName</name>
+      <anchorfile>class_db_struct_meta.html</anchorfile>
+      <anchor>a011ce499ce61caf3188b6dd98fb79ac9</anchor>
+      <arglist>(int index) const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbTable</name>
+    <filename>class_db_table.html</filename>
+    <base>DbTaew</base>
+    <member kind="function">
+      <type></type>
+      <name>DbTable</name>
+      <anchorfile>class_db_table.html</anchorfile>
+      <anchor>a6838db2ad843a287f19a32100f549d51</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbTable</name>
+      <anchorfile>class_db_table.html</anchorfile>
+      <anchor>a3b61984342738abc45b6074e970eeb55</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Type</type>
+      <name>type</name>
+      <anchorfile>class_db_table.html</anchorfile>
+      <anchor>a3d94d22a12cd92ca369bdc3367f2a8f9</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbTaew</name>
+    <filename>class_db_taew.html</filename>
+    <base>DbObject</base>
+    <member kind="enumeration">
+      <type></type>
+      <name>Codes</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a0d11bf9bd8476aa62616aa64a07735af</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>DbTaew</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>abb3ab56b3d30c6a19cc369b9a0d95840</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbTaew</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a29907e330a69f04e158bba6dc98fc8be</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>hasColumn</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a52db067a41efc711a3ad688561c8b570</anchor>
+      <arglist>(const QString &amp;s_name) const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>columnIndex</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a37448f309dc740ac61eae43474aca133</anchor>
+      <arglist>(const QString &amp;s_name) const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>realColumnIndex</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>abcd50f8b533e3a2eae565209f2832f6f</anchor>
+      <arglist>(const QString &amp;s_name) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QSqlTableModel *</type>
+      <name>sqlModel</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a9123ee7be2d6e0980f3d3655cbe8b952</anchor>
+      <arglist>(QSqlDatabase &amp;database, QObject *parent=NULL) const </arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>tableName</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a3c8c60c72929166a8f3c61ba3a2b7a79</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QString</type>
+      <name>modifyTableName</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>ae53297da1324f2fe4eabbb326f9639e5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>columnName</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a52a5ab96a4ec09709b5d00914a9855ad</anchor>
+      <arglist>(int i) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>columnLabel</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a3bd620a458d9548f4221491f94f0083c</anchor>
+      <arglist>(int i) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>columnCount</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>ac9f8eef75e3438e9b1c02eb22500c713</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QStringList</type>
+      <name>columns</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a8956865772ca1583826dea9dda66ef21</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>idColumn</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>af512b65210b8e709d0a1f2e0baeaafa5</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>commaColumns</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a0b1034e989c5acc7dd2a878f844cff1f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>commaColumnsNoId</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a3d7467930eebf1afe829f1f868352d45</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>columnColumns</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a207eaee4587988dd1c02be714d287569</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>assignColumns</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a0ba966cb16bbd36638ae2ece274cf27f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DbColumn</type>
+      <name>columnCtor</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a9b1424cd4f077322aed365718617af94</anchor>
+      <arglist>(int i) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DbRecord *</type>
+      <name>createDefaultRecord</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a4a7ff18ce475e0a57a1362b8c4827a0e</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>toRealIndex</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a099d460ebc91303cc38799cf849067b5</anchor>
+      <arglist>(int) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>fromRealIndex</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a3056f4741e81f5112c33a9538ed495d4</anchor>
+      <arglist>(int) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>tableName</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a3c8c60c72929166a8f3c61ba3a2b7a79</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QString</type>
+      <name>modifyTableName</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>ae53297da1324f2fe4eabbb326f9639e5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>columnName</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a52a5ab96a4ec09709b5d00914a9855ad</anchor>
+      <arglist>(int i) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>columnLabel</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a3bd620a458d9548f4221491f94f0083c</anchor>
+      <arglist>(int i) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>columnCount</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>ac9f8eef75e3438e9b1c02eb22500c713</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QStringList</type>
+      <name>columns</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a8956865772ca1583826dea9dda66ef21</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>idColumn</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>af512b65210b8e709d0a1f2e0baeaafa5</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>commaColumns</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a0b1034e989c5acc7dd2a878f844cff1f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>commaColumnsNoId</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a3d7467930eebf1afe829f1f868352d45</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>columnColumns</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a207eaee4587988dd1c02be714d287569</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual QString</type>
+      <name>assignColumns</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a0ba966cb16bbd36638ae2ece274cf27f</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DbColumn</type>
+      <name>columnCtor</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a9b1424cd4f077322aed365718617af94</anchor>
+      <arglist>(int i) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual DbRecord *</type>
+      <name>createDefaultRecord</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a4a7ff18ce475e0a57a1362b8c4827a0e</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>toRealIndex</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a099d460ebc91303cc38799cf849067b5</anchor>
+      <arglist>(int) const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>fromRealIndex</name>
+      <anchorfile>class_db_taew.html</anchorfile>
+      <anchor>a3056f4741e81f5112c33a9538ed495d4</anchor>
+      <arglist>(int) const =0</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>DbView</name>
+    <filename>class_db_view.html</filename>
+    <base>DbTaew</base>
+    <member kind="function">
+      <type></type>
+      <name>DbView</name>
+      <anchorfile>class_db_view.html</anchorfile>
+      <anchor>afff3815307983beff12689d17d2c96c1</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbView</name>
+      <anchorfile>class_db_view.html</anchorfile>
+      <anchor>a2aa5bc33c04063aa2dbac82ea29c18de</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Type</type>
+      <name>type</name>
+      <anchorfile>class_db_view.html</anchorfile>
+      <anchor>a7f0f3c08a60622c3ecbaba4305f724f8</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::decimal</name>
+    <filename>classpile__schema__api_1_1decimal.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::decimalScale0</name>
+    <filename>classpile__schema__api_1_1decimal_scale0.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pileschema::Driver</name>
+    <filename>classpileschema_1_1_driver.html</filename>
+    <member kind="function">
+      <type>def</type>
+      <name>databaseStart</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>aad48006377d3641e7ca17afa077fc51e</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>databaseEnd</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>aa05cf7e0ec498bd9ea19be655c5bd24b</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>tableStart</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>aab4c861d266fdd5c85fdb92dbed8f45c</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>tableEnd</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>aaa85f5427b93b19c707093e16cb4af7d</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>column</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>a47ebd8b6a11348d59714a61e632a1262</anchor>
+      <arglist>(self, name, label, datatype, nulls, node, dtnode)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>viewStart</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>ae20a0811493e3beedf7b686af9027a95</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>viewEnd</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>a7acbc572c65d024c713f1550cec1d320</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>viewSubset</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>a1d09f05bd9078af7093153d8deb29585</anchor>
+      <arglist>(self, node, subset)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>getForeignKey</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>a685ded1e7eda71a4124d11e34fca68c0</anchor>
+      <arglist>(self, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>checkForeignKeys</name>
+      <anchorfile>classpileschema_1_1_driver.html</anchorfile>
+      <anchor>acdd9f08494e1e392a0631df55d824553</anchor>
+      <arglist>(self)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::float_</name>
+    <filename>classpile__schema__api_1_1float__.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::foreignKeyColumns</name>
+    <filename>classpile__schema__api_1_1foreign_key_columns.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::GDSParseError</name>
+    <filename>classpile__schema__api_1_1_g_d_s_parse_error.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::GeneratedsSuper</name>
+    <filename>classpile__schema__api_1_1_generateds_super.html</filename>
+    <class kind="class">pile_schema_api::GeneratedsSuper::_FixedOffsetTZ</class>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::identity</name>
+    <filename>classpile__schema__api_1_1identity.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::index</name>
+    <filename>classpile__schema__api_1_1index.html</filename>
+    <base>pile_schema_api::constraint</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::indexes</name>
+    <filename>classpile__schema__api_1_1indexes.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::integer</name>
+    <filename>classpile__schema__api_1_1integer.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::MemberSpec_</name>
+    <filename>classpile__schema__api_1_1_member_spec__.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::MixedContainer</name>
+    <filename>classpile__schema__api_1_1_mixed_container.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::money</name>
+    <filename>classpile__schema__api_1_1money.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::nchar</name>
+    <filename>classpile__schema__api_1_1nchar.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::parameterlessStringType</name>
+    <filename>classpile__schema__api_1_1parameterless_string_type.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::parameterlessType</name>
+    <filename>classpile__schema__api_1_1parameterless_type.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::primaryKey</name>
+    <filename>classpile__schema__api_1_1primary_key.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::primaryKeyTable</name>
+    <filename>classpile__schema__api_1_1primary_key_table.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pileschema::QtDriver</name>
+    <filename>classpileschema_1_1_qt_driver.html</filename>
+    <base>pileschema::Driver</base>
+    <member kind="function">
+      <type>def</type>
+      <name>databaseStart</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>a9624eb9db3eb17dcf06abe8ce14b519e</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>databaseEnd</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>ae294f8dd60aab83b904adb60f110abd2</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>bootstrapData</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>abbfa047ba7788b9b17afe80c3754b91a</anchor>
+      <arglist>(self, name)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>tableStart</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>afc1ebd70fb6019ca04c5e204948ee81a</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>fillTableData</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>a617bd661b531652fd8e4b35c10b50816</anchor>
+      <arglist>(self, name)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>tableEnd</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>a679ce544ac9ac8d36a49ad9943d0e602</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>column</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>a278c5536daaf80d7b7e23a98e077e5c0</anchor>
+      <arglist>(self, name, label, datatype, nulls, node, dtnode)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>viewStart</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>a9c74e37682cfc6b21ee70baeab5fba6a</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>viewEnd</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>a7a13c4204920a2622426c28173bf6704</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>viewSubset</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>a51386be7ff4cd62bebc8153cffcb5b77</anchor>
+      <arglist>(self, node, subset)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>getTemplate</name>
+      <anchorfile>classpileschema_1_1_qt_driver.html</anchorfile>
+      <anchor>aacf8c4f56659bf3703b1288f50375aa9</anchor>
+      <arglist>(self, which)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::real</name>
+    <filename>classpile__schema__api_1_1real.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::relationship</name>
+    <filename>classpile__schema__api_1_1relationship.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::relationshipColumn</name>
+    <filename>classpile__schema__api_1_1relationship_column.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::relationships</name>
+    <filename>classpile__schema__api_1_1relationships.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::smallint</name>
+    <filename>classpile__schema__api_1_1smallint.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::smallmoney</name>
+    <filename>classpile__schema__api_1_1smallmoney.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pileschema::SqlDriver</name>
+    <filename>classpileschema_1_1_sql_driver.html</filename>
+    <base>pileschema::Driver</base>
+    <member kind="function">
+      <type>def</type>
+      <name>tableStart</name>
+      <anchorfile>classpileschema_1_1_sql_driver.html</anchorfile>
+      <anchor>a57bf94e4978d16c831a8284ae3d97edb</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>tableEnd</name>
+      <anchorfile>classpileschema_1_1_sql_driver.html</anchorfile>
+      <anchor>a3ecac470fda5589ad94fe337a091be3f</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>column</name>
+      <anchorfile>classpileschema_1_1_sql_driver.html</anchorfile>
+      <anchor>a0d7877877dea979e469f034d2466dead</anchor>
+      <arglist>(self, name, label, datatype, nulls, node, dtnode)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>viewStart</name>
+      <anchorfile>classpileschema_1_1_sql_driver.html</anchorfile>
+      <anchor>aad502101d546fd3e23d9c877b168848a</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>viewEnd</name>
+      <anchorfile>classpileschema_1_1_sql_driver.html</anchorfile>
+      <anchor>aa76290fe951ba82f9290ec74e474535f</anchor>
+      <arglist>(self, name, node)</arglist>
+    </member>
+    <member kind="function">
+      <type>def</type>
+      <name>viewSubset</name>
+      <anchorfile>classpileschema_1_1_sql_driver.html</anchorfile>
+      <anchor>aaba56a369bc7e0627d7a6aeea4aceee6</anchor>
+      <arglist>(self, node, subset)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>pileschema::SqLiteDriver</name>
+    <filename>classpileschema_1_1_sq_lite_driver.html</filename>
+    <base>pileschema::SqlDriver</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::table</name>
+    <filename>classpile__schema__api_1_1table.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::tables</name>
+    <filename>classpile__schema__api_1_1tables.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::timeType</name>
+    <filename>classpile__schema__api_1_1time_type.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::tinyint</name>
+    <filename>classpile__schema__api_1_1tinyint.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::tristate</name>
+    <filename>classpile__schema__api_1_1tristate.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::uniqueConstraints</name>
+    <filename>classpile__schema__api_1_1unique_constraints.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::uniqueidentifier</name>
+    <filename>classpile__schema__api_1_1uniqueidentifier.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::variablePrecisionTime</name>
+    <filename>classpile__schema__api_1_1variable_precision_time.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::view</name>
+    <filename>classpile__schema__api_1_1view.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::views</name>
+    <filename>classpile__schema__api_1_1views.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::viewSubset</name>
+    <filename>classpile__schema__api_1_1view_subset.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::viewWriteBack</name>
+    <filename>classpile__schema__api_1_1view_write_back.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::viewWriteBackCol</name>
+    <filename>classpile__schema__api_1_1view_write_back_col.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="class">
+    <name>pile_schema_api::vrtcol</name>
+    <filename>classpile__schema__api_1_1vrtcol.html</filename>
+    <base>pile_schema_api::GeneratedsSuper</base>
+  </compound>
+  <compound kind="namespace">
+    <name>pile_schema_api</name>
+    <filename>namespacepile__schema__api.html</filename>
+    <class kind="class">pile_schema_api::bigint</class>
+    <class kind="class">pile_schema_api::binary</class>
+    <class kind="class">pile_schema_api::bit</class>
+    <class kind="class">pile_schema_api::char</class>
+    <class kind="class">pile_schema_api::column</class>
+    <class kind="class">pile_schema_api::columnList</class>
+    <class kind="class">pile_schema_api::constraint</class>
+    <class kind="class">pile_schema_api::constraintColumn</class>
+    <class kind="class">pile_schema_api::database</class>
+    <class kind="class">pile_schema_api::dateTimeType</class>
+    <class kind="class">pile_schema_api::dateType</class>
+    <class kind="class">pile_schema_api::decimal</class>
+    <class kind="class">pile_schema_api::decimalScale0</class>
+    <class kind="class">pile_schema_api::float_</class>
+    <class kind="class">pile_schema_api::foreignKeyColumns</class>
+    <class kind="class">pile_schema_api::GDSParseError</class>
+    <class kind="class">pile_schema_api::GeneratedsSuper</class>
+    <class kind="class">pile_schema_api::identity</class>
+    <class kind="class">pile_schema_api::index</class>
+    <class kind="class">pile_schema_api::indexes</class>
+    <class kind="class">pile_schema_api::integer</class>
+    <class kind="class">pile_schema_api::MemberSpec_</class>
+    <class kind="class">pile_schema_api::MixedContainer</class>
+    <class kind="class">pile_schema_api::money</class>
+    <class kind="class">pile_schema_api::nchar</class>
+    <class kind="class">pile_schema_api::parameterlessStringType</class>
+    <class kind="class">pile_schema_api::parameterlessType</class>
+    <class kind="class">pile_schema_api::primaryKey</class>
+    <class kind="class">pile_schema_api::primaryKeyTable</class>
+    <class kind="class">pile_schema_api::real</class>
+    <class kind="class">pile_schema_api::relationship</class>
+    <class kind="class">pile_schema_api::relationshipColumn</class>
+    <class kind="class">pile_schema_api::relationships</class>
+    <class kind="class">pile_schema_api::smallint</class>
+    <class kind="class">pile_schema_api::smallmoney</class>
+    <class kind="class">pile_schema_api::table</class>
+    <class kind="class">pile_schema_api::tables</class>
+    <class kind="class">pile_schema_api::timeType</class>
+    <class kind="class">pile_schema_api::tinyint</class>
+    <class kind="class">pile_schema_api::tristate</class>
+    <class kind="class">pile_schema_api::uniqueConstraints</class>
+    <class kind="class">pile_schema_api::uniqueidentifier</class>
+    <class kind="class">pile_schema_api::variablePrecisionTime</class>
+    <class kind="class">pile_schema_api::view</class>
+    <class kind="class">pile_schema_api::views</class>
+    <class kind="class">pile_schema_api::viewSubset</class>
+    <class kind="class">pile_schema_api::viewWriteBack</class>
+    <class kind="class">pile_schema_api::viewWriteBackCol</class>
+    <class kind="class">pile_schema_api::vrtcol</class>
+  </compound>
+  <compound kind="namespace">
+    <name>pileschema</name>
+    <filename>namespacepileschema.html</filename>
+    <class kind="class">pileschema::Driver</class>
+    <class kind="class">pileschema::QtDriver</class>
+    <class kind="class">pileschema::SqlDriver</class>
+    <class kind="class">pileschema::SqLiteDriver</class>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

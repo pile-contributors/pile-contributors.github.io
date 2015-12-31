@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>activegrip.cc</name>
+    <path>H:/prog/piles/imagesel/src/imagesel/</path>
+    <filename>activegrip_8cc</filename>
+    <includes id="imagesel_8h" name="imagesel.h" local="yes" imported="no">imagesel.h</includes>
+    <includes id="imagesel-private_8h" name="imagesel-private.h" local="yes" imported="no">imagesel-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>activegrip.h</name>
+    <path>H:/prog/piles/imagesel/src/imagesel/</path>
+    <filename>activegrip_8h</filename>
+    <class kind="class">ActiveGrip</class>
+  </compound>
+  <compound kind="file">
+    <name>imagesel-private.h</name>
+    <path>H:/prog/piles/imagesel/src/imagesel/</path>
+    <filename>imagesel-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>imagesel.cc</name>
+    <path>H:/prog/piles/imagesel/src/imagesel/</path>
+    <filename>imagesel_8cc</filename>
+    <includes id="imagesel_8h" name="imagesel.h" local="yes" imported="no">imagesel.h</includes>
+    <includes id="imagesel-private_8h" name="imagesel-private.h" local="yes" imported="no">imagesel-private.h</includes>
+    <class kind="class">RectangularBuildInlay</class>
+    <class kind="class">SquareBuildInlay</class>
+    <class kind="class">EllipseBuildInlay</class>
+    <class kind="class">CircleBuildInlay</class>
+  </compound>
+  <compound kind="file">
+    <name>imagesel.h</name>
+    <path>H:/prog/piles/imagesel/src/imagesel/</path>
+    <filename>imagesel_8h</filename>
+    <class kind="class">ImageSel</class>
+  </compound>
+  <compound kind="file">
+    <name>layoutinterf.cc</name>
+    <path>H:/prog/piles/imagesel/src/imagesel/</path>
+    <filename>layoutinterf_8cc</filename>
+    <includes id="imagesel_8h" name="imagesel.h" local="yes" imported="no">imagesel.h</includes>
+    <includes id="imagesel-private_8h" name="imagesel-private.h" local="yes" imported="no">imagesel-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>layoutinterf.h</name>
+    <path>H:/prog/piles/imagesel/src/imagesel/</path>
+    <filename>layoutinterf_8h</filename>
+    <class kind="class">LayoutInterf</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/imagesel/src/imagesel/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>ActiveGrip</name>
+    <filename>class_active_grip.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ActiveGrip</name>
+      <anchorfile>class_active_grip.html</anchorfile>
+      <anchor>a0c0abe27b5ce8c91a8421e1c4be79e71</anchor>
+      <arglist>(ImageSel *parent)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ActiveGrip</name>
+      <anchorfile>class_active_grip.html</anchorfile>
+      <anchor>a691514eaf2896318fa32a3b1cdc421bb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getGripSize</name>
+      <anchorfile>class_active_grip.html</anchorfile>
+      <anchor>acda411884aef0b04b6fca1b749a22107</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setGripSize</name>
+      <anchorfile>class_active_grip.html</anchorfile>
+      <anchor>a028152d19eee40d213b151fa1e97797e</anchor>
+      <arglist>(int value)</arglist>
+    </member>
+    <member kind="function">
+      <type>ImageSel *</type>
+      <name>parentSel</name>
+      <anchorfile>class_active_grip.html</anchorfile>
+      <anchor>a2d6aa24e2ac6eed9d1cb5028182eea02</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CircleBuildInlay</name>
+    <filename>class_circle_build_inlay.html</filename>
+    <base>LayoutInterf</base>
+  </compound>
+  <compound kind="class">
+    <name>EllipseBuildInlay</name>
+    <filename>class_ellipse_build_inlay.html</filename>
+    <base>LayoutInterf</base>
+  </compound>
+  <compound kind="class">
+    <name>ImageSel</name>
+    <filename>class_image_sel.html</filename>
+    <member kind="enumeration">
+      <type></type>
+      <name>BuildInLay</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>a5cded2f0de9b9151b91914d874dc0750</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>ImageSel</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>afdf9910bfddaa2fa61ca68ed369eeaa7</anchor>
+      <arglist>(QWidget *parent=NULL)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ImageSel</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>ab5c2e66970760ba316dbddf5fdd55138</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setImage</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>a7f97438e8ae654994c8176ddb3795b97</anchor>
+      <arglist>(const QPixmap &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>clearImage</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>ad29b0e822e128c908ddef856a8cffb1b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>const QPixmap &amp;</type>
+      <name>image</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>ac326964ab17dc05f66e7b5153f062390</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setBuildInLayout</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>a33d0918b73db2353e9117b4f3d29daa5</anchor>
+      <arglist>(BuildInLay kind)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLay</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>a6d347cbcfe14be491c474e878440a4e6</anchor>
+      <arglist>(LayoutInterf *value)</arglist>
+    </member>
+    <member kind="function">
+      <type>LayoutInterf *</type>
+      <name>lay</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>a5b6791a8ee244ae0351da68579f91e58</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>LayoutInterf *</type>
+      <name>takeLay</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>a48f512d2bb3464d21dcf3bae89678d61</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>QPoint</type>
+      <name>gripMode</name>
+      <anchorfile>class_image_sel.html</anchorfile>
+      <anchor>ac3d92a732232adac4ebc3aca69adbbad</anchor>
+      <arglist>(ActiveGrip *grip, const QPoint &amp;pos)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>LayoutInterf</name>
+    <filename>class_layout_interf.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~LayoutInterf</name>
+      <anchorfile>class_layout_interf.html</anchorfile>
+      <anchor>a45da6c35d196d4494810e9b08cb7e991</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>RectangularBuildInlay</name>
+    <filename>class_rectangular_build_inlay.html</filename>
+    <base>LayoutInterf</base>
+  </compound>
+  <compound kind="class">
+    <name>SquareBuildInlay</name>
+    <filename>class_square_build_inlay.html</filename>
+    <base>LayoutInterf</base>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

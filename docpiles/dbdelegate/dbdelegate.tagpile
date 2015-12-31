@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>dbdelegate-private.h</name>
+    <path>H:/prog/piles/dbdelegate/src/dbdelegate/</path>
+    <filename>dbdelegate-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>dbdelegate.cc</name>
+    <path>H:/prog/piles/dbdelegate/src/dbdelegate/</path>
+    <filename>dbdelegate_8cc</filename>
+    <includes id="dbdelegate_8h" name="dbdelegate.h" local="yes" imported="no">dbdelegate.h</includes>
+    <includes id="dbdelegate-private_8h" name="dbdelegate-private.h" local="yes" imported="no">dbdelegate-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>dbdelegate.h</name>
+    <path>H:/prog/piles/dbdelegate/src/dbdelegate/</path>
+    <filename>dbdelegate_8h</filename>
+    <class kind="class">DbDelegate</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/dbdelegate/src/dbdelegate/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>DbDelegate</name>
+    <filename>class_db_delegate.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>DbDelegate</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>a41583acc415c57b8c6342b7f2c8ecdd9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~DbDelegate</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>ac1fd5d5925661af172e0042808ee8417</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>paint</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>a9d95a22f71473227c5f7672aa0bea024</anchor>
+      <arglist>(QPainter *painter, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QSize</type>
+      <name>sizeHint</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>ad45ab50be2a5e6b8b559ffe9c0475dec</anchor>
+      <arglist>(const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QWidget *</type>
+      <name>createEditor</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>abe1ed54d623fdd88bb554811da3a1620</anchor>
+      <arglist>(QWidget *parent, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setEditorData</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>aab9a15d604fba1edadbb669266983215</anchor>
+      <arglist>(QWidget *editor, const QModelIndex &amp;index) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>setModelData</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>a98c3b29ea492671457c55e4138e12ac5</anchor>
+      <arglist>(QWidget *editor, QAbstractItemModel *model, const QModelIndex &amp;index) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>updateEditorGeometry</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>a7a3f1a2887c22f39b2a4db7e71d44ac2</anchor>
+      <arglist>(QWidget *editor, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index) const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual QString</type>
+      <name>displayText</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>a43fe55cb6cf40c2e8f5728aa6e55d9ec</anchor>
+      <arglist>(const QVariant &amp;value, const QLocale &amp;locale) const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initStyleOption</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>aa8616f1325b19eb003b96e48e4852a56</anchor>
+      <arglist>(QStyleOptionViewItem *option, const QModelIndex &amp;index) const </arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>eventFilter</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>a4ef985e8b9f75232caa84601869134b8</anchor>
+      <arglist>(QObject *object, QEvent *event)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>editorEvent</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>a25a6c7675c8ba4d9518a48ca46e22eb2</anchor>
+      <arglist>(QEvent *event, QAbstractItemModel *model, const QStyleOptionViewItem &amp;option, const QModelIndex &amp;index)</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

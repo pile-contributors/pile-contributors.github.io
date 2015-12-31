@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/reportbuilder/src/reportbuilder/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="file">
+    <name>reportbuilder-private.h</name>
+    <path>H:/prog/piles/reportbuilder/src/reportbuilder/</path>
+    <filename>reportbuilder-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>reportbuilder.cc</name>
+    <path>H:/prog/piles/reportbuilder/src/reportbuilder/</path>
+    <filename>reportbuilder_8cc</filename>
+    <includes id="reportbuilder_8h" name="reportbuilder.h" local="yes" imported="no">reportbuilder.h</includes>
+    <includes id="reportbuilder-private_8h" name="reportbuilder-private.h" local="yes" imported="no">reportbuilder-private.h</includes>
+    <member kind="define">
+      <type>#define</type>
+      <name>STRINGIFY</name>
+      <anchorfile>reportbuilder_8cc.html</anchorfile>
+      <anchor>a4689212d5a549893cabb9d7782eecfb6</anchor>
+      <arglist>(s)</arglist>
+    </member>
+    <member kind="define">
+      <type>#define</type>
+      <name>DBG_ASSERT</name>
+      <anchorfile>reportbuilder_8cc.html</anchorfile>
+      <anchor>a47332a399c0f2a927aca2833b349ba65</anchor>
+      <arglist>(a)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>reportbuilder.h</name>
+    <path>H:/prog/piles/reportbuilder/src/reportbuilder/</path>
+    <filename>reportbuilder_8h</filename>
+    <class kind="class">ReportBuilder</class>
+  </compound>
+  <compound kind="class">
+    <name>ReportBuilder</name>
+    <filename>class_report_builder.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ReportBuilder</name>
+      <anchorfile>class_report_builder.html</anchorfile>
+      <anchor>a30d7bbcb725ba265035153cb43c18fba</anchor>
+      <arglist>(const QString &amp;s_file)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~ReportBuilder</name>
+      <anchorfile>class_report_builder.html</anchorfile>
+      <anchor>ae30e987c6982aa2d4c6d8e6d0f4ff623</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDocumentTitle</name>
+      <anchorfile>class_report_builder.html</anchorfile>
+      <anchor>ad2facf7df774527e4d3fdcad8a2110fb</anchor>
+      <arglist>(const QString &amp;s_title)</arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>errorString</name>
+      <anchorfile>class_report_builder.html</anchorfile>
+      <anchor>a67670a10fd9e46e74ce3c8ab90feb51c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isOK</name>
+      <anchorfile>class_report_builder.html</anchorfile>
+      <anchor>a9942811e4a16b8cc6ccb9be32722c251</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>start</name>
+      <anchorfile>class_report_builder.html</anchorfile>
+      <anchor>a5a21b4cf4c5f17c048779fd8debd02f6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>end</name>
+      <anchorfile>class_report_builder.html</anchorfile>
+      <anchor>af70c7333da05e502179de72f2a17135b</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

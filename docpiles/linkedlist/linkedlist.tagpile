@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>linkedlist-private.h</name>
+    <path>H:/prog/piles/linkedlist/src/linkedlist/</path>
+    <filename>linkedlist-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>linkedlist.cc</name>
+    <path>H:/prog/piles/linkedlist/src/linkedlist/</path>
+    <filename>linkedlist_8cc</filename>
+    <includes id="linkedlist_8h" name="linkedlist.h" local="yes" imported="no">linkedlist.h</includes>
+    <includes id="linkedlist-private_8h" name="linkedlist-private.h" local="yes" imported="no">linkedlist-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>linkedlist.h</name>
+    <path>H:/prog/piles/linkedlist/src/linkedlist/</path>
+    <filename>linkedlist_8h</filename>
+    <class kind="class">LinkedList</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/linkedlist/src/linkedlist/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>LinkedList</name>
+    <filename>class_linked_list.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>LinkedList</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>afe7f78983e173f8018927cf2ad11a5aa</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~LinkedList</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a35811ed58ff0d8d9cc9b309b8d8f5111</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>lNextCount</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a240053ea97248cf402125436ec11426f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>LinkedList *</type>
+      <name>lExtract</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a73241c3c76dedfb3e7554dffe7b8a2dd</anchor>
+      <arglist>(LinkedList *first_item)</arglist>
+    </member>
+    <member kind="function">
+      <type>LinkedList *</type>
+      <name>lPrevious</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a18f09966ed44e6323d3d2c35b35a926c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>LinkedList *</type>
+      <name>lNext</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a05a29daf6969bd1fd55ca5f1c80d5f94</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>lPushFront</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a3901292285cfeb259b2508335591091d</anchor>
+      <arglist>(LinkedList *first_item, LinkedList *new_item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>lPushBack</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>ae9e6fe9b7713c9097fefbbfa3cd4454c</anchor>
+      <arglist>(LinkedList *first_item, LinkedList *new_item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>preppend</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a9379e1adaf7081b35113c4e043ad23fa</anchor>
+      <arglist>(LinkedList *first_item, LinkedList *new_item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>append</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>af2e35c84394bd70a39013c58f73541f4</anchor>
+      <arglist>(LinkedList *first_item, LinkedList *new_item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>lPopFront</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>aa17c5eca4393745bcb0db0c3361c5c90</anchor>
+      <arglist>(LinkedList *first_item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>lPopBack</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a7c1831549be3f6fee6e11abbaa20e325</anchor>
+      <arglist>(LinkedList *first_item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static int</type>
+      <name>lCount</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a7086d7d349d38d788e31b1b2debaa2d1</anchor>
+      <arglist>(LinkedList *first_item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>lClear</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a088a5da675a134d2581f26a5044ffbca</anchor>
+      <arglist>(LinkedList *first_item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>lItem</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>aabc5463f8802d80dfbe264909772b5c0</anchor>
+      <arglist>(LinkedList *first_item, int index)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>lFirst</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a52729890559a1e1864bdcced754e2a59</anchor>
+      <arglist>(LinkedList *first_item)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static LinkedList *</type>
+      <name>lLast</name>
+      <anchorfile>class_linked_list.html</anchorfile>
+      <anchor>a1c68f69286dbbbe62591ce01e29b511c</anchor>
+      <arglist>(LinkedList *first_item)</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

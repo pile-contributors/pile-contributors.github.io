@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>progress-private.h</name>
+    <path>H:/prog/piles/progress/src/progress/</path>
+    <filename>progress-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>progress.cc</name>
+    <path>H:/prog/piles/progress/src/progress/</path>
+    <filename>progress_8cc</filename>
+    <includes id="progress_8h" name="progress.h" local="yes" imported="no">progress.h</includes>
+    <includes id="progress-private_8h" name="progress-private.h" local="yes" imported="no">progress-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>progress.h</name>
+    <path>H:/prog/piles/progress/src/progress/</path>
+    <filename>progress_8h</filename>
+    <class kind="class">Progress</class>
+  </compound>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/progress/src/progress/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="class">
+    <name>Progress</name>
+    <filename>class_progress.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Progress</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a01d83f02dc49939dd5d14057932a8a8d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Progress</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>abfa443f16958768636a59a560b625317</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>init</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a61a7b4f43d49ba15f393e5dee5035156</anchor>
+      <arglist>(const QString &amp;title=QString(), int64_t total_size=100)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>end</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a79acde8beebaaf555a01d20c8a9d4f0c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isInitialized</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a61b90c131eb3bf3955979427bbfc9e0e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>enter</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a6a24509564af68d275b6d6f15f12cc81</anchor>
+      <arglist>(int64_t parent_size, const QString &amp;label=QString(), int64_t total_size=100, int64_t parent_offset=-1, void *portion_data=NULL)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>finish</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a4c21970663d26fa3b534cb4779fa0195</anchor>
+      <arglist>(bool update_parent=true)</arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>currentStatus</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>addd097bdbe4c262b4885fa90fea6653e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>cutoffLevel</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>ae63b24f8b7bac7d6704366a5a0a03bf9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCutoffLevel</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>ae9d0273fcc04089826d17dde4ae6bff4</anchor>
+      <arglist>(int value)</arglist>
+    </member>
+    <member kind="function">
+      <type>int64_t</type>
+      <name>granularity</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>aa149e3206681c229fb2849400985b4a7</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setGranularity</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a4958262ff0c9681335116bbe378a2ba5</anchor>
+      <arglist>(int64_t value)</arglist>
+    </member>
+    <member kind="function">
+      <type>void *</type>
+      <name>userData</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a0080b75067081be56a69b344dfb7d80f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setUserData</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a4eac746cc7af1a38290b987a2a22534d</anchor>
+      <arglist>(void *value)</arglist>
+    </member>
+    <member kind="function">
+      <type>KbSignalSimple</type>
+      <name>simpleCallback</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a89f58d17bc72fcacbe35880aee348262</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSimpleCallback</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a887558754ad83f619f9c6921550b112f</anchor>
+      <arglist>(KbSignalSimple value)</arglist>
+    </member>
+    <member kind="function">
+      <type>KbSignal</type>
+      <name>callback</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a77da54bac92d17f5f42dcea4a77e4cab</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setCallback</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a19a6af8e3c88f5c50a8486e07e73f7cf</anchor>
+      <arglist>(KbSignal value)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>step</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a59c62915d194a4a20189c18ae9db6a5c</anchor>
+      <arglist>(int64_t chunk_size=1, int64_t offset=-1)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setStop</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>adec09276c0d5702a3cdd5e4a6712e7a4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>resetStop</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a3a763854e6b817b674923e81dbfacdfb</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>shouldStop</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>a045aff6c0ffe8bc4f9fc397425ede90b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>emitSigal</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>af9b8b9a8a2fb54e760b73d19d7cb77ac</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setLevelCharact</name>
+      <anchorfile>class_progress.html</anchorfile>
+      <anchor>ab6c8133b18774e04d356b7bd48005eb8</anchor>
+      <arglist>(int64_t total_size, int64_t progress=0)</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

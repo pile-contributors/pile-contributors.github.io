@@ -82,7 +82,7 @@ title: Piles Project
 {% endhighlight %}
 	
 	<p>
-	The <em>pileProject</em> adds a number of variables:
+        The <em>pileProject</em> macro adds a number of variables:
 	<dl>
 		<dt>PROJECT_NAME:</dt><dd>the name of the project (CamelCased, with spaces)</dd>
 		<dt>PROJECT_NAME_UNIX:</dt><dd>the name of the project (low case, no spaces)</dd>
@@ -112,7 +112,8 @@ title: Piles Project
         <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonIncludeDir">pileProjectCommonIncludeDir</a></li>
         <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonBits">pileProjectCommonBits</a></li>
         <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonQt">pileProjectCommonQt</a></li>
-	</ul>
+        <li><a href="{{ site.url }}/specs/cmake-macros.html#pileProjectCommonPackage">pileProjectCommonPackage</a></li>
+        </ul>
 	</p>
 
 	<p>
@@ -120,10 +121,13 @@ title: Piles Project
 	called <em>config.h.in</em> and, if it exists, uses the
 	standard CMake 
 	<a href="https://cmake.org/cmake/help/v3.0/command/configure_file.html">configure_file</a>
-	command on it. If a <em>Doxyfile.in</em> file exists
+        command on it.<br>
+        If a <em>Doxyfile.in</em> file exists
 	and the user enabled appropriate option
 	it is also run through same standard mechanism, Doxygeen is located
-	and a target is created for building the documentation.
+        and a target is created for building the documentation.<br>
+        The macro also includes CPack, so all relevant variables should be
+        assigned values before the invocation.
 	</p>
 
 </div>

@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/usermsggui/src/usermsggui/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="file">
+    <name>usermsggui-private.h</name>
+    <path>H:/prog/piles/usermsggui/src/usermsggui/</path>
+    <filename>usermsggui-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>usermsggui.cc</name>
+    <path>H:/prog/piles/usermsggui/src/usermsggui/</path>
+    <filename>usermsggui_8cc</filename>
+    <includes id="usermsggui_8h" name="usermsggui.h" local="yes" imported="no">usermsggui.h</includes>
+    <includes id="usermsggui-private_8h" name="usermsggui-private.h" local="yes" imported="no">usermsggui-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>usermsggui.h</name>
+    <path>H:/prog/piles/usermsggui/src/usermsggui/</path>
+    <filename>usermsggui_8h</filename>
+    <class kind="class">UserMsgGui</class>
+  </compound>
+  <compound kind="file">
+    <name>usermsglogw.cc</name>
+    <path>H:/prog/piles/usermsggui/src/usermsggui/</path>
+    <filename>usermsglogw_8cc</filename>
+    <includes id="usermsglogw_8h" name="usermsglogw.h" local="yes" imported="no">usermsglogw.h</includes>
+    <includes id="usermsggui-private_8h" name="usermsggui-private.h" local="yes" imported="no">usermsggui-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>usermsglogw.h</name>
+    <path>H:/prog/piles/usermsggui/src/usermsggui/</path>
+    <filename>usermsglogw_8h</filename>
+    <class kind="class">UserMsgLogW</class>
+  </compound>
+  <compound kind="class">
+    <name>UserMsgGui</name>
+    <filename>class_user_msg_gui.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>UserMsgGui</name>
+      <anchorfile>class_user_msg_gui.html</anchorfile>
+      <anchor>a6cebc8ada9f4744286131daa4db43971</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~UserMsgGui</name>
+      <anchorfile>class_user_msg_gui.html</anchorfile>
+      <anchor>ac2ef0e0d02ad3b1982956116bc21ed80</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>UserMsgLogW</name>
+    <filename>class_user_msg_log_w.html</filename>
+    <member kind="slot">
+      <type>void</type>
+      <name>showMessage</name>
+      <anchorfile>class_user_msg_log_w.html</anchorfile>
+      <anchor>a6e182198828cdf99e01489154a5e683c</anchor>
+      <arglist>(const UserMsg &amp;um)</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>clearMessages</name>
+      <anchorfile>class_user_msg_log_w.html</anchorfile>
+      <anchor>a8d0811d783c04f401c9ed00f2a117479</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="slot">
+      <type>void</type>
+      <name>reloadMessages</name>
+      <anchorfile>class_user_msg_log_w.html</anchorfile>
+      <anchor>ac830c718e85007c2e5a5b449d55ced00</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>UserMsgLogW</name>
+      <anchorfile>class_user_msg_log_w.html</anchorfile>
+      <anchor>a26580dc541429395b6b8ede7dde66677</anchor>
+      <arglist>(QWidget *parent=NULL)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~UserMsgLogW</name>
+      <anchorfile>class_user_msg_log_w.html</anchorfile>
+      <anchor>a7031290f8b8b52d8d3418322e86e125c</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>

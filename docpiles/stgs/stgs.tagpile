@@ -1,0 +1,343 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>README.md</name>
+    <path>H:/prog/piles/stgs/src/stgs/</path>
+    <filename>_r_e_a_d_m_e_8md</filename>
+  </compound>
+  <compound kind="file">
+    <name>stgs-private.h</name>
+    <path>H:/prog/piles/stgs/src/stgs/</path>
+    <filename>stgs-private_8h</filename>
+  </compound>
+  <compound kind="file">
+    <name>stgs.cc</name>
+    <path>H:/prog/piles/stgs/src/stgs/</path>
+    <filename>stgs_8cc</filename>
+    <includes id="stgs_8h" name="stgs.h" local="yes" imported="no">stgs.h</includes>
+    <includes id="stgs-private_8h" name="stgs-private.h" local="yes" imported="no">stgs-private.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>stgs.h</name>
+    <path>H:/prog/piles/stgs/src/stgs/</path>
+    <filename>stgs_8h</filename>
+    <class kind="class">Stgs</class>
+  </compound>
+  <compound kind="class">
+    <name>Stgs</name>
+    <filename>class_stgs.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>Stgs</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a395ecebf7d8b893840f7f2653446725c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~Stgs</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a6c2498977df2d86ba96123d751c430d0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVersion</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ac6a4e8060ebbd97f4ed55e7794057b6d</anchor>
+      <arglist>(int version)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>version</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ab23b017276a4cc6530b7b6098c8c6936</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>beginGroup</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a9f44704b2fd54a92383d32439d9b488b</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>endGroup</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ae001de4aadae3b1976b093455044aa94</anchor>
+      <arglist>(const PERST_STRING &amp;name=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>beginWriteArray</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>abf30eb4649fb70ed3a6cf4c28d16284a</anchor>
+      <arglist>(const PERST_STRING &amp;name, int predicted_count=-1)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>beginReadArray</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ae3f283d8ac989ced52761e379b5cf732</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>endArray</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a912e9f8b1da70574ec6087a1ecc8ecbc</anchor>
+      <arglist>(const PERST_STRING &amp;name=&quot;&quot;)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int</type>
+      <name>arrayIndex</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a461d819e89d0088412524214dc087982</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setArrayIndex</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a1e8158a27747d61643e837337fd6ca3e</anchor>
+      <arglist>(int index)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual PERST_STRING</type>
+      <name>group</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a8be24c1680bf14b0cba9701b431e1d72</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual PERST_SLIST</type>
+      <name>groupPath</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a2e19eb18c6eed77d1b565fc25d4f678a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>hasKey</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>adc575d4e7d179cec6facf7943f7cb485</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>hasKey</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ac544da4b1742ba07cea975f86889fb76</anchor>
+      <arglist>(const PERST_SLIST &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual PERST_STRING</type>
+      <name>valueS</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ad96dbc6f1371bdc28b0a3166bcc15c6e</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual PERST_SLIST</type>
+      <name>valueSList</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a00594206d8752c029a6ea5d7934cc73f</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual int64_t</type>
+      <name>valueInt</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ac0d629dc7786ea99c55a71a93694988a</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual uint64_t</type>
+      <name>valueUInt</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>abf1e2aae14edd170f4a3fa56084e7ea1</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual double</type>
+      <name>valueDbl</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>af66428040a3eed6433fd9e45709e746e</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function">
+      <type>PERST_STRING</type>
+      <name>valueS</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a644962c0b1f106f910623b3153a34b76</anchor>
+      <arglist>(const PERST_STRING &amp;name, const PERST_STRING &amp;default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>PERST_SLIST</type>
+      <name>valueSList</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ac0bc359e87ea5832169960b9700564e2</anchor>
+      <arglist>(const PERST_STRING &amp;name, const PERST_SLIST &amp;default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>int64_t</type>
+      <name>valueInt</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a37f84879733d5dab8c77c2918fe1862a</anchor>
+      <arglist>(const PERST_STRING &amp;name, int64_t default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint64_t</type>
+      <name>valueUInt</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a1914601c2b50d4a0e46ee695e5ff4164</anchor>
+      <arglist>(const PERST_STRING &amp;name, uint64_t default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>valueDbl</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>afebcd776251e848c75d760b879071fe0</anchor>
+      <arglist>(const PERST_STRING &amp;name, double default_val)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a0e1c3d757feacf0ead2fcbf8520f2cec</anchor>
+      <arglist>(const PERST_STRING &amp;name, const PERST_STRING &amp;value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>aa65c791ba323cb5b73501c37aaeecafd</anchor>
+      <arglist>(const PERST_STRING &amp;name, const PERST_SLIST &amp;value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a77c9811642c705a18ee9ad7cef67a2aa</anchor>
+      <arglist>(const PERST_STRING &amp;name, int64_t value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a043f89435f17f6bf1e67ea6acf253581</anchor>
+      <arglist>(const PERST_STRING &amp;name, uint64_t value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ad600ead12ffd1407e0c9ea8a8b3ca129</anchor>
+      <arglist>(const PERST_STRING &amp;name, int value)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a4fae0b4bfda3e1656925b653efdf0e53</anchor>
+      <arglist>(const PERST_STRING &amp;name, double value)</arglist>
+    </member>
+    <member kind="function">
+      <type>QByteArray</type>
+      <name>valueBA</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a37c87635dd221133bc622193f84dffa1</anchor>
+      <arglist>(const PERST_STRING &amp;name, const QByteArray &amp;default_val)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a0766e94380b88cfe4ed24d398b24d516</anchor>
+      <arglist>(const PERST_STRING &amp;name, const QByteArray &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>valueB</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ad7314b2dcb90e1d945de8b70cac4c1b0</anchor>
+      <arglist>(const PERST_STRING &amp;name, bool default_val)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>af89d65bff0a8a7d3a78eb8faf92f49bb</anchor>
+      <arglist>(const PERST_STRING &amp;name, bool value)</arglist>
+    </member>
+    <member kind="function">
+      <type>QDate</type>
+      <name>valueDate</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>ad16e763647db2121eab905e088bd31b0</anchor>
+      <arglist>(const PERST_STRING &amp;name, const QDate &amp;default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>QDate</type>
+      <name>valueDate</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a88d2d7b6123bea7eb9a898a89a99c365</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a26d5a7d2dc06626dd908534f25b21b82</anchor>
+      <arglist>(const PERST_STRING &amp;name, const QDate &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>QTime</type>
+      <name>valueTime</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>aaa5049e426400f2824f498b6ce3ddfca</anchor>
+      <arglist>(const PERST_STRING &amp;name, const QTime &amp;default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>QTime</type>
+      <name>valueTime</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a42945e354251e8e7110da79ee1a73b6c</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a7cb2b49e3bdce3cc1a191eeea77aee8d</anchor>
+      <arglist>(const PERST_STRING &amp;name, const QTime &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>QDateTime</type>
+      <name>valueDateTime</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a5ad80240d7608762f4903e1670350bf9</anchor>
+      <arglist>(const PERST_STRING &amp;name, const QDateTime &amp;default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>QDateTime</type>
+      <name>valueDateTime</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>abf12c0a525710b3ca230a06e2aade864</anchor>
+      <arglist>(const PERST_STRING &amp;name)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_stgs.html</anchorfile>
+      <anchor>a02c15ab5fc57b19ecdab3024ced6f766</anchor>
+      <arglist>(const PERST_STRING &amp;name, const QDateTime &amp;value)</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+  </compound>
+</tagfile>
