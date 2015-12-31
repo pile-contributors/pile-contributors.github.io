@@ -26,6 +26,7 @@ from subprocess import check_output
 
 from constants import *
 from logsetup import setup_logging
+from dynfiles import file_with_dyn_area
 
 LOGGER = None
 
@@ -355,6 +356,68 @@ class DocumRun(object):
             with open(html_file, 'wt') as fout:
                 fout.write(fcont)
 
+        def pile_link(data):
+            '''Create a html link for a pile'''
+            return '<a href="%s/html/index.html" ' \
+                    'title="%s version %s: %s">%s</a>' % (
+                        data['pile_dir_name'], data['pile'], data['pile_version'],
+                        data['pile_brief'], data['pile'])
+
+        def tag_link(tag):
+            '''Create a html link for a tag'''
+            return '<a href="tags.html#tag-%s">%s</a>' % (tag, tag)
+
+        def category_link(category):
+            '''Create a html link for a category'''
+            return '<a href="categories.html#categ-%s">%s</a>' % (
+                category, category)
+
+        def alphabetical_html():
+            '''Generate an alphabetical list of piles.'''
+            result = ''
+            for subdir in sorted(self.tree):
+                data = self.tree[subdir]
+                s_categ_tags = [category_link(data['pile_categ'])]
+                tags = data['pile_tags']
+                for tag in tags:
+                    s_categ_tags.append(tag_link(tag))
+                s_categ_tags = ', '.join(s_categ_tags)
+                result += \
+                    '        <dt>%s&nbsp;<sup><a href="' \
+                    'https://github.com/pile-contributors/%s.github.io">' \
+                    'GitHub</a></sup></dt><dd>%s (%s)</dd>\n' % (
+                        pile_link(data), subdir,
+                        data['pile_brief'], s_categ_tags)
+            return result
+
+        def categories_html():
+            '''Generate an alphabetical list of categories.'''
+            result = ''
+            for categ in sorted(self.categories):
+                data = self.categories[categ]
+                result += \
+                    '        <dt id="categ-%s">%s</dt><dd>%s</dd>\n' % (
+                        categ,
+                        category_link(categ),
+                        ', '.join([pile_link(pdata) 
+                        for pdata in sorted(data)]))
+
+            return result
+
+        def tags_html():
+            '''Generate an alphabetical list of tags.'''
+            result = ''
+            for tag in sorted(self.tags):
+                data = self.tags[tag]
+                result += \
+                    '        <dt id="tag-%s">%s</dt><dd>%s</dd>\n' % (
+                        tag,
+                        tag_link(tag),
+                        ', '.join([pile_link(pdata) 
+                        for pdata in sorted(data)]))
+
+            return result
+
         LOGGER.info('Post-processing...')
         for subdir in self.tree:
             data = self.tree[subdir]
@@ -365,6 +428,18 @@ class DocumRun(object):
             for fname in os.listdir(src_path):
                 if fname.endswith('.html'):
                     brute_force_images(os.path.join(src_path, fname))
+
+        # alphabetical list of piles
+        file_with_dyn_area(
+            os.path.join(self.outpath, 'index.html'),
+            alphabetical_html())
+        file_with_dyn_area(
+            os.path.join(self.outpath, 'categories.html'),
+            categories_html())
+        file_with_dyn_area(
+            os.path.join(self.outpath, 'tags.html'),
+            tags_html())
+
 
     def run(self):
         '''
