@@ -384,7 +384,7 @@ class DocumRun(object):
                 s_categ_tags = ', '.join(s_categ_tags)
                 result += \
                     '        <dt>%s&nbsp;<sup><a href="' \
-                    'https://github.com/pile-contributors/%s.github.io">' \
+                    'https://github.com/pile-contributors/%s">' \
                     'GitHub</a></sup></dt><dd>%s (%s)</dd>\n' % (
                         pile_link(data), subdir,
                         data['pile_brief'], s_categ_tags)
