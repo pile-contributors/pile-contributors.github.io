@@ -58,6 +58,7 @@
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
     </ul>
@@ -74,6 +75,7 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_db_delegate-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -98,10 +100,22 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a41583acc415c57b8c6342b7f2c8ecdd9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41583acc415c57b8c6342b7f2c8ecdd9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_delegate.html#a41583acc415c57b8c6342b7f2c8ecdd9">DbDelegate</a> ()</td></tr>
-<tr class="memdesc:a41583acc415c57b8c6342b7f2c8ecdd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
-<tr class="separator:a41583acc415c57b8c6342b7f2c8ecdd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e740e317ab5e20f17820e6451d3a93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1e740e317ab5e20f17820e6451d3a93"></a>
+virtual const DbModel *&#160;</td><td class="memItemRight" valign="bottom"><b>dbModelConst</b> (const QModelIndex &amp;index) const </td></tr>
+<tr class="separator:ad1e740e317ab5e20f17820e6451d3a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abed4568164c34a961c3e6e95743b80b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abed4568164c34a961c3e6e95743b80b2"></a>
+virtual DbModel *&#160;</td><td class="memItemRight" valign="bottom"><b>dbModel</b> (const QModelIndex &amp;index) const </td></tr>
+<tr class="separator:abed4568164c34a961c3e6e95743b80b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4789a422d63bf68a2c7450ecbf17812"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4789a422d63bf68a2c7450ecbf17812"></a>
+virtual QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>getData</b> (const QModelIndex &amp;index, int role) const </td></tr>
+<tr class="separator:ad4789a422d63bf68a2c7450ecbf17812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b85718a86def717eb718a216eeee2f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b85718a86def717eb718a216eeee2f2"></a>
+virtual QModelIndex&#160;</td><td class="memItemRight" valign="bottom"><b>mapIndex</b> (const QModelIndex &amp;idx) const </td></tr>
+<tr class="separator:a0b85718a86def717eb718a216eeee2f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a292ddf77284d9c57a571f4ef07032e27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a292ddf77284d9c57a571f4ef07032e27"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_delegate.html#a292ddf77284d9c57a571f4ef07032e27">DbDelegate</a> (QObject *parent=NULL)</td></tr>
+<tr class="memdesc:a292ddf77284d9c57a571f4ef07032e27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor. <br /></td></tr>
+<tr class="separator:a292ddf77284d9c57a571f4ef07032e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1fd5d5925661af172e0042808ee8417"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1fd5d5925661af172e0042808ee8417"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_delegate.html#ac1fd5d5925661af172e0042808ee8417">~DbDelegate</a> ()</td></tr>
 <tr class="memdesc:ac1fd5d5925661af172e0042808ee8417"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
@@ -135,6 +149,48 @@ virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el"
 <tr class="memdesc:a43fe55cb6cf40c2e8f5728aa6e55d9ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Last chance to change displayed text before actual paint. <br /></td></tr>
 <tr class="separator:a43fe55cb6cf40c2e8f5728aa6e55d9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a70d26b526773b35e8f8520f800704760"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_delegate.html#a70d26b526773b35e8f8520f800704760">setAllDelegates</a> (QTableView *view)</td></tr>
+<tr class="memdesc:a70d26b526773b35e8f8520f800704760"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all delegates for a table.  <a href="#a70d26b526773b35e8f8520f800704760">More...</a><br /></td></tr>
+<tr class="separator:a70d26b526773b35e8f8520f800704760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafa8322d6bde60a7a916ec6c14c8b625"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_delegate.html#aafa8322d6bde60a7a916ec6c14c8b625">setAllDelegates</a> (DbTaew *table, QTableView *view)</td></tr>
+<tr class="memdesc:aafa8322d6bde60a7a916ec6c14c8b625"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all delegates for a table.  <a href="#aafa8322d6bde60a7a916ec6c14c8b625">More...</a><br /></td></tr>
+<tr class="separator:aafa8322d6bde60a7a916ec6c14c8b625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb01ed025fb8224a0f2e2d1d505aa687"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_delegate.html#aeb01ed025fb8224a0f2e2d1d505aa687">resetAllDelegates</a> (QTableView *view)</td></tr>
+<tr class="memdesc:aeb01ed025fb8224a0f2e2d1d505aa687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets all delegates for a table.  <a href="#aeb01ed025fb8224a0f2e2d1d505aa687">More...</a><br /></td></tr>
+<tr class="separator:aeb01ed025fb8224a0f2e2d1d505aa687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">Control SetUp</div></td></tr>
+<tr><td colspan="2"><div class="groupText"><p>Prepare controls to be used according to their type. </p>
+</div></td></tr>
+<tr class="memitem:a19f75d324aa6d7b766168dbe28567fcd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19f75d324aa6d7b766168dbe28567fcd"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setupControl</b> (const DbModelCol &amp;col_data, QCheckBox *control, const QVariant &amp;value)</td></tr>
+<tr class="separator:a19f75d324aa6d7b766168dbe28567fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85031ab240c93b94b102b7422eacfef9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85031ab240c93b94b102b7422eacfef9"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setupControl</b> (const DbModelCol &amp;col_data, QComboBox *control, const QVariant &amp;value)</td></tr>
+<tr class="separator:a85031ab240c93b94b102b7422eacfef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bd46adc8ba5a686eec98ed77c7d43fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bd46adc8ba5a686eec98ed77c7d43fb"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setupControl</b> (const DbModelCol &amp;col_data, QDateEdit *control, const QVariant &amp;value)</td></tr>
+<tr class="separator:a0bd46adc8ba5a686eec98ed77c7d43fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1738e024536d1bdd945325aa524dd97c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1738e024536d1bdd945325aa524dd97c"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setupControl</b> (const DbModelCol &amp;col_data, QDateTimeEdit *control, const QVariant &amp;value)</td></tr>
+<tr class="separator:a1738e024536d1bdd945325aa524dd97c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae554de55685bd1b71820c3f65da742d2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae554de55685bd1b71820c3f65da742d2"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setupControl</b> (const DbModelCol &amp;col_data, QDoubleSpinBox *control, const QVariant &amp;value)</td></tr>
+<tr class="separator:ae554de55685bd1b71820c3f65da742d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44749120f4fae4370adc545ba9d430e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44749120f4fae4370adc545ba9d430e4"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setupControl</b> (const DbModelCol &amp;col_data, QLineEdit *control, const QVariant &amp;value)</td></tr>
+<tr class="separator:a44749120f4fae4370adc545ba9d430e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab93bf7437af3c59bb50ae53d26480fce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab93bf7437af3c59bb50ae53d26480fce"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setupControl</b> (const DbModelCol &amp;col_data, QSpinBox *control, const QVariant &amp;value)</td></tr>
+<tr class="separator:ab93bf7437af3c59bb50ae53d26480fce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5375b38363c19f1911d4f8a41e4d3753"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5375b38363c19f1911d4f8a41e4d3753"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setupControl</b> (const DbModelCol &amp;col_data, QTimeEdit *control, const QVariant &amp;value)</td></tr>
+<tr class="separator:a5375b38363c19f1911d4f8a41e4d3753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0733c488c2fb67d35126d6682961327e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0733c488c2fb67d35126d6682961327e"></a>
+static bool&#160;</td><td class="memItemRight" valign="bottom"><b>setupControl</b> (const DbModelCol &amp;col_data, QTextEdit *control, const QVariant &amp;value)</td></tr>
+<tr class="separator:a0733c488c2fb67d35126d6682961327e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aa8616f1325b19eb003b96e48e4852a56"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8616f1325b19eb003b96e48e4852a56"></a>
@@ -152,7 +208,113 @@ virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Provides display and editing facilities for data items from a model. </p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aeb01ed025fb8224a0f2e2d1d505aa687"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DbDelegate::resetAllDelegates </td>
+          <td>(</td>
+          <td class="paramtype">QTableView *&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resets all delegates for a table. </p>
+<p>The method iterates all columns, gets the delegate and checks if it is a <a class="el" href="class_db_delegate.html" title="Provides display and editing facilities for data items from a model. ">DbDelegate</a>. If so it removes it and deletes the instance.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>the view where delegates were installed </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the model is a DbModel. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a70d26b526773b35e8f8520f800704760"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DbDelegate::setAllDelegates </td>
+          <td>(</td>
+          <td class="paramtype">QTableView *&#160;</td>
+          <td class="paramname"><em>view</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets all delegates for a table. </p>
+<p>This overload simply extracts the table or view definition and passes that to base implementation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">view</td><td>The target view. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the model is a DbModel and has a valid meta data object. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aafa8322d6bde60a7a916ec6c14c8b625"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DbDelegate::setAllDelegates </td>
+          <td>(</td>
+          <td class="paramtype">DbTaew *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QTableView *&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets all delegates for a table. </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd></dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="dbdelegate_8h_source.html">dbdelegate.h</a></li>
 <li><a class="el" href="dbdelegate_8cc.html">dbdelegate.cc</a></li>
 </ul>

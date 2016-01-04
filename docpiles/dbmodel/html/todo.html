@@ -72,6 +72,8 @@
 <div class="textblock"><dl class="reflist">
 <dt><a class="anchor" id="_todo000002"></a>Member <a class="el" href="class_db_model_private.html#a327d8ecc220360da4510ab3c46f3ec60">DbModelPrivate::data</a>  (const QModelIndex &amp;idx, int role=Qt::DisplayRole) const </dt>
 <dd>column.t_display_;  </dd>
+<dt><a class="anchor" id="_todo000003"></a>Member <a class="el" href="class_db_model_private.html#a6ccf12b90c642647acc249356ff90199">DbModelPrivate::setColumnCallback</a>  (int table_index, int column_index, DbColumn::Callback value, void *user_data)</dt>
+<dd>the cells in main table are also stored locally; this is a design flaw as we should only store a reference in <a class="el" href="class_db_model_col.html" title="Model representation of a column. ">DbModelCol</a>.  </dd>
 <dt><a class="anchor" id="_todo000001"></a>Member <a class="el" href="class_db_model_private.html#ac2a35ece8f40f7babc054a482b93821a">DbModelPrivate::setOrder</a>  (int column, Qt::SortOrder order, int table_index=0)</dt>
 <dd></dd>
 </dl>

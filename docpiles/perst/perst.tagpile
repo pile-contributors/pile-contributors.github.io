@@ -34,6 +34,12 @@
     <class kind="class">PerStFactory</class>
   </compound>
   <compound kind="file">
+    <name>perst_interface.h</name>
+    <path>H:/prog/piles/perst/src/perst/</path>
+    <filename>perst__interface_8h</filename>
+    <class kind="class">PerstInterface</class>
+  </compound>
+  <compound kind="file">
     <name>README.md</name>
     <path>H:/prog/piles/perst/src/perst/</path>
     <filename>_r_e_a_d_m_e_8md</filename>
@@ -45,6 +51,7 @@
   <compound kind="class">
     <name>PerSt</name>
     <filename>class_per_st.html</filename>
+    <base>PerstInterface</base>
     <class kind="struct">PerSt::KbData</class>
     <member kind="enumeration">
       <type></type>
@@ -117,54 +124,12 @@
       <anchor>a8bb3841339bcfae882cf11dd101304a7</anchor>
       <arglist>()</arglist>
     </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>beginGroup</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>ac8fdc1692e89e31814f36a99f0f96fc9</anchor>
-      <arglist>(const PERST_STRING &amp;name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>endGroup</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>a44e77ccf781ea2557900c4e4bebd1c70</anchor>
-      <arglist>(const PERST_STRING &amp;name=&quot;&quot;)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>beginWriteArray</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>aae38a4104f3bcc89c89890758b3ba5c5</anchor>
-      <arglist>(const PERST_STRING &amp;name, int predicted_count=-1)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual int</type>
-      <name>beginReadArray</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>a81a71cc6c0e46a22114f9992af8871d3</anchor>
-      <arglist>(const PERST_STRING &amp;name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>endArray</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>a451315de7a9d12b4f1c09f439ad4db9f</anchor>
-      <arglist>(const PERST_STRING &amp;name=&quot;&quot;)=0</arglist>
-    </member>
     <member kind="function">
       <type>int</type>
       <name>arrayIndex</name>
       <anchorfile>class_per_st.html</anchorfile>
       <anchor>ac6078feabaeee5245bbe1fd309d395e7</anchor>
       <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>setArrayIndex</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>ad30f167999b8894428dbeddce6ebb248</anchor>
-      <arglist>(int index)=0</arglist>
     </member>
     <member kind="function">
       <type>PERST_STRING</type>
@@ -179,90 +144,6 @@
       <anchorfile>class_per_st.html</anchorfile>
       <anchor>a329044ccf072dc35397e74ce5ae71fee</anchor>
       <arglist>() const </arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>hasKey</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>aabd50981cb6ac2172f15937a8ac051ba</anchor>
-      <arglist>(const PERST_STRING &amp;name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>hasKey</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>af43162e6caedcfd2b08741af8e4aed89</anchor>
-      <arglist>(const PERST_SLIST &amp;name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual PERST_STRING</type>
-      <name>valueS</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>a5583e3825ff0bf8f71391b4b5b5f3b6a</anchor>
-      <arglist>(const PERST_STRING &amp;name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual PERST_SLIST</type>
-      <name>valueSList</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>a2ad97891cc688e65150e63ca2aa74f8a</anchor>
-      <arglist>(const PERST_STRING &amp;name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual int64_t</type>
-      <name>valueInt</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>ab533515eec799b0be11df1a8d353f406</anchor>
-      <arglist>(const PERST_STRING &amp;name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual uint64_t</type>
-      <name>valueUInt</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>ad5123c7b06d5d78f4338947997c36d4b</anchor>
-      <arglist>(const PERST_STRING &amp;name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual double</type>
-      <name>valueDbl</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>aa72e9b9b621765cf2a48e52ce64cd912</anchor>
-      <arglist>(const PERST_STRING &amp;name)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>setValue</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>a3afed5c888cfbbbf88017daec92b9471</anchor>
-      <arglist>(const PERST_STRING &amp;name, const PERST_STRING &amp;value)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>setValue</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>a71f3ef76fcd9f4672c54d728853cec13</anchor>
-      <arglist>(const PERST_STRING &amp;name, const PERST_SLIST &amp;value)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>setValue</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>acc1a72ffd0a10e51cb5fb9f7bdf5f177</anchor>
-      <arglist>(const PERST_STRING &amp;name, int64_t value)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>setValue</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>a0dc954822244e05d46f1373efd8a6e11</anchor>
-      <arglist>(const PERST_STRING &amp;name, uint64_t value)=0</arglist>
-    </member>
-    <member kind="function" virtualness="pure">
-      <type>virtual bool</type>
-      <name>setValue</name>
-      <anchorfile>class_per_st.html</anchorfile>
-      <anchor>a0f590eefc4eb07e49210f446e518273d</anchor>
-      <arglist>(const PERST_STRING &amp;name, double value)=0</arglist>
     </member>
     <member kind="function" protection="protected">
       <type></type>
@@ -379,6 +260,199 @@
       <anchorfile>class_per_st_factory.html</anchorfile>
       <anchor>a45817320fb278e2335f2276983dfb6a5</anchor>
       <arglist>(kbForEach kb, void *for_each_user_data)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PerstInterface</name>
+    <filename>class_perst_interface.html</filename>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>beginGroup</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a1e69c6fc449f6c86c0427021ec5ff4ff</anchor>
+      <arglist>(const PERST_STRING &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>endGroup</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a9a053c3521bfc63d345e45380750a16a</anchor>
+      <arglist>(const PERST_STRING &amp;name=&quot;&quot;)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>beginWriteArray</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a153a37f28afcf217b2d00f6040c59b0c</anchor>
+      <arglist>(const PERST_STRING &amp;name, int predicted_count=-1)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>beginReadArray</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a24b9590f75ea51831d2b34e9e0caffe7</anchor>
+      <arglist>(const PERST_STRING &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>endArray</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a2e8875eda92df6d336c7761f4225ef91</anchor>
+      <arglist>(const PERST_STRING &amp;name=&quot;&quot;)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int</type>
+      <name>arrayIndex</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>af6d7a6bf0d3f8fdc2abccbf3cb13b643</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>setArrayIndex</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a86c5c97618f96e459724371c09b1dfea</anchor>
+      <arglist>(int index)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual PERST_STRING</type>
+      <name>group</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>af7d30902ee2ea7673fc9216e9b336da9</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual PERST_SLIST</type>
+      <name>groupPath</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a4372e0ba00c997ff068f26e67e973452</anchor>
+      <arglist>() const =0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>hasKey</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a73dc40b4c4f2d4308da4ec5f0cdba903</anchor>
+      <arglist>(const PERST_STRING &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>hasKey</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>aae3c807e0396cb3005521e25677dbf1e</anchor>
+      <arglist>(const PERST_SLIST &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual PERST_STRING</type>
+      <name>valueS</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a3f77d7f5afbc589696ae1897bcb30077</anchor>
+      <arglist>(const PERST_STRING &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual PERST_SLIST</type>
+      <name>valueSList</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>abad4afb9b15d5df4829d07d2ab5d3ffe</anchor>
+      <arglist>(const PERST_STRING &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual int64_t</type>
+      <name>valueInt</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a479ed833df277571137dcc477327af0e</anchor>
+      <arglist>(const PERST_STRING &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual uint64_t</type>
+      <name>valueUInt</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>aee487bc3b4a6b6b7686406cce76ac60f</anchor>
+      <arglist>(const PERST_STRING &amp;name)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual double</type>
+      <name>valueDbl</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>aa6bdcda8245816433ef7321122bcc5f8</anchor>
+      <arglist>(const PERST_STRING &amp;name)=0</arglist>
+    </member>
+    <member kind="function">
+      <type>PERST_STRING</type>
+      <name>valueS</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a5d70c5c665c95c5aa6549b6e46e76bb3</anchor>
+      <arglist>(const PERST_STRING &amp;name, const PERST_STRING &amp;default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>PERST_SLIST</type>
+      <name>valueSList</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>aceef2b37066f971b502c6eaf573eae99</anchor>
+      <arglist>(const PERST_STRING &amp;name, const PERST_SLIST &amp;default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>int64_t</type>
+      <name>valueInt</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a6ffc6517b4cb0b79ef7128c06a45b41a</anchor>
+      <arglist>(const PERST_STRING &amp;name, int64_t default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint64_t</type>
+      <name>valueUInt</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a8216e528820c3e8dbc88545742965116</anchor>
+      <arglist>(const PERST_STRING &amp;name, uint64_t default_val)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>valueDbl</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a7bc43599c073c2ba97d6f5163f822a86</anchor>
+      <arglist>(const PERST_STRING &amp;name, double default_val)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>aaf49cb47b87eee6c0c671a70c1fa41ce</anchor>
+      <arglist>(const PERST_STRING &amp;name, const PERST_STRING &amp;value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a06b4730664f375a229b38d75ef86cd6f</anchor>
+      <arglist>(const PERST_STRING &amp;name, const PERST_SLIST &amp;value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>ae6378170ba1a53eda304e234c2606ae8</anchor>
+      <arglist>(const PERST_STRING &amp;name, int64_t value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>ab04e8f8fc2f8a239b31937120a543d54</anchor>
+      <arglist>(const PERST_STRING &amp;name, uint64_t value)=0</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a8d36b59e8afde94a995af2953552ea0f</anchor>
+      <arglist>(const PERST_STRING &amp;name, int value)</arglist>
+    </member>
+    <member kind="function" virtualness="pure">
+      <type>virtual bool</type>
+      <name>setValue</name>
+      <anchorfile>class_perst_interface.html</anchorfile>
+      <anchor>a3afd07cceb6c7fbf6b7b1ccacfe744a6</anchor>
+      <arglist>(const PERST_STRING &amp;name, double value)=0</arglist>
     </member>
   </compound>
   <compound kind="struct">

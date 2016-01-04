@@ -98,15 +98,19 @@
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa97d569c83551120b4f6776b7cd5a9af"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model_private.html#aa97d569c83551120b4f6776b7cd5a9af">DbModelPrivate</a> (DbStruct *db, DbTaew *meta, QObject *parent=NULL)</td></tr>
-<tr class="memdesc:aa97d569c83551120b4f6776b7cd5a9af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new model from a table or view definition and a database.  <a href="#aa97d569c83551120b4f6776b7cd5a9af">More...</a><br /></td></tr>
-<tr class="separator:aa97d569c83551120b4f6776b7cd5a9af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e9ca43c590ca1076ed34ecb769bb48b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model_private.html#a2e9ca43c590ca1076ed34ecb769bb48b">DbModelPrivate</a> (DbStruct *db, int component, QObject *parent=NULL)</td></tr>
-<tr class="memdesc:a2e9ca43c590ca1076ed34ecb769bb48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new model from a database and an index.  <a href="#a2e9ca43c590ca1076ed34ecb769bb48b">More...</a><br /></td></tr>
-<tr class="separator:a2e9ca43c590ca1076ed34ecb769bb48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b8b95d83e5d1cfe510446640b7f180"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model_private.html#a54b8b95d83e5d1cfe510446640b7f180">DbModelPrivate</a> (DbStruct *db, DbTaew *meta, <a class="el" href="class_db_model.html">DbModel</a> *parent)</td></tr>
+<tr class="memdesc:a54b8b95d83e5d1cfe510446640b7f180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new model from a table or view definition and a database.  <a href="#a54b8b95d83e5d1cfe510446640b7f180">More...</a><br /></td></tr>
+<tr class="separator:a54b8b95d83e5d1cfe510446640b7f180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a993d162d7ae4fcab5aef4f377a075715"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model_private.html#a993d162d7ae4fcab5aef4f377a075715">DbModelPrivate</a> (DbStruct *db, int component, <a class="el" href="class_db_model.html">DbModel</a> *parent)</td></tr>
+<tr class="memdesc:a993d162d7ae4fcab5aef4f377a075715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new model from a database and an index.  <a href="#a993d162d7ae4fcab5aef4f377a075715">More...</a><br /></td></tr>
+<tr class="separator:a993d162d7ae4fcab5aef4f377a075715"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0de4c1c5531762d03299d773e0c4b56b"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model_private.html#a0de4c1c5531762d03299d773e0c4b56b">~DbModelPrivate</a> ()</td></tr>
 <tr class="memdesc:a0de4c1c5531762d03299d773e0c4b56b"><td class="mdescLeft">&#160;</td><td class="mdescRight">destructor  <a href="#a0de4c1c5531762d03299d773e0c4b56b">More...</a><br /></td></tr>
 <tr class="separator:a0de4c1c5531762d03299d773e0c4b56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4946ff191b775212b2aeab387057674"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac4946ff191b775212b2aeab387057674"></a>
+<a class="el" href="class_db_model.html">DbModel</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model_private.html#ac4946ff191b775212b2aeab387057674">parentDbModel</a> () const </td></tr>
+<tr class="memdesc:ac4946ff191b775212b2aeab387057674"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the front-end model. <br /></td></tr>
+<tr class="separator:ac4946ff191b775212b2aeab387057674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e4b31afef1d75e591316cb23597a29d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e4b31afef1d75e591316cb23597a29d"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model_private.html#a7e4b31afef1d75e591316cb23597a29d">isValid</a> () const </td></tr>
 <tr class="memdesc:a7e4b31afef1d75e591316cb23597a29d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is this a valid model (with a table set) or not? <br /></td></tr>
@@ -177,6 +181,14 @@ QSqlRecord&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model_private.html#a7d0a27ba5ef78dc47411119dfeba958e">reloadHeaders</a> ()</td></tr>
 <tr class="memdesc:a7d0a27ba5ef78dc47411119dfeba958e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the labels again (possibly in a different language). <br /></td></tr>
 <tr class="separator:a7d0a27ba5ef78dc47411119dfeba958e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ccf12b90c642647acc249356ff90199"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model_private.html#a6ccf12b90c642647acc249356ff90199">setColumnCallback</a> (int table_index, int column_index, DbColumn::Callback value, void *user_data)</td></tr>
+<tr class="separator:a6ccf12b90c642647acc249356ff90199"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b1213e01e7bacb6379daae3bb9bf13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25b1213e01e7bacb6379daae3bb9bf13"></a>
+DbColumn::Callback&#160;</td><td class="memItemRight" valign="bottom"><b>columnCallback</b> (int table_index, int column_index)</td></tr>
+<tr class="separator:a25b1213e01e7bacb6379daae3bb9bf13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a043d54f45c33b37947f42327a29eb3a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a043d54f45c33b37947f42327a29eb3a6"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>columnCallbackData</b> ()</td></tr>
+<tr class="separator:a043d54f45c33b37947f42327a29eb3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Marker</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>A cell may be highlited in a different color and with a special icon; the model only stores the coordinates of that cell. </p>
 </div></td></tr>
@@ -239,7 +251,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Internal model. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="aa97d569c83551120b4f6776b7cd5a9af"></a>
+<a class="anchor" id="a54b8b95d83e5d1cfe510446640b7f180"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -258,8 +270,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>NULL</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_db_model.html">DbModel</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -283,7 +295,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const
 
 </div>
 </div>
-<a class="anchor" id="a2e9ca43c590ca1076ed34ecb769bb48b"></a>
+<a class="anchor" id="a993d162d7ae4fcab5aef4f377a075715"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -302,8 +314,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">QObject *&#160;</td>
-          <td class="paramname"><em>parent</em> = <code>NULL</code>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_db_model.html">DbModel</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -465,6 +477,45 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>columnCount</b> (const
 <p>Number of rows. </p>
 <p>This method exists because, for table-only models, we will never have a parent.</p>
 <dl class="section return"><dt>Returns</dt><dd>number of rows </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6ccf12b90c642647acc249356ff90199"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool DbModelPrivate::setColumnCallback </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>table_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>column_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DbColumn::Callback&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>the cells in main table are also stored locally; this is a design flaw as we should only store a reference in <a class="el" href="class_db_model_col.html" title="Model representation of a column. ">DbModelCol</a>. </dd></dl>
 
 </div>
 </div>

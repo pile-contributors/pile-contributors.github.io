@@ -155,7 +155,9 @@ Public Types</h2></td></tr>
 &#160;&#160;<b>DTY_VARBINARY</b>, 
 <b>DTY_VARCHAR</b>, 
 <b>DTY_XML</b>, 
-<a class="el" href="class_db_column.html#a1844456b4fa234b411053054f0ce85bba129286294df0ddc2485b6de4773c3ecb">DTY_MAX</a>
+<a class="el" href="class_db_column.html#a1844456b4fa234b411053054f0ce85bbad9c0e63710f07e0aa962a86e7ba13a14">DTY_CALLBACK</a>, 
+<br />
+&#160;&#160;<a class="el" href="class_db_column.html#a1844456b4fa234b411053054f0ce85bba129286294df0ddc2485b6de4773c3ecb">DTY_MAX</a>
 <br />
  }</td></tr>
 <tr class="separator:a1844456b4fa234b411053054f0ce85bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +179,10 @@ Public Types</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:a48822255f9df79705dfdf290c7890fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85a2bd861c09e002ace28c727517e8a7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85a2bd861c09e002ace28c727517e8a7"></a>
+typedef QVariant(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_column.html#a85a2bd861c09e002ace28c727517e8a7">Callback</a>) (const <a class="el" href="class_db_taew.html">DbTaew</a> &amp;table, const <a class="el" href="class_db_column.html">DbColumn</a> &amp;colorig, const QSqlRecord &amp;rec, int role, void *user_data)</td></tr>
+<tr class="memdesc:a85a2bd861c09e002ace28c727517e8a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Callback used to retreive the value for a DTY_CALLBACK column. <br /></td></tr>
+<tr class="separator:a85a2bd861c09e002ace28c727517e8a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_class_db_object"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_db_object')"><img src="../../../assets/images/closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="class_db_object.html">DbObject</a></td></tr>
 <tr class="memitem:abdf59870c28b7fb89583164f69a6a4b7 inherit pub_types_class_db_object"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_object.html#abdf59870c28b7fb89583164f69a6a4b7">Type</a> { <br />
 &#160;&#160;<b>DBO_INVALID</b> = -1, 
@@ -219,6 +225,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_column.html#af84af6ca057adde80683ecb2edd7f38f">isVirtual</a> () const </td></tr>
 <tr class="memdesc:af84af6ca057adde80683ecb2edd7f38f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell if this column is a virtual one. <br /></td></tr>
 <tr class="separator:af84af6ca057adde80683ecb2edd7f38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb0863894bc847cda402a46a5ae1098"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4eb0863894bc847cda402a46a5ae1098"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_column.html#a4eb0863894bc847cda402a46a5ae1098">isDynamic</a> () const </td></tr>
+<tr class="memdesc:a4eb0863894bc847cda402a46a5ae1098"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tell if this column is a virtual one. <br /></td></tr>
+<tr class="separator:a4eb0863894bc847cda402a46a5ae1098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae9d5e009700fab15ec410b9463b5f59"><td class="memItemLeft" align="right" valign="top">QVariant&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_column.html#aae9d5e009700fab15ec410b9463b5f59">kbData</a> (const <a class="el" href="class_db_taew.html">DbTaew</a> &amp;table, const QSqlRecord &amp;rec, int role=Qt::DisplayRole, void *user_data=NULL) const </td></tr>
+<tr class="memdesc:aae9d5e009700fab15ec410b9463b5f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retreive the data using the callback.  <a href="#aae9d5e009700fab15ec410b9463b5f59">More...</a><br /></td></tr>
+<tr class="separator:aae9d5e009700fab15ec410b9463b5f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a831d608fc13a7a9af2efb53243cc7d1c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a831d608fc13a7a9af2efb53243cc7d1c"></a>
 QVariant&#160;</td><td class="memItemRight" valign="bottom"><b>formattedData</b> (const QVariant &amp;original_value) const </td></tr>
 <tr class="separator:a831d608fc13a7a9af2efb53243cc7d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -345,6 +358,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>virtrefcol_</b></td></
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a1844456b4fa234b411053054f0ce85bba0b86f099ee271a36c9989e5c2b4b6fb0"></a>DTY_INVALID&#160;</td><td class="fielddoc">
 <p>invalid data type </p>
 </td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a1844456b4fa234b411053054f0ce85bbad9c0e63710f07e0aa962a86e7ba13a14"></a>DTY_CALLBACK&#160;</td><td class="fielddoc">
+<p>dynamically computed value or retrieved from database </p>
+</td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a1844456b4fa234b411053054f0ce85bba129286294df0ddc2485b6de4773c3ecb"></a>DTY_MAX&#160;</td><td class="fielddoc">
 <p>first invalid value </p>
 </td></tr>
@@ -414,6 +430,58 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>virtrefcol_</b></td></
 
 <p>Destructor. </p>
 <p>Detailed description for decolumnor. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aae9d5e009700fab15ec410b9463b5f59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVariant DbColumn::kbData </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_db_taew.html">DbTaew</a> &amp;&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSqlRecord &amp;&#160;</td>
+          <td class="paramname"><em>rec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>role</em> = <code>Qt::DisplayRole</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em> = <code>NULL</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retreive the data using the callback. </p>
+<p>If the callback was not set QVariant() is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">table</td><td>The table where this column belongs. </td></tr>
+    <tr><td class="paramname">rec</td><td>The record for which data is being requested. </td></tr>
+    <tr><td class="paramname">role</td><td>Requested role. </td></tr>
+    <tr><td class="paramname">user_data</td><td>Opaque data passed along to the callback. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The data for this record and column. </dd></dl>
 
 </div>
 </div>

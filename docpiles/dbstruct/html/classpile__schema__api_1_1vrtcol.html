@@ -106,6 +106,12 @@ def&#160;</td><td class="memItemRight" valign="bottom"><b>__init__</b></td></tr>
 <tr class="memitem:a87da3ac391ca8abc35e14032e19f72b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87da3ac391ca8abc35e14032e19f72b4"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>factory</b> (args_, kwargs_)</td></tr>
 <tr class="separator:a87da3ac391ca8abc35e14032e19f72b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7606d36a3a77735ca803d2cd41731ee2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7606d36a3a77735ca803d2cd41731ee2"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>get_dynamic</b> (self)</td></tr>
+<tr class="separator:a7606d36a3a77735ca803d2cd41731ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cea92f087267ed85246ccdebf853fba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cea92f087267ed85246ccdebf853fba"></a>
+def&#160;</td><td class="memItemRight" valign="bottom"><b>set_dynamic</b> (self, dynamic)</td></tr>
+<tr class="separator:a7cea92f087267ed85246ccdebf853fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a09f4e6e1b481e534bfb616142269bfe7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09f4e6e1b481e534bfb616142269bfe7"></a>
 def&#160;</td><td class="memItemRight" valign="bottom"><b>get_references</b> (self)</td></tr>
 <tr class="separator:a09f4e6e1b481e534bfb616142269bfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,6 +254,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a89126b627ca511cbc396705a62e9b4fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89126b627ca511cbc396705a62e9b4fb"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>original_tagname_</b></td></tr>
 <tr class="separator:a89126b627ca511cbc396705a62e9b4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde8d32f4b4def42ec5cc3f5e5822b9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acde8d32f4b4def42ec5cc3f5e5822b9f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>dynamic</b></td></tr>
+<tr class="separator:acde8d32f4b4def42ec5cc3f5e5822b9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1795c30fb00f885dda1e1632f3211dd3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1795c30fb00f885dda1e1632f3211dd3"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>references</b></td></tr>
 <tr class="separator:a1795c30fb00f885dda1e1632f3211dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,7 +288,9 @@ The virtual column uses another, real column to locate the table
 and the entry in the related model. This element only indicates
 the source column in that table and the label. The parent column
 element must provide name, label and foreignInsert attributes.
-The name of the real column that selects into a foreign table.</pre> </div><h2 class="groupheader">Member Data Documentation</h2>
+The name of the real column that selects into a foreign
+table.Tells if the value for the the cell requires a callback or
+is provided by the database.</pre> </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="aedefae602ee111d3c302b7140448aed7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -298,8 +309,9 @@ The name of the real column that selects into a foreign table.</pre> </div><h2 c
 </table>
 </div><div class="memdoc">
 <b>Initial value:</b><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;= {</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;        <span class="stringliteral">&#39;references&#39;</span>: MemberSpec_(<span class="stringliteral">&#39;references&#39;</span>, <span class="stringliteral">&#39;xs:string&#39;</span>, 0),</div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    }</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;        <span class="stringliteral">&#39;dynamic&#39;</span>: MemberSpec_(<span class="stringliteral">&#39;dynamic&#39;</span>, <span class="stringliteral">&#39;xs:boolean&#39;</span>, 0),</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;        <span class="stringliteral">&#39;references&#39;</span>: MemberSpec_(<span class="stringliteral">&#39;references&#39;</span>, <span class="stringliteral">&#39;xs:string&#39;</span>, 0),</div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>

@@ -30,8 +30,8 @@
       <type></type>
       <name>DbDelegate</name>
       <anchorfile>class_db_delegate.html</anchorfile>
-      <anchor>a41583acc415c57b8c6342b7f2c8ecdd9</anchor>
-      <arglist>()</arglist>
+      <anchor>a292ddf77284d9c57a571f4ef07032e27</anchor>
+      <arglist>(QObject *parent=NULL)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -88,6 +88,27 @@
       <anchorfile>class_db_delegate.html</anchorfile>
       <anchor>a43fe55cb6cf40c2e8f5728aa6e55d9ec</anchor>
       <arglist>(const QVariant &amp;value, const QLocale &amp;locale) const </arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>setAllDelegates</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>a70d26b526773b35e8f8520f800704760</anchor>
+      <arglist>(QTableView *view)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>setAllDelegates</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>aafa8322d6bde60a7a916ec6c14c8b625</anchor>
+      <arglist>(DbTaew *table, QTableView *view)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static bool</type>
+      <name>resetAllDelegates</name>
+      <anchorfile>class_db_delegate.html</anchorfile>
+      <anchor>aeb01ed025fb8224a0f2e2d1d505aa687</anchor>
+      <arglist>(QTableView *view)</arglist>
     </member>
     <member kind="function" protection="protected" virtualness="virtual">
       <type>virtual void</type>

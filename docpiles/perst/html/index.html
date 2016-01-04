@@ -47,7 +47,7 @@
    <div id="projectname">PerSt Pile
    &#160;<span id="projectnumber"> version 0.0.1</span>
    </div>
-   <div id="projectbrief">PerSt pile.</div>
+   <div id="projectbrief">Persistent storage pile used for storing key/value pairs</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,32 @@
 <div class="title">PerSt Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="el" href="class_per_st.html" title="Interface class for persistent storage. ">PerSt</a> pile. </p>
+<div class="textblock"><p>Persistent storage pile used for storing key/value pairs on different underlying objects.</p>
+<p>The pile provides an interface in the form of <a class="el" href="class_per_st.html">PerSt</a> class and a number of providers:</p><ul>
+<li>registry - based on QSettings and registry</li>
+<li>config - based on QSettings and file system</li>
+<li>xml - based on an XML file</li>
+</ul>
+<p>Instantiating and general management is performed through <a class="el" href="class_per_st_factory.html">PerStFactory</a> class and it also allows custom providers to be added.</p>
+<h2>Usage </h2>
+<p>Initialization and termination needs to be done once per application: </p><pre class="fragment">PerStFactory::init ();
+// ...
+PerStFactory::end ();
+</pre><p>To create a new file-based instance with QSettings back-end and read the content if the file "config.ini" exists use: </p><pre class="fragment">PerSt * result = PerStFactory::create (
+    "config",
+    "config.ini");
+result-&gt;beginGroup ("general");
+int port = result-&gt;valueInt ("in_port");
+++port;
+result-&gt;setValue ("out_port", port);
+result-&gt;endGroup ("general");
+// ...
+delete result;
+</pre><h2>Dependencies </h2>
+<ul>
+<li>Qt (either 4.X or 5.X) is optional (the pile uses QString used for strings but it may also use std::string);</li>
+<li>UserMsg pile </li>
+</ul>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

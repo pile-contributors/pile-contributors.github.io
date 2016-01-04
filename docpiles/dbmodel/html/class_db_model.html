@@ -185,6 +185,22 @@ QSqlRecord&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model.html#a619dbd83dfac282b5d7b92a056d5e9bc">reloadHeaders</a> ()</td></tr>
 <tr class="memdesc:a619dbd83dfac282b5d7b92a056d5e9bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the labels again (possibly in a different language). <br /></td></tr>
 <tr class="separator:a619dbd83dfac282b5d7b92a056d5e9bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ebe917e0e49a10977e7bc427db0dc55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ebe917e0e49a10977e7bc427db0dc55"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model.html#a5ebe917e0e49a10977e7bc427db0dc55">setColumnCallback</a> (int table_index, int column_index, DbColumn::Callback value, void *user_data=NULL)</td></tr>
+<tr class="memdesc:a5ebe917e0e49a10977e7bc427db0dc55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback for a column in a table. <br /></td></tr>
+<tr class="separator:a5ebe917e0e49a10977e7bc427db0dc55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a5e729a48f5c6f76698b958e2639f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51a5e729a48f5c6f76698b958e2639f7"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model.html#a51a5e729a48f5c6f76698b958e2639f7">setColumnCallback</a> (int column_index, DbColumn::Callback value, void *user_data=NULL)</td></tr>
+<tr class="memdesc:a51a5e729a48f5c6f76698b958e2639f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the callback for a column in main table. <br /></td></tr>
+<tr class="separator:a51a5e729a48f5c6f76698b958e2639f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e6f9d96527ced448b4a6392f87592b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e6f9d96527ced448b4a6392f87592b6"></a>
+DbColumn::Callback&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model.html#a5e6f9d96527ced448b4a6392f87592b6">columnCallback</a> (int table_index, int column_index)</td></tr>
+<tr class="memdesc:a5e6f9d96527ced448b4a6392f87592b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the callback for a cell. <br /></td></tr>
+<tr class="separator:a5e6f9d96527ced448b4a6392f87592b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4c28ef228e833be5fa5db1e516b5ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c4c28ef228e833be5fa5db1e516b5ef"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_db_model.html#a6c4c28ef228e833be5fa5db1e516b5ef">columnCallbackData</a> ()</td></tr>
+<tr class="memdesc:a6c4c28ef228e833be5fa5db1e516b5ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the callback for a cell. <br /></td></tr>
+<tr class="separator:a6c4c28ef228e833be5fa5db1e516b5ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">Marker</div></td></tr>
 <tr><td colspan="2"><div class="groupText"><p>A cell may be highlited in a different color and with a special icon; the model only stores the coordinates of that cell. </p>
 </div></td></tr>

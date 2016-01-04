@@ -67,7 +67,7 @@ class DocumRun(object):
         '''
         Gets the information from a cmake file line.
 
-        This is a utility function for setup_dict_for_pile().
+        This is a utility function for setup_dict_for_pile()._pile_readme_data_pile_readme_data
         '''
         if stat == CMAKE_STAT_PROP_VERSION:
             vlist = mtch.group(1).split(';')
@@ -513,6 +513,10 @@ def make_argument_parser():
                         action='store_true',
                         help='Display any DEBUG-level log messages, '
                              'suppressed by default.')
+    parser.add_argument('--logfile',
+                        action='store',
+                        help='Save the output to file.')
+                             
     parser.add_argument('--doxygen',
                         action='store', default='doxygen',
                         help='The path and name of the doxygen executable.')
@@ -528,9 +532,6 @@ def make_argument_parser():
     parser.add_argument('--sitepath',
                         action='store', default='..',
                         help='Root directory for the site.')
-    parser.add_argument('--logfile',
-                        action='store',
-                        help='Save the output to file.')
     parser.add_argument('pilespath', action='store',
                         choices=None,
                         help='The path towards the directory that ' \

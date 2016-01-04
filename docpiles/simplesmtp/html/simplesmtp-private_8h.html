@@ -65,6 +65,7 @@
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -85,14 +86,18 @@
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:a5df844fb798091a0235f29d5efd9bb93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5df844fb798091a0235f29d5efd9bb93"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIMPLESMTP_DEBUGM</b>&#160;&#160;&#160;black_hole</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIMPLESMTP_DEBUGM</b>&#160;&#160;&#160;printf</td></tr>
 <tr class="separator:a5df844fb798091a0235f29d5efd9bb93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c5b3b6ab7419dbcede62f75ad2ca9b3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c5b3b6ab7419dbcede62f75ad2ca9b3"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIMPLESMTP_TRACE_ENTRY</b></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIMPLESMTP_TRACE_ENTRY</b>&#160;&#160;&#160;printf(&quot;SIMPLESMTP ENTRY %s in %s[%d]\n&quot;, __func__, __FILE__, __LINE__)</td></tr>
 <tr class="separator:a4c5b3b6ab7419dbcede62f75ad2ca9b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc3495a7884074d5c31e2cc702434aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfc3495a7884074d5c31e2cc702434aa"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIMPLESMTP_TRACE_EXIT</b></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>SIMPLESMTP_TRACE_EXIT</b>&#160;&#160;&#160;printf(&quot;SIMPLESMTP EXIT %s in %s[%d]\n&quot;, __func__, __FILE__, __LINE__)</td></tr>
 <tr class="separator:adfc3495a7884074d5c31e2cc702434aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83762e80a80d93e84b946d462bc389b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83762e80a80d93e84b946d462bc389b7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="simplesmtp-private_8h.html#a83762e80a80d93e84b946d462bc389b7">TMP_A</a>(__s__)&#160;&#160;&#160;__s__.toLatin1 ().constData ()</td></tr>
+<tr class="memdesc:a83762e80a80d93e84b946d462bc389b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">C style string from QString. <br /></td></tr>
+<tr class="separator:a83762e80a80d93e84b946d462bc389b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Declarations for <a class="el" href="class_simple_smtp.html" title="brief description ">SimpleSmtp</a> class. </p>

@@ -1,6 +1,21 @@
 <?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
 <tagfile>
   <compound kind="file">
+    <name>logmsg.cc</name>
+    <path>H:/prog/piles/usermsg/src/usermsg/</path>
+    <filename>logmsg_8cc</filename>
+    <includes id="usermsg_8h" name="usermsg.h" local="yes" imported="no">usermsg.h</includes>
+    <includes id="usermsg-private_8h" name="usermsg-private.h" local="yes" imported="no">usermsg-private.h</includes>
+    <includes id="usermsgman_8h" name="usermsgman.h" local="yes" imported="no">usermsgman.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>logmsg.h</name>
+    <path>H:/prog/piles/usermsg/src/usermsg/</path>
+    <filename>logmsg_8h</filename>
+    <includes id="usermsgentry_8h" name="usermsgentry.h" local="no" imported="no">usermsg/usermsgentry.h</includes>
+    <class kind="class">LogMsg</class>
+  </compound>
+  <compound kind="file">
     <name>README.md</name>
     <path>H:/prog/piles/usermsg/src/usermsg/</path>
     <filename>_r_e_a_d_m_e_8md</filename>
@@ -88,6 +103,59 @@
     <filename>usermsgstg_8h</filename>
     <includes id="usermsg_8h" name="usermsg.h" local="no" imported="no">usermsg/usermsg.h</includes>
     <class kind="class">UserMsgStg</class>
+  </compound>
+  <compound kind="class">
+    <name>LogMsg</name>
+    <filename>class_log_msg.html</filename>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>err</name>
+      <anchorfile>class_log_msg.html</anchorfile>
+      <anchor>acd01a359afa62ab3b0b7acd32e6a34c9</anchor>
+      <arglist>(const QString &amp;s_message)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>war</name>
+      <anchorfile>class_log_msg.html</anchorfile>
+      <anchor>a19a02d51ce3c17aa8681d2732da6ea02</anchor>
+      <arglist>(const QString &amp;s_message)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>info</name>
+      <anchorfile>class_log_msg.html</anchorfile>
+      <anchor>a329d6e0e7a5bc383fdcb0a2346e5aaaa</anchor>
+      <arglist>(const QString &amp;s_message)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>dbgErr</name>
+      <anchorfile>class_log_msg.html</anchorfile>
+      <anchor>a5f30d9a6199b93ba31075ebcfebe8201</anchor>
+      <arglist>(const QString &amp;s_message)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>dbgWar</name>
+      <anchorfile>class_log_msg.html</anchorfile>
+      <anchor>a7233de9b9a2cc271f99ac8003336bc74</anchor>
+      <arglist>(const QString &amp;s_message)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>dbgInfo</name>
+      <anchorfile>class_log_msg.html</anchorfile>
+      <anchor>acc0be3871d9bbef7404ccb7488c97a5d</anchor>
+      <arglist>(const QString &amp;s_message)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>msg</name>
+      <anchorfile>class_log_msg.html</anchorfile>
+      <anchor>af29ebc2c9d7a4cccd4ebb54c6f21fc5f</anchor>
+      <arglist>(UserMsgEntry::Type ty, const QString &amp;s_message)</arglist>
+    </member>
   </compound>
   <compound kind="class">
     <name>UserMsg</name>
@@ -568,6 +636,48 @@
       <anchorfile>class_user_msg_man.html</anchorfile>
       <anchor>a292c60edb131fcdb962bb644bf5bf05b</anchor>
       <arglist>(const UserMsg &amp;um)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>_addMessageToQueue</name>
+      <anchorfile>class_user_msg_man.html</anchorfile>
+      <anchor>a0da85f1e30eecb9e40b2fe5d72917be3</anchor>
+      <arglist>(const UserMsg &amp;um)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>_showMessage</name>
+      <anchorfile>class_user_msg_man.html</anchorfile>
+      <anchor>a4548e605ef4a10d9fc034f238dd55cb8</anchor>
+      <arglist>(const UserMsg &amp;um)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>_showQueue</name>
+      <anchorfile>class_user_msg_man.html</anchorfile>
+      <anchor>a6d54f3aad9b3f46ebdda8e8d796c6067</anchor>
+      <arglist>(bool collapse_messages)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>_openLogFile</name>
+      <anchorfile>class_user_msg_man.html</anchorfile>
+      <anchor>a2cb8f6e3e485e1aefd0f540ba9dae1dc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>_logMessage</name>
+      <anchorfile>class_user_msg_man.html</anchorfile>
+      <anchor>a639f95be8b7abdfcaf89e8934961d103</anchor>
+      <arglist>(const UserMsg &amp;um)</arglist>
+    </member>
+    <member kind="function" protection="protected" static="yes">
+      <type>static void</type>
+      <name>autostart</name>
+      <anchorfile>class_user_msg_man.html</anchorfile>
+      <anchor>aec63d27b89dd45beb5b17798ca1a8769</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="class">

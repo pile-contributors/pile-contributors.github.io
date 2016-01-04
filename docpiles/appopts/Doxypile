@@ -6,7 +6,7 @@
 DOXYFILE_ENCODING      = UTF-8
 PROJECT_NAME           = AppOpts
 PROJECT_NUMBER         = 0.0.1
-PROJECT_BRIEF          = "AppOpts pile."
+PROJECT_BRIEF          = "The pile provides the application with easy loading"
 PROJECT_LOGO           =
 OUTPUT_DIRECTORY       = H:\prog\piles\pile-contributors.github.io\docpiles\appopts
 CREATE_SUBDIRS         = NO

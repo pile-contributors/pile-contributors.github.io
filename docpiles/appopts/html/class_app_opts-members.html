@@ -47,7 +47,7 @@
    <div id="projectname">AppOpts Pile
    &#160;<span id="projectnumber"> version 0.0.1</span>
    </div>
-   <div id="projectbrief">AppOpts pile.</div>
+   <div id="projectbrief">The pile provides the application with easy loading</div>
   </td>
  </tr>
  </tbody>
@@ -85,12 +85,16 @@
   <tr><td class="entry"><a class="el" href="class_app_opts.html#ab6bbca25caa6485459b6996d59c03ea6">cfgFileName</a>(const QString &amp;s_app_name)</td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_app_opts.html#ad76c28187f41bde29d44b52259030aa0">loadFile</a>(const QString &amp;s_file, PerSt **out_pers, UserMsg &amp;um)</td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_app_opts.html#a3f7b08139fb585d096ecf1ca3709195d">loadFromAll</a>(UserMsg &amp;um, const QString &amp;s_app_name=QString())</td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_app_opts.html#a94ca32c57d865a76202b34612b28ffdc">readMultipleFromCfgs</a>(const OneOptList &amp;optlist, UserMsg &amp;um)</td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_app_opts.html#aa1a4fe299f673da0d88a98fbaa6665ec">readValueFromCfgs</a>(const OneOpt &amp;opt, UserMsg &amp;um)</td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_app_opts.html#a7f8521333bc180c3fa7fc701a3b13b10">setCurrentConfig</a>(const QString &amp;s_file, UserMsg &amp;um)</td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_app_opts.html#a9644abfbab5e48dd24163e056113a7a0">setValue</a>(const QString &amp;s_key, const QString &amp;s_value)</td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_app_opts.html#a525beb4b438768826c98c97ee5c55471">setValue</a>(const QString &amp;s_key, const QStringList &amp;sl_value)</td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="class_app_opts.html#ae25d3b4508dd8ef9677facffc832d8e6">valueB</a>(const QString &amp;s_name, bool b_default=false) const </td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="class_app_opts.html#ac18b6060c10ed30838c461acf61f9a0e">valueI</a>(const QString &amp;s_name, int i_default=0) const </td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="class_app_opts.html#af673721f3a84ec0ab48130b06a805f02">valueS</a>(const QString &amp;s_name, const QString &amp;s_default=QString()) const </td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_app_opts.html#ae3c2be68d56b7ab076874a640b160031">valueD</a>(const QString &amp;s_name, double d_default=0.0) const </td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_app_opts.html#ac18b6060c10ed30838c461acf61f9a0e">valueI</a>(const QString &amp;s_name, int i_default=0) const </td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_app_opts.html#af673721f3a84ec0ab48130b06a805f02">valueS</a>(const QString &amp;s_name, const QString &amp;s_default=QString()) const </td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_app_opts.html#aa3b877384b8a6d455ab3d27c0c28a564">valueSL</a>(const QString &amp;s_name, const QStringList &amp;sl_default=QStringList()) const </td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="class_app_opts.html#a7d97a361b41f552b9930ce6b870e9949">~AppOpts</a>()</td><td class="entry"><a class="el" href="class_app_opts.html">AppOpts</a></td><td class="entry"><span class="mlabel">virtual</span></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->

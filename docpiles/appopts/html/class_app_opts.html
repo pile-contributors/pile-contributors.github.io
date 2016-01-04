@@ -47,7 +47,7 @@
    <div id="projectname">AppOpts Pile
    &#160;<span id="projectnumber"> version 0.0.1</span>
    </div>
-   <div id="projectbrief">AppOpts pile.</div>
+   <div id="projectbrief">The pile provides the application with easy loading</div>
   </td>
  </tr>
  </tbody>
@@ -110,38 +110,42 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad76c28187f41bde29d44b52259030aa0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#ad76c28187f41bde29d44b52259030aa0">loadFile</a> (const QString &amp;s_file, PerSt **out_pers, UserMsg &amp;um)</td></tr>
 <tr class="memdesc:ad76c28187f41bde29d44b52259030aa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load options from a file.  <a href="#ad76c28187f41bde29d44b52259030aa0">More...</a><br /></td></tr>
 <tr class="separator:ad76c28187f41bde29d44b52259030aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9644abfbab5e48dd24163e056113a7a0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9644abfbab5e48dd24163e056113a7a0"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#a9644abfbab5e48dd24163e056113a7a0">setValue</a> (const QString &amp;s_key, const QString &amp;s_value)</td></tr>
-<tr class="memdesc:a9644abfbab5e48dd24163e056113a7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a value. <br /></td></tr>
+<tr class="memitem:aa1a4fe299f673da0d88a98fbaa6665ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#aa1a4fe299f673da0d88a98fbaa6665ec">readValueFromCfgs</a> (const <a class="el" href="class_one_opt.html">OneOpt</a> &amp;opt, UserMsg &amp;um)</td></tr>
+<tr class="memdesc:aa1a4fe299f673da0d88a98fbaa6665ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks into existing files for requested variable.  <a href="#aa1a4fe299f673da0d88a98fbaa6665ec">More...</a><br /></td></tr>
+<tr class="separator:aa1a4fe299f673da0d88a98fbaa6665ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ca32c57d865a76202b34612b28ffdc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#a94ca32c57d865a76202b34612b28ffdc">readMultipleFromCfgs</a> (const <a class="el" href="class_one_opt_list.html">OneOptList</a> &amp;optlist, UserMsg &amp;um)</td></tr>
+<tr class="memdesc:a94ca32c57d865a76202b34612b28ffdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Looks into existing files for requested variables.  <a href="#a94ca32c57d865a76202b34612b28ffdc">More...</a><br /></td></tr>
+<tr class="separator:a94ca32c57d865a76202b34612b28ffdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9644abfbab5e48dd24163e056113a7a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#a9644abfbab5e48dd24163e056113a7a0">setValue</a> (const QString &amp;s_key, const QString &amp;s_value)</td></tr>
+<tr class="memdesc:a9644abfbab5e48dd24163e056113a7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a value.  <a href="#a9644abfbab5e48dd24163e056113a7a0">More...</a><br /></td></tr>
 <tr class="separator:a9644abfbab5e48dd24163e056113a7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a525beb4b438768826c98c97ee5c55471"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a525beb4b438768826c98c97ee5c55471"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#a525beb4b438768826c98c97ee5c55471">setValue</a> (const QString &amp;s_key, const QStringList &amp;sl_value)</td></tr>
-<tr class="memdesc:a525beb4b438768826c98c97ee5c55471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a value. <br /></td></tr>
+<tr class="memitem:a525beb4b438768826c98c97ee5c55471"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#a525beb4b438768826c98c97ee5c55471">setValue</a> (const QString &amp;s_key, const QStringList &amp;sl_value)</td></tr>
+<tr class="memdesc:a525beb4b438768826c98c97ee5c55471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a value.  <a href="#a525beb4b438768826c98c97ee5c55471">More...</a><br /></td></tr>
 <tr class="separator:a525beb4b438768826c98c97ee5c55471"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac7622fce5f67ba4641728d9a5e4d52e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac7622fce5f67ba4641728d9a5e4d52e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#aac7622fce5f67ba4641728d9a5e4d52e">appendValue</a> (const QString &amp;s_key, const QString &amp;s_value)</td></tr>
-<tr class="memdesc:aac7622fce5f67ba4641728d9a5e4d52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a value. <br /></td></tr>
+<tr class="memitem:aac7622fce5f67ba4641728d9a5e4d52e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#aac7622fce5f67ba4641728d9a5e4d52e">appendValue</a> (const QString &amp;s_key, const QString &amp;s_value)</td></tr>
+<tr class="memdesc:aac7622fce5f67ba4641728d9a5e4d52e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a value.  <a href="#aac7622fce5f67ba4641728d9a5e4d52e">More...</a><br /></td></tr>
 <tr class="separator:aac7622fce5f67ba4641728d9a5e4d52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a809a8d16685119be677354ccc7772848"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a809a8d16685119be677354ccc7772848"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#a809a8d16685119be677354ccc7772848">appendValues</a> (const QString &amp;s_key, const QStringList &amp;sl_values)</td></tr>
-<tr class="memdesc:a809a8d16685119be677354ccc7772848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append values. <br /></td></tr>
+<tr class="memitem:a809a8d16685119be677354ccc7772848"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#a809a8d16685119be677354ccc7772848">appendValues</a> (const QString &amp;s_key, const QStringList &amp;sl_values)</td></tr>
+<tr class="memdesc:a809a8d16685119be677354ccc7772848"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append values.  <a href="#a809a8d16685119be677354ccc7772848">More...</a><br /></td></tr>
 <tr class="separator:a809a8d16685119be677354ccc7772848"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f8521333bc180c3fa7fc701a3b13b10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7f8521333bc180c3fa7fc701a3b13b10"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#a7f8521333bc180c3fa7fc701a3b13b10">setCurrentConfig</a> (const QString &amp;s_file, UserMsg &amp;um)</td></tr>
-<tr class="memdesc:a7f8521333bc180c3fa7fc701a3b13b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current file. <br /></td></tr>
+<tr class="memitem:a7f8521333bc180c3fa7fc701a3b13b10"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#a7f8521333bc180c3fa7fc701a3b13b10">setCurrentConfig</a> (const QString &amp;s_file, UserMsg &amp;um)</td></tr>
+<tr class="memdesc:a7f8521333bc180c3fa7fc701a3b13b10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current file.  <a href="#a7f8521333bc180c3fa7fc701a3b13b10">More...</a><br /></td></tr>
 <tr class="separator:a7f8521333bc180c3fa7fc701a3b13b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae25d3b4508dd8ef9677facffc832d8e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae25d3b4508dd8ef9677facffc832d8e6"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#ae25d3b4508dd8ef9677facffc832d8e6">valueB</a> (const QString &amp;s_name, bool b_default=false) const </td></tr>
-<tr class="memdesc:ae25d3b4508dd8ef9677facffc832d8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a boolean value. <br /></td></tr>
+<tr class="memitem:ae25d3b4508dd8ef9677facffc832d8e6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#ae25d3b4508dd8ef9677facffc832d8e6">valueB</a> (const QString &amp;s_name, bool b_default=false) const </td></tr>
+<tr class="memdesc:ae25d3b4508dd8ef9677facffc832d8e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a boolean value based on option's name.  <a href="#ae25d3b4508dd8ef9677facffc832d8e6">More...</a><br /></td></tr>
 <tr class="separator:ae25d3b4508dd8ef9677facffc832d8e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af673721f3a84ec0ab48130b06a805f02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af673721f3a84ec0ab48130b06a805f02"></a>
-QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#af673721f3a84ec0ab48130b06a805f02">valueS</a> (const QString &amp;s_name, const QString &amp;s_default=QString()) const </td></tr>
-<tr class="memdesc:af673721f3a84ec0ab48130b06a805f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string value. <br /></td></tr>
+<tr class="memitem:af673721f3a84ec0ab48130b06a805f02"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#af673721f3a84ec0ab48130b06a805f02">valueS</a> (const QString &amp;s_name, const QString &amp;s_default=QString()) const </td></tr>
+<tr class="memdesc:af673721f3a84ec0ab48130b06a805f02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string value.  <a href="#af673721f3a84ec0ab48130b06a805f02">More...</a><br /></td></tr>
 <tr class="separator:af673721f3a84ec0ab48130b06a805f02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac18b6060c10ed30838c461acf61f9a0e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac18b6060c10ed30838c461acf61f9a0e"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#ac18b6060c10ed30838c461acf61f9a0e">valueI</a> (const QString &amp;s_name, int i_default=0) const </td></tr>
-<tr class="memdesc:ac18b6060c10ed30838c461acf61f9a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an integer value. <br /></td></tr>
+<tr class="memitem:aa3b877384b8a6d455ab3d27c0c28a564"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#aa3b877384b8a6d455ab3d27c0c28a564">valueSL</a> (const QString &amp;s_name, const QStringList &amp;sl_default=QStringList()) const </td></tr>
+<tr class="memdesc:aa3b877384b8a6d455ab3d27c0c28a564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of strings.  <a href="#aa3b877384b8a6d455ab3d27c0c28a564">More...</a><br /></td></tr>
+<tr class="separator:aa3b877384b8a6d455ab3d27c0c28a564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18b6060c10ed30838c461acf61f9a0e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#ac18b6060c10ed30838c461acf61f9a0e">valueI</a> (const QString &amp;s_name, int i_default=0) const </td></tr>
+<tr class="memdesc:ac18b6060c10ed30838c461acf61f9a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an integer value.  <a href="#ac18b6060c10ed30838c461acf61f9a0e">More...</a><br /></td></tr>
 <tr class="separator:ac18b6060c10ed30838c461acf61f9a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3c2be68d56b7ab076874a640b160031"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_app_opts.html#ae3c2be68d56b7ab076874a640b160031">valueD</a> (const QString &amp;s_name, double d_default=0.0) const </td></tr>
+<tr class="memdesc:ae3c2be68d56b7ab076874a640b160031"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get an integer value.  <a href="#ae3c2be68d56b7ab076874a640b160031">More...</a><br /></td></tr>
+<tr class="separator:ae3c2be68d56b7ab076874a640b160031"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -151,7 +155,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Application options. </p>
-<p>This class holds a list of key-value pairs, where values are ultimatelly list of strings. </p>
+<p>This class holds a list of key-value pairs, where values are ultimately list of strings. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a9b8436e0ab365b85e3b64a10bb5a579f"></a>
 <div class="memitem">
@@ -167,7 +171,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Default constructor. </p>
-<p>Detailed description for constructor. </p>
+<p>Creates a valid instance. </p>
 
 </div>
 </div>
@@ -193,11 +197,83 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Destructor. </p>
-<p>Detailed description for destructor. </p>
+<p>Releases all resources associated with this instance. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aac7622fce5f67ba4641728d9a5e4d52e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppOpts::appendValue </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append a value. </p>
+<p>The class represents values for options as a list of strings. This overload will either create a list with a single member and use that as a value if the option is not found or append <b>s_value</b> to internal list associated with this option.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_key</td><td>the name of the variable to change </td></tr>
+    <tr><td class="paramname">s_value</td><td>a string value to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a809a8d16685119be677354ccc7772848"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppOpts::appendValues </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>sl_values</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Append values. </p>
+<p>The class represents values for options as a list of strings. If the option is already present inside t6he two lists will be merged.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_key</td><td>the name of the variable to change </td></tr>
+    <tr><td class="paramname">s_value</td><td>a string value to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ab6bbca25caa6485459b6996d59c03ea6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -263,12 +339,12 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Load options from a file. </p>
-<p>Creates a PerSt instance from our file and checks that a <code>General</code> section exists and it contains a proper `` version string that we are safe to interpret.</p>
+<p>Creates a PerSt instance from our file and checks that a <code>general</code> section exists and it contains a proper <code>perst_version</code> version string that we are safe to interpret.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s_file</td><td>Input file's path. </td></tr>
     <tr><td class="paramname">out_pers</td><td>Resulted PerSt object, if any. </td></tr>
-    <tr><td class="paramname">um</td><td>Communication device. </td></tr>
+    <tr><td class="paramname">um</td><td>communication device. </td></tr>
   </table>
   </dd>
 </dl>
@@ -301,17 +377,398 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Load options from files. </p>
-<p>The function will either get the name of the application or use provided string. The spaces are replaced by <code>_</code> and all letters are lower-cased.</p>
-<p>The name that results is then used to search for a configuration file in three locations: system data directory, user home directory and current directory. If found, the file is immediatly loaded in this order.</p>
+<p>The function will either get the name of the application or use provided string. The spaces are replaced by <code>_</code> and all letters are lower-cased. See <code><a class="el" href="class_app_opts.html#ab6bbca25caa6485459b6996d59c03ea6" title="Get a proper name starting from a template. ">cfgFileName()</a></code> for details.</p>
+<p>The name that results is then used to search for a configuration file in three locations: system data directory, user home directory and current directory. If found, the file is immediately loaded in this order.</p>
 <p>The reverse order (current dir, user home, system data) is used to decide where to save changed settings.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">um</td><td>structure used to show messages. </td></tr>
     <tr><td class="paramname">s_app_name</td><td>the name to use for file name. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true if everything went fine. </dd></dl>
 <p>Get the name of the config file </p>
+
+</div>
+</div>
+<a class="anchor" id="a94ca32c57d865a76202b34612b28ffdc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AppOpts::readMultipleFromCfgs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_one_opt_list.html">OneOptList</a> &amp;&#160;</td>
+          <td class="paramname"><em>list</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UserMsg &amp;&#160;</td>
+          <td class="paramname"><em>um</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Looks into existing files for requested variables. </p>
+<p>The method simply iterates the list of options and uses <code><a class="el" href="class_app_opts.html#aa1a4fe299f673da0d88a98fbaa6665ec" title="Looks into existing files for requested variable. ">readValueFromCfgs()</a></code> to get their values and insert them into its own option tree.</p>
+<p>This is useful if the application defines at startup a list of options that it expects, then initializes the <a class="el" href="class_app_opts.html" title="Application options. ">AppOpts</a> instance and makes sure that all required options are present.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">list</td><td>the list of variables to search </td></tr>
+    <tr><td class="paramname">um</td><td>communication object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if all required variables were found </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa1a4fe299f673da0d88a98fbaa6665ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AppOpts::readValueFromCfgs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="class_one_opt.html">OneOpt</a> &amp;&#160;</td>
+          <td class="paramname"><em>opt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UserMsg &amp;&#160;</td>
+          <td class="paramname"><em>um</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Looks into existing files for requested variable. </p>
+<p>The method will honor variable's group and try to locate the value in system, user and local config files (represented as persistent storage inside). If found the variable and the value are inserted into local storage, replacing any value that was previously there.</p>
+<p>If a variable is not required and is also not found in the configuration files the default value is used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">opt</td><td>definition of the variable to search </td></tr>
+    <tr><td class="paramname">um</td><td>communication object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the variable was found in at least one file </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7f8521333bc180c3fa7fc701a3b13b10"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AppOpts::setCurrentConfig </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UserMsg &amp;&#160;</td>
+          <td class="paramname"><em>um</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set current file. </p>
+<p>Current config file is meaningful if the values (maybe adjusted by the application) need to be saved back to a file.</p>
+<p>The <b>s_file</b> may be one of the following keywords:</p><ul>
+<li>system</li>
+<li>user</li>
+<li>local In this case, if the coresponding persistent object is valid, the file is used as current file.</li>
+</ul>
+<p>If <b>s_file</b> is an actual file that is different from the files used as system, user and local files the file is loaded and made current.</p>
+<p>A previous current file that is not one of the three types (loaded by a previous call to <code><a class="el" href="class_app_opts.html#a7f8521333bc180c3fa7fc701a3b13b10" title="Set current file. ">setCurrentConfig()</a></code>) will be discarded by this method.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_file</td><td>keyword or the path and name of the file to make current </td></tr>
+    <tr><td class="paramname">um</td><td>communication object </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if everything went well </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9644abfbab5e48dd24163e056113a7a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppOpts::setValue </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a value. </p>
+<p>The class represents values for options as a list of strings. This overload will create a list with a single member and use that as a value.</p>
+<p>Any value that was previously assigned to this option will be overwritten.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_key</td><td>the name of the variable to change </td></tr>
+    <tr><td class="paramname">s_value</td><td>a string value to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a525beb4b438768826c98c97ee5c55471"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void AppOpts::setValue </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>sl_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a value. </p>
+<p>The class represents values for options as a list of strings. The <b>sl_value</b> argument is directly used in internal map.</p>
+<p>Any value that was previously assigned to this option will be overwritten.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_key</td><td>the name of the variable to change </td></tr>
+    <tr><td class="paramname">s_value</td><td>a string value to use </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae25d3b4508dd8ef9677facffc832d8e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool AppOpts::valueB </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>b_default</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a boolean value based on option's name. </p>
+<p>The class represents values for options as a list of strings. For boolean values first entry in the list is used and the string is compared against <code>FALSE</code>, <code>false</code> and <code>0</code>; if the string matches the value is false, otherwise it is true.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_name</td><td>name of the option to retreive </td></tr>
+    <tr><td class="paramname">b_default</td><td>default value if the option is not found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the result </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae3c2be68d56b7ab076874a640b160031"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double AppOpts::valueD </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>d_default</em> = <code>0.0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get an integer value. </p>
+<p>The class represents values for options as a list of strings. For double values first entry in the list is used and converted into double. If the conversion fails the default value is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_name</td><td>name of the option to retreive </td></tr>
+    <tr><td class="paramname">d_default</td><td>default value if the option is not found or can't be converted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the number </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac18b6060c10ed30838c461acf61f9a0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int AppOpts::valueI </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i_default</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get an integer value. </p>
+<p>The class represents values for options as a list of strings. For integer values first entry in the list is used and converted into integer. If the conversion fails the default value is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_name</td><td>name of the option to retreive </td></tr>
+    <tr><td class="paramname">i_default</td><td>default value if the option is not found or can't be converted </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the integer </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af673721f3a84ec0ab48130b06a805f02"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString AppOpts::valueS </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_default</em> = <code>QString()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a string value. </p>
+<p>The class represents values for options as a list of strings. For string values first entry in the list is used.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_name</td><td>name of the option to retreive </td></tr>
+    <tr><td class="paramname">s_default</td><td>default value if the option is not found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the string that was found </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa3b877384b8a6d455ab3d27c0c28a564"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QStringList AppOpts::valueSL </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>s_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QStringList &amp;&#160;</td>
+          <td class="paramname"><em>sl_default</em> = <code>QStringList()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a list of strings. </p>
+<p>The class represents values for options as a list of strings. Entire list is returned if found.</p>
+<p>An empty list is interpreted as a missing value and default list is returned.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s_name</td><td>name of the option to retreive </td></tr>
+    <tr><td class="paramname">s_default</td><td>default value if the option is not found </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the list that was found </dd></dl>
 
 </div>
 </div>

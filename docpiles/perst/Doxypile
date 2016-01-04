@@ -6,7 +6,7 @@
 DOXYFILE_ENCODING      = UTF-8
 PROJECT_NAME           = PerSt
 PROJECT_NUMBER         = 0.0.1
-PROJECT_BRIEF          = "PerSt pile."
+PROJECT_BRIEF          = "Persistent storage pile used for storing key/value pairs"
 PROJECT_LOGO           =
 OUTPUT_DIRECTORY       = H:\prog\piles\pile-contributors.github.io\docpiles\perst
 CREATE_SUBDIRS         = NO

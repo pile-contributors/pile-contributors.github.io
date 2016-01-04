@@ -276,6 +276,34 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>setColumnCallback</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a5ebe917e0e49a10977e7bc427db0dc55</anchor>
+      <arglist>(int table_index, int column_index, DbColumn::Callback value, void *user_data=NULL)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setColumnCallback</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a51a5e729a48f5c6f76698b958e2639f7</anchor>
+      <arglist>(int column_index, DbColumn::Callback value, void *user_data=NULL)</arglist>
+    </member>
+    <member kind="function">
+      <type>DbColumn::Callback</type>
+      <name>columnCallback</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a5e6f9d96527ced448b4a6392f87592b6</anchor>
+      <arglist>(int table_index, int column_index)</arglist>
+    </member>
+    <member kind="function">
+      <type>void *</type>
+      <name>columnCallbackData</name>
+      <anchorfile>class_db_model.html</anchorfile>
+      <anchor>a6c4c28ef228e833be5fa5db1e516b5ef</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>setCurrentMarker</name>
       <anchorfile>class_db_model.html</anchorfile>
       <anchor>a4f1e86f76b2a4cfa37ff3f9ea1a5bbb9</anchor>
@@ -521,15 +549,15 @@
       <type></type>
       <name>DbModelPrivate</name>
       <anchorfile>class_db_model_private.html</anchorfile>
-      <anchor>aa97d569c83551120b4f6776b7cd5a9af</anchor>
-      <arglist>(DbStruct *db, DbTaew *meta, QObject *parent=NULL)</arglist>
+      <anchor>a54b8b95d83e5d1cfe510446640b7f180</anchor>
+      <arglist>(DbStruct *db, DbTaew *meta, DbModel *parent)</arglist>
     </member>
     <member kind="function">
       <type></type>
       <name>DbModelPrivate</name>
       <anchorfile>class_db_model_private.html</anchorfile>
-      <anchor>a2e9ca43c590ca1076ed34ecb769bb48b</anchor>
-      <arglist>(DbStruct *db, int component, QObject *parent=NULL)</arglist>
+      <anchor>a993d162d7ae4fcab5aef4f377a075715</anchor>
+      <arglist>(DbStruct *db, int component, DbModel *parent)</arglist>
     </member>
     <member kind="function" virtualness="virtual">
       <type>virtual</type>
@@ -537,6 +565,13 @@
       <anchorfile>class_db_model_private.html</anchorfile>
       <anchor>a0de4c1c5531762d03299d773e0c4b56b</anchor>
       <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>DbModel *</type>
+      <name>parentDbModel</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>ac4946ff191b775212b2aeab387057674</anchor>
+      <arglist>() const </arglist>
     </member>
     <member kind="function">
       <type>bool</type>
@@ -687,6 +722,13 @@
     </member>
     <member kind="function">
       <type>bool</type>
+      <name>setColumnCallback</name>
+      <anchorfile>class_db_model_private.html</anchorfile>
+      <anchor>a6ccf12b90c642647acc249356ff90199</anchor>
+      <arglist>(int table_index, int column_index, DbColumn::Callback value, void *user_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
       <name>setCurrentMarker</name>
       <anchorfile>class_db_model_private.html</anchorfile>
       <anchor>a6e09a7b164a12196fd282ec39850a0e1</anchor>
@@ -815,19 +857,96 @@
       <anchor>abec353d563eaa6a53574a91c7ed78ae9</anchor>
       <arglist>() const </arglist>
     </member>
-    <member kind="variable">
+    <member kind="function">
       <type>DbTaew *</type>
-      <name>meta</name>
+      <name>metadata</name>
       <anchorfile>class_db_model_tbl.html</anchorfile>
-      <anchor>a04254c920545b15bac9f9ba57d4f1fb2</anchor>
-      <arglist></arglist>
+      <anchor>ad2dc2a17dd789506b58c7b7f88876303</anchor>
+      <arglist>() const </arglist>
     </member>
-    <member kind="variable">
-      <type>QSqlTableModel *</type>
-      <name>model</name>
+    <member kind="function">
+      <type>void</type>
+      <name>setMetadata</name>
       <anchorfile>class_db_model_tbl.html</anchorfile>
-      <anchor>ab752f1fa3d5a8944731ebcd07f63eac5</anchor>
-      <arglist></arglist>
+      <anchor>a3d11f79650d4bf6fe1226c755b12eac6</anchor>
+      <arglist>(DbTaew *value)</arglist>
+    </member>
+    <member kind="function">
+      <type>QSqlTableModel *</type>
+      <name>sqlModel</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a0085baab9140da2e9f7eb599c0d90731</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSqlModel</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a8042b28fe598d271233b1df7173df94c</anchor>
+      <arglist>(QSqlTableModel *value)</arglist>
+    </member>
+    <member kind="function">
+      <type>const DbColumn &amp;</type>
+      <name>column</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>ac6d72eacb6f98bf8f5a74cc4f3363603</anchor>
+      <arglist>(int colidx) const </arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>columnLabel</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a71acab95e2541867e46a69576f4d24bd</anchor>
+      <arglist>(int colidx) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>setColumnCallback</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a7b74ad3928f8bde777c09fa8a0b4dfa7</anchor>
+      <arglist>(int column_index, DbColumn::Callback value)</arglist>
+    </member>
+    <member kind="function">
+      <type>DbColumn::Callback</type>
+      <name>columnCallback</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>acd2ee28a6866191e97f0cbf5ce32b974</anchor>
+      <arglist>(int column_index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>tableName</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a4469f09c63cc3659df6387cbbcf9dd04</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>rowCount</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>aae3b0e71571ae63aaeb21bcccae5304d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>QVariant</type>
+      <name>data</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a6ff8d3e880c38862d67ad3854a046159</anchor>
+      <arglist>(int row, int column, int role=Qt::DisplayRole) const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>toRealIndex</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>ae2d018217a4ad689b79dbc65c0f1b097</anchor>
+      <arglist>(int value) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>destroy</name>
+      <anchorfile>class_db_model_tbl.html</anchorfile>
+      <anchor>a0d96b1ef0b30b662e16f144846891ae1</anchor>
+      <arglist>()</arglist>
     </member>
   </compound>
   <compound kind="page">

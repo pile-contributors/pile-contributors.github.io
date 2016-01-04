@@ -11,12 +11,44 @@
     <filename>appopts_8cc</filename>
     <includes id="appopts_8h" name="appopts.h" local="yes" imported="no">appopts.h</includes>
     <includes id="appopts-private_8h" name="appopts-private.h" local="yes" imported="no">appopts-private.h</includes>
+    <includes id="one__opt_8h" name="one_opt.h" local="yes" imported="no">one_opt.h</includes>
+    <includes id="one__opt__list_8h" name="one_opt_list.h" local="yes" imported="no">one_opt_list.h</includes>
   </compound>
   <compound kind="file">
     <name>appopts.h</name>
     <path>H:/prog/piles/appopts/src/appopts/</path>
     <filename>appopts_8h</filename>
     <class kind="class">AppOpts</class>
+  </compound>
+  <compound kind="file">
+    <name>one_opt.cc</name>
+    <path>H:/prog/piles/appopts/src/appopts/</path>
+    <filename>one__opt_8cc</filename>
+    <includes id="appopts_8h" name="appopts.h" local="yes" imported="no">appopts.h</includes>
+    <includes id="appopts-private_8h" name="appopts-private.h" local="yes" imported="no">appopts-private.h</includes>
+    <includes id="one__opt_8h" name="one_opt.h" local="yes" imported="no">one_opt.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>one_opt.h</name>
+    <path>H:/prog/piles/appopts/src/appopts/</path>
+    <filename>one__opt_8h</filename>
+    <class kind="class">OneOpt</class>
+  </compound>
+  <compound kind="file">
+    <name>one_opt_list.cc</name>
+    <path>H:/prog/piles/appopts/src/appopts/</path>
+    <filename>one__opt__list_8cc</filename>
+    <includes id="appopts_8h" name="appopts.h" local="yes" imported="no">appopts.h</includes>
+    <includes id="appopts-private_8h" name="appopts-private.h" local="yes" imported="no">appopts-private.h</includes>
+    <includes id="one__opt_8h" name="one_opt.h" local="yes" imported="no">one_opt.h</includes>
+    <includes id="one__opt__list_8h" name="one_opt_list.h" local="yes" imported="no">one_opt_list.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>one_opt_list.h</name>
+    <path>H:/prog/piles/appopts/src/appopts/</path>
+    <filename>one__opt__list_8h</filename>
+    <includes id="one__opt_8h" name="one_opt.h" local="no" imported="no">appopts/one_opt.h</includes>
+    <class kind="class">OneOptList</class>
   </compound>
   <compound kind="file">
     <name>README.md</name>
@@ -53,6 +85,20 @@
       <anchorfile>class_app_opts.html</anchorfile>
       <anchor>ad76c28187f41bde29d44b52259030aa0</anchor>
       <arglist>(const QString &amp;s_file, PerSt **out_pers, UserMsg &amp;um)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>readValueFromCfgs</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>aa1a4fe299f673da0d88a98fbaa6665ec</anchor>
+      <arglist>(const OneOpt &amp;opt, UserMsg &amp;um)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>readMultipleFromCfgs</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>a94ca32c57d865a76202b34612b28ffdc</anchor>
+      <arglist>(const OneOptList &amp;optlist, UserMsg &amp;um)</arglist>
     </member>
     <member kind="function">
       <type>void</type>
@@ -104,11 +150,25 @@
       <arglist>(const QString &amp;s_name, const QString &amp;s_default=QString()) const </arglist>
     </member>
     <member kind="function">
+      <type>QStringList</type>
+      <name>valueSL</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>aa3b877384b8a6d455ab3d27c0c28a564</anchor>
+      <arglist>(const QString &amp;s_name, const QStringList &amp;sl_default=QStringList()) const </arglist>
+    </member>
+    <member kind="function">
       <type>int</type>
       <name>valueI</name>
       <anchorfile>class_app_opts.html</anchorfile>
       <anchor>ac18b6060c10ed30838c461acf61f9a0e</anchor>
       <arglist>(const QString &amp;s_name, int i_default=0) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>valueD</name>
+      <anchorfile>class_app_opts.html</anchorfile>
+      <anchor>ae3c2be68d56b7ab076874a640b160031</anchor>
+      <arglist>(const QString &amp;s_name, double d_default=0.0) const </arglist>
     </member>
     <member kind="function" static="yes">
       <type>static QString</type>
@@ -117,6 +177,119 @@
       <anchor>ab6bbca25caa6485459b6996d59c03ea6</anchor>
       <arglist>(const QString &amp;s_app_name)</arglist>
     </member>
+  </compound>
+  <compound kind="class">
+    <name>OneOpt</name>
+    <filename>class_one_opt.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>OneOpt</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>a62b67e575b33fa1f5b809e674a91e34b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>OneOpt</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>a16eca25e585f223d5ea89a8b2e383cba</anchor>
+      <arglist>(const OneOpt &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>OneOpt &amp;</type>
+      <name>operator=</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>a6093af5755e9643fbe41269f2f6d7621</anchor>
+      <arglist>(const OneOpt &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>name</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>ae5bd3f7fbf64aecd7e995715840b9ca7</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setName</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>a671eef4ee9786cb6db067bea35443b55</anchor>
+      <arglist>(const QString &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>QString</type>
+      <name>fullName</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>aab7e38d0ee913dfa04cb30444701e570</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>group</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>a6e5513f7a4a20e1e0bf181e0a6c97185</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setGroup</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>a5a4dad8e899c70e8220aca0d2e911906</anchor>
+      <arglist>(const QString &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>const QString &amp;</type>
+      <name>description</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>a9da5e30fb19eec9b683d3a9628837e5c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDescription</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>ade6f13a3cf7507881abe4c09215a5901</anchor>
+      <arglist>(const QString &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>const QStringList &amp;</type>
+      <name>defaultValue</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>a889b0b14d27806968570b23bbb8c1321</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setDefault</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>ac99d7a687a181708bc1b2a92c6052ff4</anchor>
+      <arglist>(const QStringList &amp;value)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>required</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>ab9ac408222218935353bbb41937c2775</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setRequired</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>aeb92900a9b2ea4ddcab23693425ba1c5</anchor>
+      <arglist>(bool value)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static OneOpt</type>
+      <name>create</name>
+      <anchorfile>class_one_opt.html</anchorfile>
+      <anchor>a99d9e1988a66ddfca25c73b645773f9f</anchor>
+      <arglist>(const QString name, const QString stgs_group=&quot;general&quot;, const QString description=QString(), const QStringList default_val=QStringList())</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>OneOptList</name>
+    <filename>class_one_opt_list.html</filename>
   </compound>
   <compound kind="page">
     <name>index</name>

@@ -47,7 +47,7 @@
    <div id="projectname">AppOpts Pile
    &#160;<span id="projectnumber"> version 0.0.1</span>
    </div>
-   <div id="projectbrief">AppOpts pile.</div>
+   <div id="projectbrief">The pile provides the application with easy loading</div>
   </td>
  </tr>
  </tbody>
@@ -68,7 +68,31 @@
 <div class="title">AppOpts Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="el" href="class_app_opts.html" title="Application options. ">AppOpts</a> pile. </p>
+<div class="textblock"><p>The pile provides the application with easy loading of options from config files, management and saving the values back to config files.</p>
+<p>The implementation looks into three locations for configuration files:</p>
+<ul>
+<li>(1) system data directory</li>
+<li>(2) user home directory</li>
+<li>(3) current directory</li>
+</ul>
+<p>If a value is present in more than one file the most specific one (highest number) takes precedence.</p>
+<p>The user may also choose to load the configuration from a specific file or files using <a class="el" href="class_app_opts.html#ad76c28187f41bde29d44b52259030aa0">loadFile()</a>.</p>
+<h2>Definitions </h2>
+<p>Some rudimentary support for option definitions exists in the pile in the form of <a class="el" href="class_one_opt.html">OneOpt</a> and <a class="el" href="class_one_opt_list.html">OneOptList</a>. Through it one may provide a name, a group, a description and a default value for each option. Options may also be required to be present in at least one config file.</p>
+<p><a class="el" href="class_app_opts.html#a94ca32c57d865a76202b34612b28ffdc">readMultipleFromCfgs()</a> can be used to validate such a list of options.</p>
+<h2>Usage </h2>
+<p>A project using this pile would include an instance of <a class="el" href="class_app_opts.html">AppOpts</a> in top level singleton: </p><pre class="fragment">class Manager {
+    AppOpts opts_; /**&lt; the options */
+    static Manager * unique_;
+};
+</pre><p>It would then load the settings from all files that are present with <code>opts_.loadFromAll ();</code>.</p>
+<p>The code may go on parsing the command line and overriding the values based on user request.</p>
+<h2>Dependencies </h2>
+<ul>
+<li>Qt (either 4.X or 5.X)</li>
+<li>UserMsg pile</li>
+<li>Perst pile </li>
+</ul>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.9.1-->
 <!-- start footer part -->

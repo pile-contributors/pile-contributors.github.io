@@ -9,6 +9,13 @@
     <name>simplesmtp-private.h</name>
     <path>H:/prog/piles/simplesmtp/src/simplesmtp/</path>
     <filename>simplesmtp-private_8h</filename>
+    <member kind="define">
+      <type>#define</type>
+      <name>TMP_A</name>
+      <anchorfile>simplesmtp-private_8h.html</anchorfile>
+      <anchor>a83762e80a80d93e84b946d462bc389b7</anchor>
+      <arglist>(__s__)</arglist>
+    </member>
   </compound>
   <compound kind="file">
     <name>simplesmtp.cc</name>
@@ -29,6 +36,7 @@
     <path>H:/prog/piles/simplesmtp/src/simplesmtp/</path>
     <filename>smtp_8cc</filename>
     <includes id="smtp_8h" name="smtp.h" local="yes" imported="no">smtp.h</includes>
+    <includes id="simplesmtp-private_8h" name="simplesmtp-private.h" local="yes" imported="no">simplesmtp-private.h</includes>
   </compound>
   <compound kind="file">
     <name>smtp.h</name>
